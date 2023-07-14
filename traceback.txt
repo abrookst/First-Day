@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 42, in script
+    e "You've created a new Ren'Py game."
+TypeError: 'str' object is not callable
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 42, in script
+    e "You've created a new Ren'Py game."
+  File "/home/ali-brooks/renpy-8.1.1-sdk/renpy/ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "/home/ali-brooks/renpy-8.1.1-sdk/renpy/exports.py", line 1473, in say
+    who(what, *args, **kwargs)
+  File "/home/ali-brooks/renpy-8.1.1-sdk/renpy/character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "/home/ali-brooks/renpy-8.1.1-sdk/renpy/character.py", line 1003, in do_display
+    display_say(who,
+  File "/home/ali-brooks/renpy-8.1.1-sdk/renpy/character.py", line 501, in display_say
+    c("begin", interact=interact, type=type, **cb_args)
+TypeError: 'str' object is not callable
+
+Linux-5.19.0-45-generic-x86_64-with-glibc2.35 x86_64
+Ren'Py 8.1.1.23060707
+First Day 1.0
+Fri Jul 14 01:11:20 2023
