@@ -1,5 +1,4 @@
-﻿
-init python:
+﻿init python:
 
     #Generate seperate audio channel from voice for beeps.
     renpy.music.register_channel(name='beeps', mixer='voice')
@@ -62,11 +61,12 @@ define r = Character("Robin", callback=r)
 label start:
 
 
-    "May 28th 201X, 11:18 P.M."
+    "May 28th 201X\n11:18 P.M.\nBirdley's Bar"
 
     scene bg bar
+    with pixellate
     
-    "Birdley's Bar. A small dingey bar, kept afloat by its regulars, who have been coming here since before I was even born."
+    "A small dingey bar, kept afloat by its regulars, who have been coming here since before I was even born."
 
     "Said regulars are all within their cliques, or are glued to the telly, watching... something."
 
@@ -130,4 +130,11 @@ label start:
 
     r "Cheers."
 
-    return
+    scene
+    with fade
+
+    jump dayOne
+
+label dayOne:
+    "..."
+
