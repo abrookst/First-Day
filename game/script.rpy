@@ -50,16 +50,66 @@ default t_name = "????"
 default s_name = "????"
 default c_name = "????"
 
-define z = Character("[z_name]", callback=z)
-define h = Character("[h_name]", callback=h)
-define t = Character("[t_name]", callback=t)
-define s = Character("[s_name]", callback=s)
-define c = Character("[c_name]", callback=c)
+define z = Character("[z_name]", callback=z, what_font="z.ttf")
+define h = Character("[h_name]", callback=h, what_font="h.ttf")
+define t = Character("[t_name]", callback=t, what_font="t.ttf")
+define s = Character("[s_name]", callback=s, what_font="s.ttf")
+define c = Character("[c_name]", callback=c, what_font="c.ttf")
 define r = Character("Robin", callback=r)
+
+define gui.text_font = "gui1.ttf"
+define gui.interface_text_font = "gui2.ttf"
+define gui.text_size = 20
+
+transform US_R:
+    zoom 0.25 
+    xalign .1
+    yalign 1.0
+transform US_C:
+    zoom 0.25 
+    xalign .5
+    yalign 1.0
+transform US_L:
+    zoom 0.25 
+    xalign 0.9
+    yalign 1.0
+transform S_R:
+    zoom 0.5
+    xalign .1
+    yalign 1.0
+transform S_C:
+    zoom 0.5
+    xalign .5
+    yalign 1.0
+transform S_L:
+    zoom 0.5
+    xalign 0.9
+    yalign 1.0
+transform DS_R:
+    zoom 0.75
+    xalign .1
+    yalign 0
+transform DS_C:
+    zoom 0.75
+    xalign .5
+    yalign 0
+transform DS_L:
+    zoom 0.75
+    xalign 0.9
+    yalign 0
+transform apron:
+    zoom 1
+    xalign .5
+    yalign 0
 
 
 label start:
 
+    scene bg office2:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x')
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+        
+    show z front at S_C
 
     "May 28th 201X\n11:18 P.M.\nBirdley's Bar"
 
@@ -78,7 +128,8 @@ label start:
 
     z "Hey."
 
-    show z front
+    show z front at S_C
+    
 
     z "Mind if I have a seat?"
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 41: invalid syntax
-    def (event, **kwargs):
-         ^
+File "game/script.rpy", line 60: invalid character '“' (U+201C)
+    “gui1.ttf”
+     ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Fri Jul 14 03:04:33 2023
+Sat Jul 15 02:04:09 2023
