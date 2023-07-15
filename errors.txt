@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 60: invalid character '“' (U+201C)
-    “gui1.ttf”
-     ^
+File "game/script.rpy", line 134: expected statement.
+    z_name = "Zeke"
+           ^
 
 Ren'Py Version: Ren'Py 8.1.1.23060707
-Sat Jul 15 02:04:09 2023
+Sat Jul 15 15:03:08 2023
