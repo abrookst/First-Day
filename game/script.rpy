@@ -44,7 +44,7 @@
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel="beeps")
 
-define z = Character("[z_name]", callback=z, what_font="z.ttf")
+define z = Character("[z_name]", callback=z, what_font="z.ttf", what_size=90)
 define h = Character("[h_name]", callback=h, what_font="h.ttf")
 define t = Character("[t_name]", callback=t, what_font="t.ttf")
 define s = Character("[s_name]", callback=s, what_font="s.ttf")
@@ -56,10 +56,6 @@ default h_name = "????"
 default t_name = "????"
 default s_name = "????"
 default c_name = "????"
-
-define gui.text_font = "gui1.ttf"
-define gui.interface_text_font = "gui2.ttf"
-define gui.text_size = 20
 
 transform US_L:
     zoom 0.25 
@@ -105,12 +101,13 @@ transform apron:
     yalign 0
 
 
+
 label start:
 
     "May 28th 201X\n11:18 P.M.\nBirdley's Bar"
 
     scene bg bar
-    with fade
+    with pixellate
     
     "A small dingey bar, kept afloat by its regulars, who have been coming here since before I was even born."
 
@@ -234,8 +231,8 @@ label dayOne:
 
     "...Maybe drinking the night before my first day of work wasn't the best idea in the world."
 
-    scene bg officefront:
-        function WaveShader(period=1, amp=5.0, speed=1, direction='x')
+    scene bg officeoutside:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with pixellate
 
@@ -248,8 +245,8 @@ label dayOne:
 
     "I collect myself, straighten out my outfit, and walk into the front door."
 
-    scene bg frontdesk:
-        function WaveShader(period=1, amp=5.0, speed=1, direction='x')
+    scene bg officefrontdesk:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     
@@ -312,7 +309,7 @@ label dayOne:
 
     r "Yes! I-It's great to meet you too, Horace."
 
-    h "To you, it's boss."
+    h "That's Boss to you."
 
     $ h_name = "Boss (Horace)"
 
@@ -330,5 +327,135 @@ label dayOne:
     r "H-huh?"
 
     h "Come with me."
+
+    hide h front
+    with dissolve
+
+    scene bg hallway:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    "They quickly move down the hallway, I wipe my face off with the towel while following them down the hall."
+
+    "We wisk by endless offices and meeting rooms, only breifly slowing down to turn corners."
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show h front at S_C
+    with dissolve
+
+    h "This is your office."
+
+    r "G-Got it. Which of the two empty desks is mine?"
+
+    show h side at S_C
+
+    h "The one on the right. The left one belongs to the other person starting today."
+
+    r "Oh? There's someone else starting with me?"
+
+    show h back at S_C
+
+    h "Yep. And speak of the devil."
+
+    "Horace steps to the side, as a tall man walks in"
+
+    show t front at S_L
+    with dissolve
+    show h front
+
+    h "This is Taiga. He's the other employee starting today."
+
+    $ t_name = "Taiga"
+
+    t "Hi. And your name is?"
+
+    r "Robin. Nice to meet you!"
+
+    "I extend my hand towards Taiga"
+
+    t "Yeah... no. I'm not shaking your hand."
+
+    show t side
+
+    t "Try not to get in my way, okay?"
+    
+    show t front
+
+    t "You should be happy you even get to share an office with me."
+
+    show t side
+
+    t "Boss, I already finished all of my work for this morning."
+    
+    t "I'll be off to get a head start on this afternoon's work."
+
+    h "Impressive, Taiga."
+
+    show h side
+
+    h "You should learn a thing or two from Taiga, Robin."
+
+    t "Heh, even if Robin tried to be like me, they'd simply fall short."
+
+    "...This is gonna be a long day."
+
+    show t back
+
+    t "I'll be off then."
+
+    hide t back
+    with dissolve
+
+    "Taiga steps out of the room"
+
+    show h front
+
+    h "Anyways, it would absolutely tickle my dying heart pink to give you a tour, but unfortunately, I have better things to do."
+
+    show h side
+
+    h "Hey, Claire."
+
+    show c front at S_R
+    with dissolve
+
+    c "Yes, Hori?"
+
+    h "Don't call me that."
+
+    show c side
+
+    c "Ah, sorry..."
+
+    h "Can you give Robin a tour?"
+
+    show c front
+
+    c "Oh! Sure, I can do that."
+
+    show h back
+
+    h "Alright. I'll be off then"
+
+    hide h back
+    with dissolve
+
+    "Horace steps out."
+
+    show c back
+
+    c "Alright! Follow me!"
+
+
+    
+
+
+
+
 
 
