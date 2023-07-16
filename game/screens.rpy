@@ -247,8 +247,8 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
-
+            yalign .99
+            
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
@@ -283,11 +283,15 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
+    hbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        if renpy.current_screen().screen_name[0] == "main_menu":
+            xalign 0.5
+            yalign 0.95
+        else:
+            yalign 0.5
+            xpos gui.navigation_xpos
 
         spacing gui.navigation_spacing
 
@@ -336,6 +340,7 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    xalign 0.5
 
 
 ## Main Menu screen ############################################################
@@ -351,10 +356,6 @@ screen main_menu():
 
     add gui.main_menu_background
 
-    ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
-
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     use navigation
@@ -363,9 +364,6 @@ screen main_menu():
 
         vbox:
             style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
 
             text "[config.version]":
                 style "main_menu_version"
@@ -394,9 +392,10 @@ style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
 
 style main_menu_title:
-    properties gui.text_properties("title")
+    properties gui.text_properties("title")  
 
 style main_menu_version:
+    color '#aaaaaa'
     properties gui.text_properties("version")
 
 

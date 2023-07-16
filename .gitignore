@@ -127,3 +127,4 @@ CubismSdkForNative-4-*.zip
 # Works in progress, throwaway scripts, etc.
 /scratch
 /*-dists
+game/audio/output.wav

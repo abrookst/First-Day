@@ -194,6 +194,7 @@ init python:
 
     build.documentation('*.html')
     build.documentation('*.txt')
+    
 
 
 ## A Google Play license key is required to perform in-app purchases. It can be
@@ -207,3 +208,5 @@ init python:
 ## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
+
+
