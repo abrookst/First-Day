@@ -554,7 +554,19 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
+            text _("Programming, Writing, Visuals: Ali Brooks")
+
+            text _("Music: Yuppe")
+
+            text _("Taiga, Horace, and Zeke Voice: Cole \"Big Man on Campus\" Maryanopolis")
+
+            text _("Shamir and Claire voice: ")
+
+            text _("Fonts: ")
+
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+
+
 
 
 style about_label is gui_label
