@@ -1,0 +1,164 @@
+Kinetic Text Tags Ren'Py Module 2021 Daniel Westfall <SoDaRa2595@gmail.com>
+http://twitter.com/sodara9 I'd appreciate being given credit if you do end up using it! :D Would really make my day to know I helped some people out! Really hope this can help the community create some really neat ways to spice up their dialogue! http://opensource.org/licenses/mit-license.php Github: https://github.com/SoDaRa/Kinetic-Text-Tags itch.io: https://wattson.itch.io/kinetic-text-tags Forum Post: https://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=60527&sid=75b4eb1aa5212a33cbfe9b0354e5376b
+Wave Shader Ren'Py Module 2022 Daniel Westfall <SoDaRa2595@gmail.com>
+http://twitter.com/sodara9 I'd appreciate being given credit if you do end up using it! :D Would really make my day to know I helped some people out! Really hope this can help the community create some cool visuals! http://opensource.org/licenses/mit-license.php Github: https://github.com/SoDaRa/RenpyWaveShader itch.io: https://wattson.itch.io/renpy-wave-shader Forum Post: https://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=64378
+Notes on how to use
+Important Part
+May 28th 201X
+11:18 P.M.
+Birdley's Bar
+A small dingey bar, kept afloat by its regulars, who have been coming here since before I was even born.
+Said regulars are all within their cliques, or are glued to the telly, watching... something.
+I sit and stir my Black Russian. Not in idle bordem, but rather in tense, sharp, anxiety.
+My mind is racing, soaring through the air, beyond the wit of man.
+My mind comes careening back down to reality, when the glass of solitude is shattered by a familiar voice.
+Hey.
+Mind if I have a seat?
+Oh, hey Zeke. Go ahead.
+He takes a seat, while gesturing at the waiter
+Two glasses of Dom P
+Are you mad? How much even is that a glass?
+Does this place even carry Dom P?
+It doesnt really matter, after all...
+Doesn't someone here have a job now?
+And didn't two people here just graduate from college?
+So we should celebrate. Full stop.
+Please dont remind me.
+Remind you of what?
+I bury my face into the table
+Please dont remind me about my job.
+What?
+I hear two glasses and a bottle hit the table
+How can you not like having a job? That makes literally no sense.
+I'm just... not a fan of change.
+I got used to college, and even moreso to school.
+This is just... different. And I really dont like that.
+To each their own, I guess.
+Exactly. Now can we stop talking about it and just drink?
+Fair enough. Cheers.
+Cheers.
+Our glasses tap, before we take a long sip of the Champage
+Wow. This really is good.
+See? Worth every penny.
+Well I wouldnt say that. A beer is just fine.
+We'll switch to beer after this, lets enjoy this while we're still sober.
+The night went on long, we drank ceaselessly, while talking about our college memories.
+Thinking about college was a nice respite from what was to come tomorrow.
+...
+...
+Ugh...
+I roll out of bed, falling onto the floor
+I pick myself up, while rubbing my eyes.
+Dread strikes as I slowly realize that today
+...is the first day of my new life.
+After parking my car, I walk over to the front of the building. 
+I'm well aware that this is just my own stress messing with me, but the atmosphere here...
+It just feels different. Otherworldly, almost.
+I collect myself, straighten out my outfit, and walk into the front door.
+Upon walking in, I am greeted by a lady sitting at the front desk.
+She seems to be flipping through a magazine.
+...
+Hello, my name is Robin.
+...
+She picks up the landline phone beside her
+Security? Some freakshow just came in and started talking to me.
+WHAT ARE YOU DOING?!
+...
+They seem to be getting aggressive...
+I WORK HERE! THIS IS MY FIRST DAY!
+I rummage though my bag to grab my ID.
+But before I can show it to her, someone comes in and grabs the phone from her hands.
+Hello? This is Horace.
+Shamir was lying. You don't have to come to the front desk.
+They put the phone down into its cradle.
+You must be Robin. Nice to meet you.
+Yes! I-It's great to meet you too, Horace.
+That's Boss to you.
+Ah, s-sorry boss.
+They step forward and extend their hand, and I reach to shake it.
+But I instead grab something fuzzy and soft. I look down at my hand.
+I wasn't trying to shake your hand. This is a towel. You're sweating like mad.
+H-huh?
+Come with me.
+They quickly move down the hallway, I wipe my face off with the towel while following them down the hall.
+We wisk by endless offices and meeting rooms, only breifly slowing down to turn corners.
+This is your office.
+G-Got it. Which of the two empty desks is mine?
+The one on the right. The left one belongs to the other person starting today.
+Oh? There's someone else starting with me?
+Yep. And speak of the devil.
+Horace steps to the side, as a tall man walks in
+This is Taiga. He's the other employee starting today.
+Hi. And your name is?
+Robin. Nice to meet you!
+I extend my hand towards Taiga
+Yeah... no. I'm not shaking your hand.
+Try not to get in my way, okay?
+You should be happy you even get to share an office with me.
+Boss, I already finished all of my work for this morning.
+I'll be off to get a head start on this afternoon's work.
+Impressive, Taiga.
+You should learn a thing or two from Taiga, Robin.
+Heh, even if Robin tried to be like me, they'd simply fall short.
+...This is gonna be a long day.
+I'll be off then.
+Taiga steps out of the room
+Anyways, it would absolutely tickle my dying heart pink to give you a tour, but unfortunately, I have better things to do.
+Hey, Claire.
+Yes, Hori?
+Don't call me that.
+Ah, sorry...
+Can you give Robin a tour?
+Oh! Sure, I can do that.
+Alright. I'll be off then
+Horace steps out.
+Alright! Follow me!
+Where have you been so far?
+Besides the front desk and the office, nowhere else.
+Got it. I'll show you the cafeteria and the way to Hori's office
+Actually, I've been meaning to ask, why do you call Horace Hori?
+And why do they hate that?
+...
+...
+The air grew unusually thick.
+H-Here's the cafe!
+Wow! This place looks really nice!
+Right? Wanna know what the best part is?
+Oh? What's that?
+There are cameras around that scan everything you eat and drink...
+And they automatically deduct the price of what you ate from your salary!
+Isn't the information age just the best!?
+Yeah... the best! Hahaha!
+Welp! Next is your boss' office.
+If all goes well, you'll never have to set foot in there again.
+And that's a very big if, mind you.
+Gulp...
+And here we are! Hi Horace!
+What are you two doing here.
+We're on the tour, Robin has to know where their boss' office is!
+I see. Did you need anything else?
+N-No... Not really...
+Then get out. The tour is over.
+Horace shoves both Claire and I out of the office.
+Oof!
+SLAM
+Welp! Guess the tour is over then!
+Let's head back to our desks and get to work.
+I plop down into my chair and face my computer.
+...It seems like Horace has already given me a lot of things to do.
+Welp, time to get to it...
+Phew... finally lunch time.
+I could get to know my coworkers better if I talked to them during lunch...
+Phew. That's this morning's work done and dusted!
+How are you holding up, Taiga?
+...
+Hmph, what do you think? I did all my work flawlessly an hour ago.
+Figures.
+Hey, by the way, where did you go to college?
+I got a scholarship to Flitington, how about you?
+Flitington?
+W-Wow, I've never met someone who went to Flitington.
+Naturally, we're the best of the best.
+I went to Blighty U, I had a great time there.
+Heh, Blighty? That preschool?
+I'm shocked 

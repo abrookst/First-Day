@@ -283,52 +283,93 @@ style quick_button_text:
 
 screen navigation():
 
-    hbox:
-        style_prefix "navigation"
+    if renpy.current_screen().screen_name[0] == "main_menu":
+        hbox:
+            style_prefix "navigation"
 
-        if renpy.current_screen().screen_name[0] == "main_menu":
             xalign 0.5
             yalign 0.95
-        else:
+
+            spacing gui.navigation_spacing
+
+            if main_menu:
+
+                textbutton _("Start") action Start()
+
+            else:
+
+                textbutton _("History") action ShowMenu("history")
+
+                textbutton _("Save") action ShowMenu("save")
+
+            textbutton _("Load") action ShowMenu("load")
+
+            textbutton _("Preferences") action ShowMenu("preferences")
+
+            if _in_replay:
+
+                textbutton _("End Replay") action EndReplay(confirm=True)
+
+            elif not main_menu:
+
+                textbutton _("Main Menu") action MainMenu()
+
+            textbutton _("About") action ShowMenu("about")
+
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+                ## Help isn't necessary or relevant to mobile devices.
+                textbutton _("Help") action ShowMenu("help")
+
+            if renpy.variant("pc"):
+
+                ## The quit button is banned on iOS and unnecessary on Android and
+                ## Web.
+                textbutton _("Quit") action Quit(confirm=not main_menu)
+    else:
+        vbox:
+            style_prefix "navigation"
+
             yalign 0.5
             xpos gui.navigation_xpos
 
-        spacing gui.navigation_spacing
+            spacing gui.navigation_spacing
 
-        if main_menu:
+            if main_menu:
 
-            textbutton _("Start") action Start()
+                textbutton _("Start") action Start()
 
-        else:
+            else:
 
-            textbutton _("History") action ShowMenu("history")
+                textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+                textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+            textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+            textbutton _("Preferences") action ShowMenu("preferences")
 
-        if _in_replay:
+            if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+                textbutton _("End Replay") action EndReplay(confirm=True)
 
-        elif not main_menu:
+            elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+                textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+            textbutton _("About") action ShowMenu("about")
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+                ## Help isn't necessary or relevant to mobile devices.
+                textbutton _("Help") action ShowMenu("help")
 
-        if renpy.variant("pc"):
+            if renpy.variant("pc"):
 
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+                ## The quit button is banned on iOS and unnecessary on Android and
+                ## Web.
+                textbutton _("Quit") action Quit(confirm=not main_menu)
+
 
 
 style navigation_button is gui_button
@@ -384,7 +425,7 @@ style main_menu_frame:
 style main_menu_vbox:
     xalign 1.0
     xoffset -30
-    xmaximum 1200
+    xmaximum 1920
     yalign 1.0
     yoffset -30
 
