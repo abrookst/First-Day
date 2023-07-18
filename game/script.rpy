@@ -57,6 +57,13 @@ default t_name = "????"
 default s_name = "????"
 default c_name = "????"
 
+default h_count = 1
+default t_count = 1
+default s_count = 1
+default c_count = 1
+default day = 1
+default todayTalk = ""
+
 transform US_L:
     zoom 0.25 
     xalign .1
@@ -107,7 +114,7 @@ label start:
     "May 28th 201X\n11:18 P.M.\nBirdley's Bar"
 
     scene bg bar
-    with pixellate
+    with fade
     
     "A small dingey bar, kept afloat by its regulars, who have been coming here since before I was even born."
 
@@ -117,7 +124,7 @@ label start:
 
     "My mind is racing, soaring through the air, beyond the wit of man."
 
-    "My mind comes careening back down to reality, when the glass of solitude is shattered by a"
+    "My mind comes careening back down to reality, when the glass of solitude is shattered by a familiar voice."
 
     z "Hey."
 
@@ -146,9 +153,9 @@ label start:
 
     show z front at S_C
 
-    z "Doesn't {i}someone{/i} here have a job now?"
+    z "Doesn't {bt}someone{/bt} here have a job now?"
 
-    z "And didn't {i}two{/i} people here just graduate from college?"
+    z "And didn't {bt}two{/bt} people here just graduate from college?"
 
     show z side  at S_C
 
@@ -162,7 +169,7 @@ label start:
 
     "I bury my face into the table"
 
-    r "Please dont remind me about my job."
+    r "{sc}Please dont remind me about my job.{/sc}"
 
     z "What?"
 
@@ -209,10 +216,9 @@ label start:
     scene black
     with fade
 
-    jump dayOne
+    jump dayOne_morning
 
-label dayOne:
-    #title here probably
+label dayOne_morning:
 
     "..."
 
@@ -221,15 +227,15 @@ label dayOne:
     r "Ugh..."
 
     scene bg home
-    with pixellate
+    with fade
 
     "I roll out of bed, falling onto the floor"
 
-    r "Hmmmm... This isn't the worst hangover..."
+    "I pick myself up, while rubbing my eyes."
 
-    "I get up, rubbing my eyes, and start to get ready for work."
+    "Dread strikes as I slowly realize that today"
 
-    "...Maybe drinking the night before my first day of work wasn't the best idea in the world."
+    "...is the first day of my new life."
 
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
@@ -259,7 +265,7 @@ label dayOne:
 
     s "..."
 
-    r "Ah, h-hello, my name's Robin. I was hoping to uh-"
+    r "Hello, my name is Robin."
 
     s "..."
 
@@ -269,7 +275,7 @@ label dayOne:
 
     s "Security? Some freakshow just came in and started talking to me."
 
-    r "W-WAIT WHAT ARE YOU DOING?!"
+    r "{sc}WHAT ARE YOU DOING?!{/sc}"
 
     show s side at S_C
 
@@ -279,7 +285,7 @@ label dayOne:
 
     s "They seem to be getting aggressive..."
 
-    r "I WORK HERE! THIS IS MY FIRST DAY!"
+    r "{sc}I WORK HERE! THIS IS MY FIRST DAY!{/sc}"
 
     "I rummage though my bag to grab my ID."
 
@@ -421,6 +427,8 @@ label dayOne:
 
     h "Hey, Claire."
 
+    $ c_name = "Claire"
+
     show c front at S_R
     with dissolve
 
@@ -451,11 +459,1062 @@ label dayOne:
 
     c "Alright! Follow me!"
 
+    scene bg hallway:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
 
+    show c back at US_C
+
+    c "Where have you been so far?"
+
+    r "Besides the front desk and the office, nowhere else."
+
+    c "Got it. I'll show you the cafeteria and the way to Hori's office"
+
+    r "Actually, I've been meaning to ask, why do you call Horace Hori?"
     
+    r "And why do they hate that?"
+
+    c "..."
+
+    r "..."
+
+    "The air grew unusually thick."
+
+    scene bg officecafe:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show c front at  DS_C
+
+    c "H-Here's the cafe!"
+
+    r "Wow! This place looks really nice!"
+
+    c "Right? Wanna know what the best part is?"
+
+    r "Oh? What's that?"
+
+    show c side
+
+    c "There are cameras around that scan everything you eat and drink..."
+
+    show c front
+
+    c "And they automatically deduct the price of what you ate from your salary!"
+
+    c "Isn't the information age just the best!?"
+
+    r "Yeah... the best! Hahaha!"
+
+    c "Welp! Next is your boss' office."
 
 
+    c "If all goes well, you'll never have to set foot in there again."
+
+    show c back
+
+    c "And that's a very big if, mind you."
+
+    "{sc}Gulp...{/sc}"
+
+    scene bg officeboss:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show c front at S_L
+    with move
+
+    c "And here we are! Hi Horace!"
+
+    show h front at S_C
+    with dissolve
+
+    h "What are you two doing here."
+
+    show c side
+
+    c "We're on the tour, Robin has to know where their boss' office is!"
+
+    h "I see. Did you need anything else?"
+
+    r "N-No... Not really..."
+
+    show h front at DS_C
+
+    h "Then get out. The tour is over."
+
+    "Horace shoves both Claire and I out of the office."
+
+    scene bg hallway:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Oof!"
+
+    "SLAM" #sfx here maybe?
+
+    show c side at S_C
+
+    c "Welp! Guess the tour is over then!"
+
+    show c front
+
+    c "Let's head back to our desks and get to work."
+
+    hide c with dissolve
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    "I plop down into my chair and face my computer."
+
+    "...It seems like Horace has already given me a lot of things to do."
+
+    "Welp, time to get to it..."
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Phew... finally lunch time."
+
+    "I could get to know my coworkers better if I talked to them during lunch..."
+
+    menu:
+        "Who should I try and talk to?"
+
+        "Taiga":
+            jump taiga
+        "Claire":
+            jump claire
+        "Horace":
+            jump horace
+        "Shamir":
+            jump shamir
+    
+label dayOne_afternoon:
 
 
+label taiga:
+    if t_count == 0:
+        jump taiga1
+    elif t_count == 1:
+        jump taiga2
+    elif t_count == 2:
+        jump taiga3
+    elif t_count == 3:
+        jump taiga4
+    elif t_count == 4:
+        jump taiga5
+    elif t_count == 5:
+        jump taigaEnding
+    else:
+        python:
+            renpy.error("Invalid taiga link!")
+
+label horace:
+    if t_count == 0:
+        jump horace1
+    elif t_count == 1:
+        jump horace2
+    elif t_count == 2:
+        jump horace3
+    elif t_count == 3:
+        jump horace4
+    elif t_count == 4:
+        jump horace5
+    elif t_count == 5:
+        jump horaceEnding
+    else:
+        python:
+            renpy.error("Invalid horace link!")
+
+label shamir:
+    if t_count == 0:
+        jump shamir1
+    elif t_count == 1:
+        jump shamir2
+    elif t_count == 2:
+        jump shamir3
+    elif t_count == 3:
+        jump shamir4
+    elif t_count == 4:
+        jump shamir5
+    elif t_count == 5:
+        jump shamirEnding
+    else:
+        python:
+            renpy.error("Invalid shamir link!")
+
+label claire:
+    if t_count == 0:
+        jump claire1
+    elif t_count == 1:
+        jump claire2
+    elif t_count == 2:
+        jump claire3
+    elif t_count == 3:
+        jump claire4
+    elif t_count == 4:
+        jump claire5
+    elif t_count == 5:
+        jump claireEnding
+    else:
+        python:
+            renpy.error("Invalid claire link!")
+
+label returnToDay:
+    if day == 1:
+        jump dayOne_afternoon
+    elif day == 2:
+        jump dayTwo_afternoon
+    elif day == 3:
+        jump dayThree_afternoon
+    elif day == 4:
+        jump dayFour_afternoon
+    elif day == 5:
+        jump dayFive_afternoon
+    else:
+        python:
+            renpy.error("Invalid day!")
+
+    return
+
+label taiga1:
+    #Talking to Taiga after working in the morning
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Phew. That's this morning's work done and dusted!"
+
+    r "How are you holding up, Taiga?"
+
+    show t side at S_C
+    with dissolve
+
+    t "..."
+
+    show t front
+
+    t "Hmph, what do you think? I did all my work flawlessly an hour ago."
+
+    r "Figures."
+
+    r "Hey, by the way, where did you go to college?"
+
+    t "I got a scholarship to Flitington, how about you?"
+
+    r "{sc}Flitington?{/sc}"
+
+    r "W-Wow, I've never met someone who went to Flitington."
+
+    show t side
+
+    t "Naturally, we're the best of the best."
+
+    r "I went to Blighty U, I had a great time there."
+
+    t "Heh, Blighty? That preschool?"
+
+    t "I'm shocked you even know how to use a computer."
+
+    "Ugh... that's a low blow."
+
+    r "A-Anyways Taiga, wanna go get lunch together?"
+
+    show t back
+
+    t "Nope. See you."
+
+    hide t back 
+    with dissolve
+
+    "Taiga walks out"
+
+    "..."
+
+    r "Welp. Guess I'll be eating lunch alone..."
+
+    show t front
+    with dissolve
+
+    t "..."
+
+    r "Taiga?"
+
+    t "I'll be nice and let you eat lunch with me this once."
+
+    r "Huh? Why the sudden change of heart."
+
+    show t side
+
+    t "As coworkers, we should be able to work together well."
+
+    show t front
+
+    t "If you know more about me, you'll be able to bolster me up higher."
+
+    t "And..."
+
+    show t back
+
+    t "..."
+
+    t "The reason isn't important. Let's go to the cafe."
+
+    "You got a little closer to Taiga today."
+
+    $ t_count+=1
+    $ todayTalk = "Taiga"
+
+    jump returnToDay
+label taiga2:
+    #Lunch with Taiga, says he has no interests
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Hey Taiga, wanna go get lunch again?"
+
+    show t side at S_C
+    with dissolve
+
+    r "To uh, bolster your status higher or whatever?"
+
+    show t front
+
+    t "Fine. Lets go."
+
+    scene bg officecafe:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show t back at apron
+    with dissolve
+
+    t "..."
+
+    r "..."
+
+    r "S-So Taiga, do you have any interests... besides work?"
+
+    show t side
+
+    t "None. Next question."
+
+    r "Huh? You really don't do anything besides work?"
+
+    show t front
+
+    t "Nope."
+
+    r "Wow, that's sounds like a really sad life."
+
+    t "If I wanted to know what a sad life was like, I'd ask you."
+
+    r "Very funny, Taiga."
+
+    t "I wasn't being funny."
+
+    "...ah"
+
+    r "So wait, what do you do once you get off of work?"
+
+    t "I usually work out."
+
+    r "Ah! See? That's something! You like working out"
+
+    show t side
+
+    t "Working out isn't something I enjoy."
+
+    t "It's something I do to stay in peak mental and physical fitness."
+
+    show t front
+
+    t "Same with my piano playing and cooking."
+
+    t "I play the piano to excercise my mind."
+    
+    t "And I cook my own meals after workouts to maximize the benefits."
+
+    show t side
+
+    t "And speaking of cooking, if you wanna be more like me Robin..."
+
+    r "Hm?"
+
+    show t front
+
+    t "You should lay off the fast food."
+
+    "I sheepishly put down the burger I was about to shove into my mouth."
+
+    r "Well... that's a very interesting way to lead your life."
+
+    r "Do you derrive joy from anything, Taiga"
+
+    show t side
+
+    t "..."
+
+    show t front
+
+    t "Crushing the opposition."
+
+    "{sc}Gulp...{/sc}"
+
+    t "I used to enjoy some things when I was a little kid..."
+
+    show t side
+
+    t "But I'm an adult now, and my parents taught me how to focus on what matters in life."
+
+    r "..."
+
+    show t front
+
+    t "We should probably get going."
+
+    r "Ah, you're right."
+
+    hide t front
+    with dissolve
+
+    t "I'll be seeing you."
+
+    "You got a little closer to Taiga today."
+
+    $ t_count+=1
+    $ todayTalk = "Taiga"
+
+    jump returnToDay
+label taiga3:
+    #Talking to Taiga and being interrupted by Shamir about art
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Hey Taiga, lunch again?"
+
+    show t front at S_C
+    with dissolve
+
+    t "My, aren't you persistent."
+
+    show t back
+
+    t "Fine, let's-"
+
+    show s front at S_C
+    with dissolve
+    show t side at S_L
+    with move
+
+    s "Excuse me."
+
+    r "Shamir, what are you doing here?"
+
+    if s_count > 0:
+        show s side
+        s "I'm here to talk about art again."
+    else:
+        s "Robin. Can I ask you an art question?"
+
+        r "Huh? You like art?"
+
+        s "...Yes"
+
+        r "Why me?"
+
+        show s side
+
+        s "You seem like you would have an eye for it. No other reason, really."
+
+    r "Well, what did you wanna talk about?"
+
+    s "I recently found this piece in my closet."
+
+    s "I have no room for it, would you like to keep it?"
+
+    r "Ooh! Mind if I see?"
+
+    show s front
+
+    s "Here you go."
+
+    r "Oh wow! This is beautiful."
+
+    s "Hm? Taiga?"
+
+    show t back
+
+    r "Hm? Is something wrong Taiga?"
+
+    s "Taiga..."
+
+    show s side
+
+    s "Are you crying?"
+
+    show t front
+
+    t "{sc}!!!{/sc}"
+
+    hide t front
+
+    "Taiga bolted out of the room."
+
+    r "{sc}TAIGA!{/sc}"
+
+    s "Woah, what's up with the egomaniac?"
+
+    r "I-I'll go after him!"
+
+    scene bg officefrontdesk:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Taiga! Wait!"
+
+    show t back at S_C
+
+    t "...What is it?"
+
+    r "What happened there? You just sprinted off!"
+
+    t "..."
+
+    r "Do you wanna talk about it?"
+
+    show t front
+
+    t "Next time you're free at lunch..."
+
+    show t side
+
+    t "Bring that painting, please."
+
+    show t front
+
+    t "And don't tell anyone about this."
+
+    r "S-Sure..."
+
+    show t back
+
+    t "I'm heading home for the day."
+
+    hide t back
+    with dissolve
+
+    t "Bye."
+
+    "You got a little closer to Taiga today."
+
+    $ t_count+=1
+    $ todayTalk = "Taiga"
+
+    jump returnToDay
+label taiga4:
+    #Talking to Taiga about art
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "H-Hey Taiga, I'm free today..."
+
+    show t front at S_C
+    with dissolve
+
+    t "..."
+
+    show t back
+
+    t "Come with me."
+
+    scene bg officeoutside:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show t front at DS_C
+    with dissolve
+
+    t "Did you bring it?"
+
+    r "Yeah, here's the painting."
+    
+    show t back
+
+    t "..."
+
+    r "Taiga? Mind telling me whats up?"
+
+    show t front
+
+    t "..."
+
+    show t side
+
+    t "Remember when I said I used to love something when I was a kid..."
+
+    show t front
+
+    t "And my parents taught me better?"
+
+    r "Mhm."
+
+    t "That was art."
+
+    t "I used to... want to be an artist."
+
+    r "I-I see..."
+
+    t "Didn't expect that, huh?"
+
+    show t side
+
+    t "Neither did my parents."
+
+    t "\"Art doesn't make money\" they said."
+
+    t "Every time I would make art, in any way, shape, or form."
+
+    t "They would strip it away from me, and send me up to my room to do another sheet of math problems."
+
+    t "Eventually, I gave up."
+
+    t "And eventually... I started to become someone I wasn't."
+
+    show t front
+
+    t "When I got into Flitington, it was town news."
+
+    t "\"Did you hear Taiga got into Flitington? A full ride too.\""
+
+    t "\"He must be so..."
+
+    show t side
+
+    t "...Happy\""
+
+    "..."
+
+    t "When I saw that painting. I remembered."
+
+    t "I had nearly forgotten."
+
+    t "How much making art, seeing art, and just... loving art gave me unbridled joy."
+
+    "..."
+
+    show t front
+
+    t "Well. Now you know."
+
+    t "Feel free to mock me when I'm not looking."
+
+    t "I'll be going \"back to normal\" after this."
+
+    t "I'm scared to do anything else but go back to normal."
+
+    t "And I suggest you do the same with me. Horace would probably notice."
+
+    t "Thanks for listening."
+
+    show t back
+
+    t "Goodbye, Robin."
+
+    hide t back
+    with dissolve
+
+    "..."
+
+    "You got a little closer to Taiga today."
+
+    $ t_count+=1
+    $ todayTalk = "Taiga"
+
+    jump returnToDay
+label taiga5:
+    #Seeing the real Taiga and setting up ending
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Hey, Taiga."
+
+    show t back at S_C
+    with dissolve
+
+    t "..."
+
+    r "Taiga."
+
+    t "..."
+
+    r "Ugh... just... come with me you mope."
+
+    show t side
+
+    t "Fine."
+
+    scene bg officeoutside:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show t side
+    with dissolve
+
+    t "What do you want."
+
+    r "Here."
+
+    show t front
+
+    t "What's this?"
+
+    r "Two tickets for an art gallery, this Saturday."
+
+    t "{sc}WHAT?!?!?!{/sc}" 
+
+    r "Woah! Calm down there Taiga."
+
+    t "..."
+
+    r "Taiga. You need to stop shelling yourself up like this."
+
+    r "You aren't your parents. You have the right to do what you enjoy."
+
+    r "Even if its just off hours."
+
+    r "So we're going to the art gallery this weekend, okay?"
+
+    hide t front
+    with dissolve
+
+    t "Fine."
+
+    "..."
+
+    "You got a little closer to Taiga today."
+
+    $ t_count+=1
+    $ todayTalk = "Taiga"
+
+    jump returnToDay
+label taigaEnding:
+    #Going with taiga to art studio
 
 
+label claire1:
+    #Getting help from Claire and talking about work
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    "Ack, wait. I still need to get this done."
+
+    "And I have no clue how to do this..."
+
+    "Maybe I should ask Claire?"
+
+    r "Hey, Claire?"
+
+    show c front at S_C
+    with dissolve
+
+    c "What's up?"
+
+    r "Mind helping me out with this?"
+
+    r "I have no clue how to do this, to be perfectly honest with you."
+
+    c "Sure! Lemme see what you got"
+
+    show c side at DS_C
+
+    "Claire takes a look at my computer."
+
+    c "Ooooh... One of these, here, let me show you how to do this."
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "I see! Wow, thank you so much Claire!"
+
+    show c front at S_C 
+
+    c "No problem, Robin!"
+
+    c "It really is quite easy once it gets explained to you."
+
+    r "It really is..."
+
+    c "But I'm glad I could help, and you can call me anytime you need a hand."
+
+    r "Thanks Claire!"
+
+    r "You're probably the nicest person here, hands down."
+
+    "And probably the most normal..."
+
+    c "Aww, thanks! I know how nice it is to get help you need, so why not pay it forward?"
+
+    r "Those are words to live by, for sure!"
+
+    show c side
+
+    c "Anyways, it's about high time we got to lunch, right?"
+
+    r "Right! Would you like to go get lunch together?"
+
+    c "Sounds good!"
+
+    show c back
+
+    c "Let's go eat, I'm starving!"
+    
+    "You got a little closer to Claire today."
+    $ c_count+=1
+    $ todayTalk = "Claire"
+
+    jump returnToDay
+label claire2:
+    #Talking to Claire about food over lunch
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Hey, Claire, wanna go get lunch again today?"
+
+    show c front at S_C
+    with dissolve
+
+    c "Sure! Let's head over!"
+
+    scene bg officecafe:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show c front at DS_C
+    with dissolve
+
+    c "Alright, time to eat!"
+
+    "We start to dig into our food."
+
+    r "So Claire, when did you start working here?"
+
+    c "Oh... about 6 or so years ago?"
+
+    r "Congrats on 6 years, then!"
+
+    r "You plan on staying here for a while longer?"
+
+    c "Yeah... probably. I've got a lot of... ties here."
+
+    r "I see... That does come with a lot of benefits!"
+
+    r "You'll probably get a promotion, if you havent already."
+
+    show c side
+
+    c "Yeah... A promotion..."
+
+    r "Is something the matter?"
+
+    c "Nah, don't worry about it."
+
+    show c front
+
+    c "Actually I have a question for you."
+
+    r "Hm? What's up?"
+
+    show c front at apron
+    with dissolve
+
+    "Claire leans forward"
+
+    c "This is an extremely important question."
+
+    r "Wh-What is it?"
+
+    c "What's your favorite food?"
+
+    r "...huh"
+
+    c "What's your favorite food?"
+
+    r "Y-Yeah I heard you I just, wasn't expecting that."
+
+    c "{sc}It's an extremely important question.{/sc}"
+
+    menu:
+        r "L-Lemme think... My favorite food is..."
+
+        "Hambugers":
+            r "Probably hamburgers, can never beat a good smashburger."
+            pass
+        "Chilaquiles":
+            r "Probably Chilaquiles, but only my dad's recepie, for sure."
+            pass
+        "Moules-Frites":
+            r "Definitely Moules-Frites, an unexpectedly fantastic combo."
+            pass
+        "Maafe":
+            r "A long simmered Maafe with a pile of rice can't be beat."
+            pass
+        "Shawarma":
+            r "Shawarma, for sure. I could probably eat the meat off the spit."
+            pass
+        "Chana Masala":
+            r "Ooh... gotta be Chana Masala. Especially with some extra spice."
+            pass
+        "Tteokbokki":
+            r "Tteokbokki. For sure, it's so easy to make, but so delicious."
+            pass
+
+    c "I see! A really great choice."
+
+    show c side at DS_C
+    with dissolve
+
+    c "Mine is probably... Steak!"
+
+    r "I see! That's also a great choice, you can never go wrong with steak."
+
+    "You got a little closer to Claire today."
+    $ c_count+=1
+    $ todayTalk = "Claire"
+
+    jump returnToDay
+label claire3:
+    #Getting help and getting walked in by Horace
+    "You got a little closer to Claire today."
+    $ c_count+=1
+    $ todayTalk = "Claire"
+
+    jump returnToDay
+label claire4:
+    #Learning about Claire and Horace
+    "You got a little closer to Claire today."
+    $ c_count+=1
+    $ todayTalk = "Claire"
+
+    jump returnToDay
+label claire5:
+    #Wrap up, talking about work and life, set up ending
+    "You got a little closer to Claire today."
+    $ c_count+=1
+    $ todayTalk = "Claire"
+
+    jump returnToDay
+label claireEnding:
+    #Chatting at bar says she might leave
+
+
+label horace1:
+    #Talking in their office
+    "You got a little closer to Horace today."
+    $ h_count+=1
+    $ todayTalk = "Horace"
+
+    jump returnToDay
+label horace2:
+    #Talking over lunch
+    "You got a little closer to Horace today."
+    $ h_count+=1
+    $ todayTalk = "Horace"
+
+    jump returnToDay
+label horace3:
+    #Talking but Claire pushes plot forward
+    "You got a little closer to Horace today."
+    $ h_count+=1
+    $ todayTalk = "Horace"
+
+    jump returnToDay
+label horace4:
+    #Backstory dump (basically)
+    "You got a little closer to Horace today."
+    $ h_count+=1
+    $ todayTalk = "Horace"
+
+    jump returnToDay
+label horace5:
+    #Chat and setup for ending
+    "You got a little closer to Horace today."
+    $ h_count+=1
+    $ todayTalk = "Horace"
+
+    jump returnToDay
+label horaceEnding:
+    #Chat and talk about how your work has been so far and how they’ve changed
+
+
+label shamir1:
+    #Talking to Shamir and learning about her and her enjoyment of art
+    "You got a little closer to Shamir today."
+    $ s_count+=1
+    $ todayTalk = "Shamir"
+
+    jump returnToDay
+label shamir2:
+    #Talking to Shamir and learning about how her art never took off because it's “foreign”
+    "You got a little closer to Shamir today."
+    $ s_count+=1
+    $ todayTalk = "Shamir"
+
+    jump returnToDay
+label shamir3:
+    #Talking to Shamir and getting interrupted by Boss, showing her suspicion
+    "You got a little closer to Shamir today."
+    $ s_count+=1
+    $ todayTalk = "Shamir"
+
+    jump returnToDay
+label shamir4:
+    #Learning about her suspicion of the company (maybe even leaving to the bar)
+    "You got a little closer to Shamir today."
+    $ s_count+=1
+    $ todayTalk = "Shamir"
+
+    jump returnToDay 
+label shamir5:
+    #Chatting and setup for ending 
+    "You got a little closer to Shamir today."
+    $ s_count+=1
+    $ todayTalk = "Shamir"
+
+    jump returnToDay
+label shamirEnding:
+    #Talk about how she’s picking up art again, and how she quit, 
+    #realizing that it's impossible for someone like her to take down a company
