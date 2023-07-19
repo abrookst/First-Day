@@ -115,6 +115,7 @@ label start:
 
     scene bg bar
     with fade
+    play music "music/bar.wav" fadein 1.0
     
     "A small dingey bar, kept afloat by its regulars, who have been coming here since before I was even born."
 
@@ -213,8 +214,10 @@ label start:
 
     "Thinking about college was a nice respite from what was to come tomorrow."
 
+    stop music fadeout 1.0
     scene black
     with fade
+    
 
     jump dayOne_morning
 
@@ -228,6 +231,7 @@ label dayOne_morning:
 
     scene bg home
     with fade
+    play music "music/home (Morning).wav" fadein 1.0
 
     "I roll out of bed, falling onto the floor"
 
@@ -237,10 +241,12 @@ label dayOne_morning:
 
     "...is the first day of my new life."
 
+    stop music fadeout 1.0
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with pixellate
+    play music "music/Sludge (Office outside morning).wav" fadein 1.0
 
 
     "After parking my car, I walk over to the front of the building. "
@@ -251,11 +257,13 @@ label dayOne_morning:
 
     "I collect myself, straighten out my outfit, and walk into the front door."
 
+    stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    
+    play music "music/Glop (Front Desk morning).wav" fadein 1.0
+
     "Upon walking in, I am greeted by a lady sitting at the front desk."
 
     "She seems to be flipping through a magazine."
@@ -346,10 +354,12 @@ label dayOne_morning:
 
     "We wisk by endless offices and meeting rooms, only breifly slowing down to turn corners."
 
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Morning).wav" fadein 1.0
 
     show h front at S_C
     with dissolve
@@ -482,10 +492,12 @@ label dayOne_morning:
 
     "The air grew unusually thick."
 
+    stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/gloop (Cafe).wav" fadein 1.0
 
     show c front at  DS_C
 
@@ -520,10 +532,12 @@ label dayOne_morning:
 
     "{sc}Gulp...{/sc}"
 
+    stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/Grime (Boss).wav" fadein 1.0
 
     show c front at S_L
     with move
@@ -568,10 +582,12 @@ label dayOne_morning:
 
     hide c with dissolve
 
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Morning).wav" fadein 1.0
 
     "I plop down into my chair and face my computer."
 
@@ -602,10 +618,13 @@ label dayOne_morning:
     
 label dayOne_afternoon:
 
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).mp3" fadein 1.0
+    
 
     r "test"
 
@@ -703,10 +722,12 @@ label returnToDay:
 
 label taiga1:
     #Talking to Taiga after working in the morning
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).mp3" fadein 1.0
 
     r "Phew. That's this morning's work done and dusted!"
 
@@ -793,10 +814,12 @@ label taiga1:
     jump returnToDay
 label taiga2:
     #Lunch with Taiga, says he has no interests
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).mp3" fadein 1.0
 
     r "Hey Taiga, wanna go get lunch again?"
 
@@ -809,10 +832,12 @@ label taiga2:
 
     t "Fine. Lets go."
 
+    stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/gloop (Cafe).wav" fadein 1.0
 
     show t side at apron
     with dissolve
@@ -916,10 +941,12 @@ label taiga2:
     jump returnToDay
 label taiga3:
     #Talking to Taiga and being interrupted by Shamir about art
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).mp3" fadein 1.0
 
     r "Hey Taiga, lunch again?"
 
@@ -997,10 +1024,12 @@ label taiga3:
 
     r "I-I'll go after him!"
 
+    stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
 
     r "Taiga! Wait!"
 
@@ -1045,10 +1074,12 @@ label taiga3:
     jump returnToDay
 label taiga4:
     #Talking to Taiga about art
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).mp3" fadein 1.0
 
     r "H-Hey Taiga, I'm free today..."
 
@@ -1061,10 +1092,12 @@ label taiga4:
 
     t "Come with me."
 
+    stop music fadeout 1.0
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).mp3" fadein 1.0
 
     show t front at DS_C
     with dissolve
@@ -1168,10 +1201,12 @@ label taiga4:
     jump returnToDay
 label taiga5:
     #Seeing the real Taiga and setting up ending
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).mp3" fadein 1.0
 
     r "Hey, Taiga."
 
@@ -1190,10 +1225,12 @@ label taiga5:
 
     t "Fine."
 
+    stop music fadeout 1.0
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/Sludge (Office outside afternoon).wav" fadein 1.0
 
     show t side at DS_C
     with dissolve
@@ -1244,10 +1281,12 @@ label taigaEnding:
 label claire1:
     #Getting help from Claire and talking about work
 
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).mp3" fadein 1.0
 
     "Ack, wait. I still need to get this done."
 
@@ -1322,7 +1361,7 @@ label claire1:
     jump returnToDay
 label claire2:
     #Talking to Claire about food over lunch
-
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -1335,6 +1374,7 @@ label claire2:
 
     c "Sure! Let's head over!"
 
+    stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -1447,7 +1487,7 @@ label claire2:
     jump returnToDay
 label claire3:
     #Getting help and getting walked in by Horace
-
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -1537,7 +1577,7 @@ label claire3:
     jump returnToDay
 label claire4:
     #Learning about Claire and Horace
-
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -1560,7 +1600,8 @@ label claire4:
 
     c "That would be fantastic."
 
-    scene bg office:
+    stop music fadeout 1.0
+    scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
@@ -1639,7 +1680,7 @@ label claire4:
     jump returnToDay
 label claire5:
     #Wrap up, talking about work and life, set up ending
-
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -1652,6 +1693,7 @@ label claire5:
 
     r "Sure! Let's go!"
 
+    stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -1707,7 +1749,7 @@ label claireEnding:
 
 label horace1:
     #Talking in their office
-
+    stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -1795,8 +1837,8 @@ label horace1:
 
     jump returnToDay
 label horace2:
-    #Talking over lunch
-
+    #Talking over lunch 
+    stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -1817,6 +1859,7 @@ label horace2:
 
     h "Then let's head out."
 
+    stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -1891,7 +1934,7 @@ label horace2:
     jump returnToDay
 label horace3:
     #Talking but Claire pushes plot forward
-
+    stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -2002,7 +2045,7 @@ label horace3:
     jump returnToDay
 label horace4:
     #Backstory dump (basically)
-
+    stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -2029,7 +2072,7 @@ label horace4:
     h "Bye."
 
     "Guess I'll get over there..."
-
+    stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -2109,7 +2152,7 @@ label horace4:
     jump returnToDay
 label horace5:
     #Chat and setup for ending
-
+    stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
@@ -2204,7 +2247,7 @@ label horaceEnding:
 
 label shamir1:
     #Talking to Shamir and learning about her and her enjoyment of art
-
+    stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
