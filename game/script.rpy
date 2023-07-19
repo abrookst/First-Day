@@ -5,41 +5,41 @@
 
     def z(event, **kwargs):
         if event == "begin": 
-            build_sentence(_last_say_what, "eileen")
+            build_sentence(_last_say_what, "zeke")
             renpy.sound.play("audio/output.wav", channel="beeps", loop=False)
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel="beeps")
 
     def h(event, **kwargs):
         if event == "show": 
-            build_sentence(_last_say_what, "eileen")
+            build_sentence(_last_say_what, "horace")
             renpy.sound.play("audio/output.wav", channel="beeps", loop=False)
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel="beeps")
     def t(event, **kwargs):
         if event == "show": 
-            build_sentence(_last_say_what, "eileen")
+            build_sentence(_last_say_what, "taiga")
             renpy.sound.play("audio/output.wav", channel="beeps", loop=False)
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel="beeps")
 
     def s(event, **kwargs):
         if event == "show": 
-            build_sentence(_last_say_what, "eileen")
+            build_sentence(_last_say_what, "shamir")
             renpy.sound.play("audio/output.wav", channel="beeps", loop=False)
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel="beeps")
 
     def c(event, **kwargs):
         if event == "show": 
-            build_sentence(_last_say_what, "eileen")
+            build_sentence(_last_say_what, "claire")
             renpy.sound.play("audio/output.wav", channel="beeps", loop=False)
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel="beeps")
 
     def r(event, **kwargs):
         if event == "begin": 
-            build_sentence(_last_say_what, "eileen")
+            build_sentence(_last_say_what, "robin")
             renpy.sound.play("audio/output.wav", channel="beeps", loop=False)
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel="beeps")
