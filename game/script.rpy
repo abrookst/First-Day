@@ -44,7 +44,7 @@
         elif event == "slow_done" or event == "end":
             renpy.sound.stop(channel="beeps")
 
-define z = Character("[z_name]", callback=z, what_font="z.ttf", what_size=90)
+define z = Character("[z_name]", callback=z, what_font="z.ttf", what_size=40)
 define h = Character("[h_name]", callback=h, what_font="h.ttf")
 define t = Character("[t_name]", callback=t, what_font="t.ttf")
 define s = Character("[s_name]", callback=s, what_font="s.ttf")
@@ -129,7 +129,7 @@ label start:
     z "Hey."
 
     show z front at S_C
-    
+    with dissolve
 
     z "Mind if I have a seat?"
 
@@ -464,7 +464,7 @@ label dayOne_morning:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
-    show c back at US_C
+    show c back at S_C
 
     c "Where have you been so far?"
 
@@ -602,70 +602,83 @@ label dayOne_morning:
     
 label dayOne_afternoon:
 
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "test"
+
+    r "test 2"
+
+    r "this is day 1 afternoon"
+
+    return
+
 
 label taiga:
-    if t_count == 0:
+    if t_count == 1:
         jump taiga1
-    elif t_count == 1:
-        jump taiga2
     elif t_count == 2:
-        jump taiga3
+        jump taiga2
     elif t_count == 3:
-        jump taiga4
+        jump taiga3
     elif t_count == 4:
-        jump taiga5
+        jump taiga4
     elif t_count == 5:
+        jump taiga5
+    elif t_count == 6:
         jump taigaEnding
     else:
         python:
             renpy.error("Invalid taiga link!")
 
 label horace:
-    if t_count == 0:
+    if t_count == 1:
         jump horace1
-    elif t_count == 1:
-        jump horace2
     elif t_count == 2:
-        jump horace3
+        jump horace2
     elif t_count == 3:
-        jump horace4
+        jump horace3
     elif t_count == 4:
-        jump horace5
+        jump horace4
     elif t_count == 5:
+        jump horace5
+    elif t_count == 6:
         jump horaceEnding
     else:
         python:
             renpy.error("Invalid horace link!")
 
 label shamir:
-    if t_count == 0:
+    if t_count == 1:
         jump shamir1
-    elif t_count == 1:
-        jump shamir2
     elif t_count == 2:
-        jump shamir3
+        jump shamir2
     elif t_count == 3:
-        jump shamir4
+        jump shamir3
     elif t_count == 4:
-        jump shamir5
+        jump shamir4
     elif t_count == 5:
+        jump shamir5
+    elif t_count == 6:
         jump shamirEnding
     else:
         python:
             renpy.error("Invalid shamir link!")
 
 label claire:
-    if t_count == 0:
+    if t_count == 1:
         jump claire1
-    elif t_count == 1:
-        jump claire2
     elif t_count == 2:
-        jump claire3
+        jump claire2
     elif t_count == 3:
-        jump claire4
+        jump claire3
     elif t_count == 4:
-        jump claire5
+        jump claire4
     elif t_count == 5:
+        jump claire5
+    elif t_count == 6:
         jump claireEnding
     else:
         python:
@@ -745,7 +758,7 @@ label taiga1:
 
     r "Welp. Guess I'll be eating lunch alone..."
 
-    show t front
+    show t front at S_C
     with dissolve
 
     t "..."
@@ -801,7 +814,7 @@ label taiga2:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
-    show t back at apron
+    show t side at apron
     with dissolve
 
     t "..."
@@ -810,7 +823,7 @@ label taiga2:
 
     r "S-So Taiga, do you have any interests... besides work?"
 
-    show t side
+    show t front
 
     t "None. Next question."
 
@@ -928,7 +941,7 @@ label taiga3:
 
     r "Shamir, what are you doing here?"
 
-    if s_count > 0:
+    if s_count > 1:
         show s side
         s "I'm here to talk about art again."
     else:
@@ -1182,7 +1195,7 @@ label taiga5:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
-    show t side
+    show t side at DS_C
     with dissolve
 
     t "What do you want."
@@ -1206,6 +1219,8 @@ label taiga5:
     r "You aren't your parents. You have the right to do what you enjoy."
 
     r "Even if its just off hours."
+
+    show t back
 
     r "So we're going to the art gallery this weekend, okay?"
 
@@ -1291,6 +1306,8 @@ label claire1:
     c "Anyways, it's about high time we got to lunch, right?"
 
     r "Right! Would you like to go get lunch together?"
+
+    show c front
 
     c "Sounds good!"
 
@@ -1411,6 +1428,18 @@ label claire2:
 
     r "I see! That's also a great choice, you can never go wrong with steak."
 
+    c "Can you see how someone's favorite food says a lot about them?"
+
+    r 'I... kinda see what you mean!'
+
+    r "I have a good college friend, his name is Zeke, and I remember how much my perception of him changed when he said his favorite food was mashed potatos."
+
+    c "Riiight? Glad you see what I mean."
+
+    c "Anyways, it's about high time we got back, don't you think?"
+
+    r "Yep, let's head over then!"
+
     "You got a little closer to Claire today."
     $ c_count+=1
     $ todayTalk = "Claire"
@@ -1418,6 +1447,89 @@ label claire2:
     jump returnToDay
 label claire3:
     #Getting help and getting walked in by Horace
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    "Ugh... wait... I'm getting this weird issue on my e-mail app... What's going on?"
+
+    "Before I go to lunch, I should probably get this sorted out, e-mails are way too important..."
+
+    r "Uh... Claire? Mind if I ask for a little more help?"
+
+    show c front at S_C
+    with dissolve
+
+    c "Sure! What's up?"
+
+    r "My e-mail app is acting up, I have no clue what's wrong..."
+
+    c "I haven't seen this before... Let me take a closer look."
+
+    show c side at S_L
+    with move
+
+    show h front at s_count
+    with dissolve
+
+    "Seemingly from the shadows, Horace steps in."
+
+    h "Let me have a look."
+
+    "..."
+
+    show h back
+
+    h "Done. I'll be going then."
+
+    show c front
+
+    c "Hori! You're gonna stop by without saying hi, darling?"
+
+    h "..."
+
+    h "Why are you still clinging on, Claire?"
+
+    show h front
+
+    h "...Isn't it about time you let go?"
+
+    c "!" #sfx here maybe?
+
+    show h side
+
+    h "Ill be seeing you Robin."
+
+    show h back 
+
+    h "Goodbye, Claire. And I don't want to say that again."
+
+    hide h back
+    with dissolve
+
+    "..."
+
+    r "...Claire?"
+
+    show c back
+
+    c "I'll um..."
+
+    c "I'll talk about it later."
+
+    c "N-Next lunch, okay?"
+
+    c "A-And don't worry about me, I'm fine!"
+
+    hide h back
+    with dissolve
+
+    c "S-See you!"
+
+    "..."
+
     "You got a little closer to Claire today."
     $ c_count+=1
     $ todayTalk = "Claire"
@@ -1425,6 +1537,101 @@ label claire3:
     jump returnToDay
 label claire4:
     #Learning about Claire and Horace
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show c front at DS_C 
+    with dissolve
+
+    c "Hey, Robin?"
+
+    r "What's up, Claire?"
+
+    c "Remember what happened last time, with Horace?"
+
+    r "Ah, y-yeah..."
+
+    c "Mind if I vent to you about that? I kinda want to get it all off my chest."
+
+    r "Oh, sure! W-Wanna go to the cafeteria?"
+
+    c "That would be fantastic."
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show c front at apron
+    with dissolve
+
+    r "So what did you want to vent about."
+
+    c "Alright, so..."
+
+    show c side
+
+    c "..ugh, for once I'm at a loss for words."
+
+    show c front
+
+    c "Let's just start at the beginning. Me and Horace started on the same day."
+
+    c "We were desk to desk, and obviously ended up talking a lot."
+
+    c "Eventually, we started hanging out outside of work."
+
+    show c side
+
+    c "And, y'know... One thing led to another... and we started dating."
+
+    c "..."
+
+    show c front
+
+    c "But one day, Horace came to my place, right after work."
+
+    c "And something seemed off, they weren't their usual self."
+
+    c "They told me that we had to break up, and before I could even respond..."
+
+    c "Horace said \"Goodbye, Claire\" before leaving."
+
+    r "I'm so sorry to hear that Claire..."
+
+    show c side
+
+    c "And I was oblivious to it until then but..."
+
+    c "There's something strange going on here, and I can't quite put my finger on it."
+
+    "..."
+
+    c "I really do loathe this job. Nothing here sits right with me, even from the start."
+
+    c "I've always wanted to quit, but I just can't give up Horace."
+
+    c "And there's no need to tell me that staying at a job I hate for unrequited love is dumb."
+
+    show c front
+
+    c "I've head that one enough from my mom."
+
+    show c side
+
+    c "Anyways, it's about high time we left. Sorry for dumping that all on you."
+
+    r "Y-You're all good! I'm glad I was able to help you get that off your chest!"
+
+    c "Yeah... It was really nice telling someone all of that..."
+    
+    c "Thanks, Robin."
+
+    "..."
+
     "You got a little closer to Claire today."
     $ c_count+=1
     $ todayTalk = "Claire"
@@ -1432,6 +1639,63 @@ label claire4:
     jump returnToDay
 label claire5:
     #Wrap up, talking about work and life, set up ending
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show c front at S_C
+    with dissolve
+
+    c "Hey, Robin! Down for lunch again today?"
+
+    r "Sure! Let's go!"
+
+    scene bg officecafe:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show c front at DS_C
+    with dissolve
+
+    c "Y'know, I'm feeling a lot better after our talk last time."
+
+    r "I'm glad to hear it, Claire!"
+
+    c "By the way, would you wanna meet up sometime this weekend?"
+
+    c "We could celebrate your first week of work!"
+
+    "W-Wow, I didnt even realize it's been a week..."
+
+    r "That sounds good! Do you have a place in mind?"
+
+    c "Ever heard of a bar called Birdley's?"
+
+    r "Oh yeah! I love Birdley's, I'm a regular myself!"
+
+    c "Oh really? Well then, it's set!"
+
+    r "Sounds great!"
+
+    c "Now, I'm sorry to cut our little lunch short, but I've got somewhere to be."
+
+    r "Really? Where?"
+
+    c "Oh, I just have a lunch meeting. I'll see you around the office later."
+
+    r "Alright, I'll see you!"
+
+    show c back
+
+    c "See you!"
+
+    hide c back
+
+    "..."
+
     "You got a little closer to Claire today."
     $ c_count+=1
     $ todayTalk = "Claire"
@@ -1443,6 +1707,88 @@ label claireEnding:
 
 label horace1:
     #Talking in their office
+
+    scene bg officeboss:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show h front at S_C
+    with dissolve
+
+    h "..."
+
+    r "..."
+
+    h "Why are you here."
+
+    r "Oh! I-It's lunch, and I wanted to talk to you."
+
+    show h back
+
+    h "Well, you talked to me. I'll be leaving now."
+
+    r "{sc}W-WAIT!{/sc}"
+
+    show h side
+
+    h "What is it."
+
+    r "U-Uh, building a strong co-worker relationship is important to a strong company..?"
+
+    h "..."
+
+    show h front
+
+    h "Do you have a source for that?"
+
+    r "N-No but... Let's just try and talk, okay?"
+
+    h "... Fine."
+
+    r "How was your day?"
+
+    show h side
+
+    h "Efficient yet suffocatingly bland with a tinge of abject misery and horror."
+
+    h "Just like the last 10,227 days of my agonizing existance."
+
+    show h front
+
+    h "...How about you..?"
+
+    "..."
+
+    "..."
+
+    "I'm stunned... I can't... say anything..."
+
+    show h side
+
+    h "You're not very good at this talking thing. Hopefully that isnt on your CV."
+
+    h "Though. I do seem to understand you a bit better."
+
+    show h front
+
+    h "This was a good idea. Thanks, Robin."
+
+    show h back
+
+    h "I'll actually be going now."
+
+    hide h back
+    with dissolve
+
+    h "Bye."
+
+    "..."
+
+    "..."
+
+    "...is this what death feels like?"
+
     "You got a little closer to Horace today."
     $ h_count+=1
     $ todayTalk = "Horace"
@@ -1450,6 +1796,94 @@ label horace1:
     jump returnToDay
 label horace2:
     #Talking over lunch
+
+    scene bg officeboss:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "{sc}BOSS!{/sc}"
+
+    show h front at S_C
+    with dissolve
+
+    h "Hm?"
+
+    r "I-I'm ready to try talking again!"
+
+    h "Sure. Does lunch sound good?"
+
+    r "Yes! That sounds great!"
+
+    h "Then let's head out."
+
+    scene bg officecafe:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show h front at DS_C
+
+    "..."
+
+    "..."
+
+    r "So... Boss... Are you gonna get any food? You just have a cup of coffee."
+
+    h "No. I woln't."
+
+    r "Well uh, what's your favorite food then?"
+
+    h "It's coffee."
+
+    if c_count > 2:
+        "W-Wow, Claire was right. Favorite food does say a lot about a person..."
+
+    r "So, Boss, what are your favorite things to do? What's your passion?"
+
+    h "Probably laying off employees. Either that or writing e-mails."
+
+    r "S-So you like writing?"
+
+    show h side
+
+    h "I suppose, just e-mails, however."
+
+    r "Have you tried writing anything else besides e-mails?"
+
+    show h front
+
+    h "No. I can't really see a reason why you would write for any other reason than for a work context."
+
+    show h side
+
+    h "Spending hours and hours of time outside of work to write a bunch of made up characters just sounds like a waste of time."
+
+    "Touche..."
+
+    r "Well... just give it a try!"
+
+    show h front
+
+    h "...Fine."
+
+    "I'm really shocked at how many times Horace has said yes to something I've suggested..."
+
+    h "I'll report back to you next time we have some free time about my findings."
+
+    show h back
+
+    h "I'll have to cut our meeting short. I have something a bit more pressing."
+
+    r "Ah, got it! I'll see you then."
+
+    hide h back
+    with dissolve
+
+    h "Yeah... I'll see you."
+
+    "..."
+
     "You got a little closer to Horace today."
     $ h_count+=1
     $ todayTalk = "Horace"
@@ -1457,6 +1891,110 @@ label horace2:
     jump returnToDay
 label horace3:
     #Talking but Claire pushes plot forward
+
+    scene bg officeboss:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Hey Boss!"
+
+    show h front at S_C
+    with dissolve
+
+    h "Hello Robin. My findings are finished."
+
+    r "Woah, you really went and wrote something?"
+
+    h "Yes. Here. Have a look."
+
+    r "Let me see..."
+
+    scene bg officeboss:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    "..."
+
+    "..."
+
+    "...This is awful."
+
+    "I have never seen such spectacularly bad writing."
+
+    h "Are you finished?"
+
+    r "Y-Yeah..."
+
+    show h front at DS_C
+    with dissolve
+
+    h "Now it is time for the user feedback. What did you think of this?"
+
+    menu:
+        "Urk... What do I say?"
+
+        "It was fantastic":
+            r "T-This is fantastic, Boss!"
+            r "I was enraptured all the way through, excelent work."
+            pass
+        "It was okay":
+            r "This was pretty alright, Boss."
+            r "I think it could use a bit of... work..."
+            r "But this is a great start!"
+            pass
+        "It was awful":
+            r "I'm not gonna mince words with you, Boss."
+            r "This was truly awful."
+            r "You know you don't need to end every character dialouge with \"Sincerely, Horace\" right?"
+            r "And why did everyone get fired at the end? None of them even worked at a company...??"
+            r "You've got a long way to go."
+            pass
+
+    h "...I see. I will add this feedback to my report."
+
+    show t front at S_C
+    with dissolve
+
+    c "Hey Boss. What's this?"
+
+    "Horace slams the laptop shut"
+
+    show h back
+
+    h "This is a private buisness afair. Please leave, Taiga."
+
+    show h front
+
+    c "Ah. G-Got it, Boss."
+
+    show t back
+
+    c "See you..."
+
+    hide c back
+
+    "..."
+
+    r "H-Hey Boss..."
+
+    r "Why do you usually... push people away?"
+
+    h "..."
+
+    r "You've warmed up to me a little bit, but we don't even know what Taiga came in for. And yet you-"
+
+    h "This is irrelevant."
+
+    h "I'll have to ask you to leave too."
+
+    r "Ah, alright."
+
+    r "See you then."
+
+    "..."
+
     "You got a little closer to Horace today."
     $ h_count+=1
     $ todayTalk = "Horace"
@@ -1464,6 +2002,106 @@ label horace3:
     jump returnToDay
 label horace4:
     #Backstory dump (basically)
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    "Phew. Time to get to lunch, finally."
+
+    show h front at DS_C
+    with dissolve
+
+    h "Robin."
+
+    r "{sc}ACK{/sc}"
+
+    r "B-Boss! Wh-What's up?"
+
+    show h back
+
+    h "Need you in my office in 5."
+
+    hide h back
+    with dissolve
+
+    h "Bye."
+
+    "Guess I'll get over there..."
+
+    scene bg officeboss:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show h front at DS_C
+    with dissolve
+
+    h "Thank you for coming, Robin."
+
+    r "What did you need, Boss?"
+
+    show h side
+
+    h "I want to talk to you about something."
+
+    r "W-What's up?"
+
+    h "Just a bit about my past."
+
+    show h front
+
+    h "You see. When I first came here, I was much more open to people."
+
+    h "I had befriended a majority of the office, and had even started seeing someone."
+
+    "...I honestly can't imagine that."
+
+    show h side
+
+    h "But my work suffered as a result. I was all play and no work."
+
+    h "And one day. My Boss came to me with a ultimatum."
+
+    h "Either focus on my work wholly, and gain a large promotion"
+
+    h "...or get laid off."
+
+    h "He saw potential in me, and knew that this potential would not be drawn out in my current state."
+
+    show h front
+
+    h "As you can see, I've made my choice."
+
+    h "Additionally, I am currently caring for a lot of people."
+
+    h "I am the \"breadwinner\" so to speak."
+
+    r "So if you got laid off..."
+
+    h "Yes. We would have starved."
+    
+    h "That is why I keep nobody close."
+
+    show h side
+
+    h "This is why I would also like to say one additonal thing"
+    
+    h "I have decided that these lunch excursions will cease henceforth."
+
+    h "I hope you understand."
+
+    r "Wait, but-"
+
+    show h front
+
+    h "Sorry, Robin, Boss' orders."
+
+    h "Now I will have to ask you to leave."
+
+    "..."
+    
     "You got a little closer to Horace today."
     $ h_count+=1
     $ todayTalk = "Horace"
@@ -1471,6 +2109,90 @@ label horace4:
     jump returnToDay
 label horace5:
     #Chat and setup for ending
+
+    scene bg officeboss:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    "..."
+
+    show h front at S_C
+    with dissolve
+
+    h "Was I not clear yesterday?"
+
+    r "No, you were very clear, as usual."
+
+    r "I'm here as an employee to ask you one thing."
+    
+    r "Consider it an HR request."
+
+    show h side
+
+    h "Did you take this up with Shamir?"
+
+    r "Y-Yeah..."
+
+    h "Well then..."
+
+    show h front
+
+    h "What is it?"
+
+    r "I belive you need to have a better work life balance."
+
+    h "...What?"
+
+    r "You need to learn to balance your life and work more!"
+
+    r "Do stuff outside of work! Talk to your coworkers! Pick up a hobby!"
+
+    h "...Robin, do you know what a work life balance is?"
+
+    r "{sc}n-no...{/sc} But that's besides the point!"
+
+    r "Horace, I can tell, this is hurting you."
+
+    h "!"
+
+    r "You woln't last much longer shutting yourself away like this."
+
+    r "And if you wanna keep working, then you gotta do whats best for you."
+
+    r "You gotta open up a bit more!"
+
+    h "..."
+
+    r "..."
+
+    h "..."
+
+    "Ugh! This feels like when we first talked at lunch! This silence is killing me."
+
+    h "Birdley's."
+
+    r "Huh..?"
+
+    h "Saturday, Birdley's."
+
+    r "W-Wait I-"
+
+    show h back
+
+    h "Speak of this to nobody."
+
+    hide h back
+    with dissolve
+
+    h "Bye."
+
+    r "..."
+
+    r "D-Did Horace just ask me to hang out this weekend?"
+
+    "..."
+
     "You got a little closer to Horace today."
     $ h_count+=1
     $ todayTalk = "Horace"
@@ -1482,6 +2204,18 @@ label horaceEnding:
 
 label shamir1:
     #Talking to Shamir and learning about her and her enjoyment of art
+
+    scene bg officefrontdesk:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Hey Shamir!"
+
+    show s front at S_C
+
+    s "..."
+
     "You got a little closer to Shamir today."
     $ s_count+=1
     $ todayTalk = "Shamir"
