@@ -63,6 +63,7 @@ default s_count = 1
 default c_count = 1
 default day = 1
 default todayTalk = ""
+default bShamir = True;
 
 transform US_L:
     zoom 0.25 
@@ -314,12 +315,12 @@ label dayOne_morning:
     $ s_name = "Shamir"
 
     "They put the phone down into its cradle."
+    
+    show h front
 
-    hide s with dissolve
-    show h front at DS_C
-    with dissolve
-
-    h "You must be Robin. Nice to meet you."
+    h "Sorry about that. You must be Robin."
+    
+    h "Nice to meet you."
 
     r "Yes! I-It's great to meet you too, Horace."
 
@@ -329,16 +330,47 @@ label dayOne_morning:
 
     r "Ah, s-sorry boss."
 
+    show h side
+
+    h "By the way, the lady who just tried to get you kicked out was Shamir."
+
+    show h front
+
+    h "She's our HR lady. So please get along."
+
+    r "HR? Why are you at the front desk?"
+
+    s "Budget cuts."
+
+    "I-I see..."
+
+    h "Here, Robin."
+
+    hide s with dissolve
     show h front at apron
     with dissolve
 
-    "They step forward and extend their hand, and I reach to shake it."
+    "Horace steps forward and extends their hand, and I reach to shake it."
 
     "But I instead grab something fuzzy and soft. I look down at my hand."
 
     h "I wasn't trying to shake your hand. This is a towel. You're sweating like mad."
 
     r "H-huh?"
+
+    show h side
+
+    h "I can understand. You must be nervous about your first day."
+
+    h "Let me put all doubts to rest for you, Robin."
+
+    h "Whatever you're imagining your work will be like..."
+
+    show h front
+
+    h "{sc}It's worse.{/sc}"
+
+    h "{sc}...{/sc}"
 
     h "Come with me."
 
@@ -350,7 +382,7 @@ label dayOne_morning:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
-    "They quickly move down the hallway, I wipe my face off with the towel while following them down the hall."
+    "Horace quickly moves down the hallway, I wipe my face off with the towel while following them down the hall."
 
     "We wisk by endless offices and meeting rooms, only breifly slowing down to turn corners."
 
@@ -482,9 +514,7 @@ label dayOne_morning:
 
     c "Got it. I'll show you the cafeteria and the way to Hori's office"
 
-    r "Actually, I've been meaning to ask, why do you call Horace Hori?"
-    
-    r "And why do they hate that?"
+    r "Mind if I ask why do you call Horace Hori?"
 
     c "..."
 
@@ -553,7 +583,17 @@ label dayOne_morning:
 
     c "We're on the tour, Robin has to know where their boss' office is!"
 
-    h "I see. Did you need anything else?"
+    h "I see. Robin, how is your first day so far?"
+
+    r "Oh, not that bad, actually..."
+
+    show h back
+
+    h "That's very unfortunate. I'll assign you some extra morning work to help rectify this issue."
+
+    show h side
+
+    h "Did you need anything else?"
 
     r "N-No... Not really..."
 
@@ -614,8 +654,7 @@ label dayOne_morning:
         "Horace":
             jump horace
         "Shamir":
-            jump shamir
-    
+            jump shamir 
 label dayOne_afternoon:
 
     stop music fadeout 1.0
@@ -623,7 +662,7 @@ label dayOne_afternoon:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).mp3" fadein 1.0
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
     
 
     r "test"
@@ -634,6 +673,17 @@ label dayOne_afternoon:
 
     return
 
+label dayTwo_morning:
+label dayTwo_afternoon:
+
+label dayThree_morning:
+label dayThree_afternoon:
+
+label dayFour_morning:
+label dayFour_afternoon:
+
+label dayFive_morning:
+label dayFive_afternoon:
 
 label taiga:
     if t_count == 1:
@@ -651,7 +701,6 @@ label taiga:
     else:
         python:
             renpy.error("Invalid taiga link!")
-
 label horace:
     if t_count == 1:
         jump horace1
@@ -668,7 +717,6 @@ label horace:
     else:
         python:
             renpy.error("Invalid horace link!")
-
 label shamir:
     if t_count == 1:
         jump shamir1
@@ -679,13 +727,18 @@ label shamir:
     elif t_count == 4:
         jump shamir4
     elif t_count == 5:
-        jump shamir5
+        if bShamir:
+            jump shamir5A
+        else:
+            jump shamir5B
     elif t_count == 6:
-        jump shamirEnding
+        if bShamir:
+            jump shamirEndingA
+        else:
+            jump shamirEndingB
     else:
         python:
             renpy.error("Invalid shamir link!")
-
 label claire:
     if t_count == 1:
         jump claire1
@@ -727,7 +780,7 @@ label taiga1:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).mp3" fadein 1.0
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     r "Phew. That's this morning's work done and dusted!"
 
@@ -806,7 +859,7 @@ label taiga1:
 
     t "The reason isn't important. Let's go to the cafe."
 
-    "You got a little closer to Taiga today."
+    "{bt}You got a little closer to Taiga today.{/bt}"
 
     $ t_count+=1
     $ todayTalk = "Taiga"
@@ -819,7 +872,7 @@ label taiga2:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).mp3" fadein 1.0
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     r "Hey Taiga, wanna go get lunch again?"
 
@@ -933,7 +986,7 @@ label taiga2:
 
     t "I'll be seeing you."
 
-    "You got a little closer to Taiga today."
+    "{bt}You got a little closer to Taiga today.{/bt}"
 
     $ t_count+=1
     $ todayTalk = "Taiga"
@@ -946,7 +999,7 @@ label taiga3:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).mp3" fadein 1.0
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     r "Hey Taiga, lunch again?"
 
@@ -968,7 +1021,7 @@ label taiga3:
 
     r "Shamir, what are you doing here?"
 
-    if s_count > 1:
+    if s_count > 2:
         show s side
         s "I'm here to talk about art again."
     else:
@@ -1066,7 +1119,7 @@ label taiga3:
 
     t "Bye."
 
-    "You got a little closer to Taiga today."
+    "{bt}You got a little closer to Taiga today.{/bt}"
 
     $ t_count+=1
     $ todayTalk = "Taiga"
@@ -1079,7 +1132,7 @@ label taiga4:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).mp3" fadein 1.0
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     r "H-Hey Taiga, I'm free today..."
 
@@ -1097,7 +1150,6 @@ label taiga4:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).mp3" fadein 1.0
 
     show t front at DS_C
     with dissolve
@@ -1193,7 +1245,7 @@ label taiga4:
 
     "..."
 
-    "You got a little closer to Taiga today."
+    "{bt}You got a little closer to Taiga today.{/bt}"
 
     $ t_count+=1
     $ todayTalk = "Taiga"
@@ -1206,7 +1258,7 @@ label taiga5:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).mp3" fadein 1.0
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     r "Hey, Taiga."
 
@@ -1268,7 +1320,7 @@ label taiga5:
 
     "..."
 
-    "You got a little closer to Taiga today."
+    "{bt}You got a little closer to Taiga today.{/bt}"
 
     $ t_count+=1
     $ todayTalk = "Taiga"
@@ -1286,7 +1338,7 @@ label claire1:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).mp3" fadein 1.0
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     "Ack, wait. I still need to get this done."
 
@@ -1354,7 +1406,7 @@ label claire1:
 
     c "Let's go eat, I'm starving!"
     
-    "You got a little closer to Claire today."
+    "{bt}You got a little closer to Claire today.{/bt}"
     $ c_count+=1
     $ todayTalk = "Claire"
 
@@ -1366,6 +1418,7 @@ label claire2:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     r "Hey, Claire, wanna go get lunch again today?"
 
@@ -1379,6 +1432,7 @@ label claire2:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/gloop (Cafe).wav" fadein 1.0
 
     show c front at DS_C
     with dissolve
@@ -1480,7 +1534,7 @@ label claire2:
 
     r "Yep, let's head over then!"
 
-    "You got a little closer to Claire today."
+    "{bt}You got a little closer to Claire today.{/bt}"
     $ c_count+=1
     $ todayTalk = "Claire"
 
@@ -1492,6 +1546,7 @@ label claire3:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     "Ugh... wait... I'm getting this weird issue on my e-mail app... What's going on?"
 
@@ -1570,7 +1625,7 @@ label claire3:
 
     "..."
 
-    "You got a little closer to Claire today."
+    "{bt}You got a little closer to Claire today.{/bt}"
     $ c_count+=1
     $ todayTalk = "Claire"
 
@@ -1582,6 +1637,7 @@ label claire4:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     show c front at DS_C 
     with dissolve
@@ -1673,7 +1729,7 @@ label claire4:
 
     "..."
 
-    "You got a little closer to Claire today."
+    "{bt}You got a little closer to Claire today.{/bt}"
     $ c_count+=1
     $ todayTalk = "Claire"
 
@@ -1685,6 +1741,7 @@ label claire5:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     show c front at S_C
     with dissolve
@@ -1698,6 +1755,7 @@ label claire5:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/gloop (Cafe).wav" fadein 1.0
 
     show c front at DS_C
     with dissolve
@@ -1738,7 +1796,7 @@ label claire5:
 
     "..."
 
-    "You got a little closer to Claire today."
+    "{bt}You got a little closer to Claire today.{/bt}"
     $ c_count+=1
     $ todayTalk = "Claire"
 
@@ -1754,6 +1812,7 @@ label horace1:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/Grime (Boss).wav" fadein 1.0
 
     show h front at S_C
     with dissolve
@@ -1831,7 +1890,7 @@ label horace1:
 
     "...is this what death feels like?"
 
-    "You got a little closer to Horace today."
+    "{bt}You got a little closer to Horace today.{/bt}"
     $ h_count+=1
     $ todayTalk = "Horace"
 
@@ -1843,6 +1902,7 @@ label horace2:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/Grime (Boss).wav" fadein 1.0
 
     r "{sc}BOSS!{/sc}"
 
@@ -1864,6 +1924,7 @@ label horace2:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/gloop (Cafe).wav" fadein 1.0
 
     show h front at DS_C
 
@@ -1927,7 +1988,7 @@ label horace2:
 
     "..."
 
-    "You got a little closer to Horace today."
+    "{bt}You got a little closer to Horace today.{/bt}"
     $ h_count+=1
     $ todayTalk = "Horace"
 
@@ -1939,6 +2000,7 @@ label horace3:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/Grime (Boss).wav" fadein 1.0
 
     r "Hey Boss!"
 
@@ -2038,7 +2100,7 @@ label horace3:
 
     "..."
 
-    "You got a little closer to Horace today."
+    "{bt}You got a little closer to Horace today.{/bt}"
     $ h_count+=1
     $ todayTalk = "Horace"
 
@@ -2050,6 +2112,7 @@ label horace4:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
     "Phew. Time to get to lunch, finally."
 
@@ -2145,7 +2208,7 @@ label horace4:
 
     "..."
     
-    "You got a little closer to Horace today."
+    "{bt}You got a little closer to Horace today.{/bt}"
     $ h_count+=1
     $ todayTalk = "Horace"
 
@@ -2157,6 +2220,7 @@ label horace5:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/Grime (Boss).wav" fadein 1.0
 
     "..."
 
@@ -2236,7 +2300,7 @@ label horace5:
 
     "..."
 
-    "You got a little closer to Horace today."
+    "{bt}You got a little closer to Horace today.{/bt}"
     $ h_count+=1
     $ todayTalk = "Horace"
 
@@ -2246,52 +2310,492 @@ label horaceEnding:
 
 
 label shamir1:
-    #Talking to Shamir and learning about her and her enjoyment of art
+    #Talking to Shamir about day one incident
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
+    play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
 
     r "Hey Shamir!"
 
     show s front at S_C
+    with dissolve
 
     s "..."
 
-    "You got a little closer to Shamir today."
+    s "Hey, Robin."
+
+    r "Wanna get lunch together?"
+
+    show s side
+
+    s "Hmmmmm..."
+
+    show s front
+
+    s "Sure. Why not. I owe it to you anyways."
+
+    r "Owe me? For what?"
+
+    s "Remember the whole security incident on your first day?"
+
+    s "Yeah. Sorry about that."
+
+    r "Oh! I-It's fine..."
+
+    r "...Why did you think I didn't work here?"
+
+    show s side
+
+    s "I'll try to put this in the nicest way possible..."
+
+    show s front 
+
+    s "You need to do a lot of work on your face."
+
+    r "T-That wasn't nice at all..."
+
+    show s side
+
+    s "Hmmm... How to put it..."
+
+    show s front
+
+    s "You just seem like the kinda person who would be a danger to those around them."
+
+    s "Like if I was infront of you in a line, I might take a few steps away, you know?"
+
+    r "That... was worse, Shamir."
+
+    show s back
+
+    s "Let's just forget everything I said and go get lunch."
+
+    r "...yeah."
+
+    "{bt}You got a little closer to Shamir today.{/bt}"
     $ s_count+=1
     $ todayTalk = "Shamir"
 
     jump returnToDay
 label shamir2:
     #Talking to Shamir and learning about how her art never took off because it's “foreign”
-    "You got a little closer to Shamir today."
+    stop music fadeout 1.0
+    scene bg officefrontdesk:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
+
+    r "Hey Shamir! Wanna go get lunch?"
+
+    show s front at S_C
+    with dissolve
+
+    s "Sure. Again, I owe you after last time."
+
+    r "L-Let's just drop the \"I owe you\" stuff and get lunch, yeah?"
+
+    s "Sure."
+
+        stop music fadeout 1.0
+    scene bg officecafe:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/gloop (Cafe).wav" fadein 1.0
+
+    show s front at DS_C
+
+    r "So Shamir, what do you do outside of work?"
+
+    show s side
+
+    s "I do art, mostly."
+
+    r "Wow, really? Do you sell any of your pieces?"
+
+    show s front
+
+    s "I try to, but its really hard to here."
+
+    r "Here? What do you mean?"
+
+    show s side
+
+    s "Ah, I don't think I've ever told you."
+
+    show s front
+
+    s "I'm an immigrant. I came here from overseas."
+
+    r "I see, but what does that have to do with your art?"
+
+    s "Well, my art is very telling of where I came from."
+
+    s "And a lot of people here aren't quite used to that."
+
+    s "Food is one thing, yknow? But are people as likely to buy an expensive painting?"
+
+    show s side
+    
+    s "Not so much."
+
+    r "Well, can I see your paintings? Maybe I'll buy one!"
+
+    show s front
+
+    s "Sure. Have a look."
+
+    "Shamir pulls out her phone and swipes through some paintings."
+
+    r "W-Wow! These are amazing! I'd love to buy one when I get paid!"
+
+    s "Thank you, Robin. That means a lot to me."
+
+    s "I'll see what I can sell to you."
+
+    show s side
+
+    s "But it looks like lunch is wrapping up, let's head back."
+
+    r "Ah, you're right. See you, Shamir!"
+
+    "..."
+
+    "{bt}You got a little closer to Shamir today.{/bt}"
     $ s_count+=1
     $ todayTalk = "Shamir"
 
     jump returnToDay
 label shamir3:
     #Talking to Shamir and getting interrupted by Boss, showing her suspicion
-    "You got a little closer to Shamir today."
+    stop music fadeout 1.0
+    scene bg officefrontdesk:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
+
+    show s front at S_C
+    with dissolve
+
+    r "Hey Shamir! Wanna go get lunch?"
+
+    s "Sure, Robin. Just give a moment, I need to wrap this up."
+
+    show h front at S_L
+    with dissolve
+
+    h "Hello Shamir. Do you need any help?"
+
+    s "{sc}...{/sc}"
+
+    s "I'm fine... Horace."
+
+    h "...I see."
+
+    show h back
+
+    h "I'll be off then."
+
+    hide h back
+    with dissolve
+
+    s "..."
+
+    r "I-Is something up?"
+
+    s "Yeah. I.. don't think I want to get lunch today."
+
+    r "H-Huh? Why?"
+
+    s "I had a change of heart. Sorry, Robin."
+
+    show s back 
+
+    s "I also need some fresh air."
+
+    hide s back
+    with dissolve
+
+    s "I-I'll see you."
+
+    "..."
+
+    "{bt}You got a little closer to Shamir today.{/bt}"
     $ s_count+=1
     $ todayTalk = "Shamir"
 
     jump returnToDay
 label shamir4:
     #Learning about her suspicion of the company (maybe even leaving to the bar)
-    "You got a little closer to Shamir today."
+
+    stop music fadeout 1.0
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
+
+    r "Phew... Finally done for the day..."
+
+    show s front at S_C
+    with dissolve
+
+    s "Hey, Robin?"
+
+    r "O-Oh! Hey Shamir! What's up?"
+
+    s "Mind if we chat about something?"
+
+    r "Oh sure! Lunch?"
+
+    s "Let's... step outside."
+
+    r "O-Okay..."
+
+    stop music fadeout 1.0
+    scene bg officeoutside:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show s front at apron
+
+    r "So Shamir, what is it you wanted to talk abo-"
+
+    s "You feel it too, don't you?"
+
+    s "Something is wrong here."
+
+    r "..."
+
+    s "I can see it in your eyes, Robin. You feel the same way."
+
+    r "Y-Yeah... I've almost forgotten because I got so absorbed in my work but..."
+
+    r "Since the beginning, nothing has sat quite right with me here."
+
+    s "Right. Everyone feels this way when they first come here."
+
+    s "But everyone slowly forgets."
+
+    s "It's driving me insane."
+
+    s "Every day, I dig into this company more and more."
+
+    s "Yet I feel like I know less and less."
+
+    s "That's why I reacted the way I did around Horace. I really don't trust them at all."
+
+    s "We used to be friends, but one day they came into work dead behind the eyes."
+
+    s "And that was the day Horace got a massive promotion. Their spot here was secured."
+
+    s "Robin. Before you loose your way, get out of here. As soon as you can."
+
+    r "S-Shamir..."
+
+    s "Did you know this company exclusively snatches up college graduates?"
+
+    s "And yet, they never seem to leave this place. They all get caught in it's web."
+
+    s "Our biggest department is IT, which is already an anomoly."
+
+    s "And yet, none of our infastructure is for our work, rather its to store information about us."
+
+    s "Don't you see it, Robin?"
+
+    "..."
+
+    "..."
+
+    "..."
+
+    s "...heh... I probably sound like a madwoman, don't I?"
+
+    s "We have a few lunches together, I act weird around a coworker..."
+
+    s "And here I am barfing my conspiracy theories at you."
+
+    s "And I called you a creep. Heh..."
+
+    s "...Robin?"
+
+    r "..?"
+
+    menu:
+        s "Do you belive me?"
+
+        "I Do.":
+            $ bShamir = True;
+            r "I-I belive you, Shamir."
+
+            r "I never know what I'm working on, I can't seem to shake this feeling deep in my chest... I..."
+
+            s "It's okay if you don't understand, Robin. You just have to run."
+
+            r "N-No..."
+
+            s "Hm?"
+
+            r "Shamir, if you're gonna find out what's going on here. Let me help you."
+
+            s "Robin..."
+
+            s "T-Thank you. I really can't remember the last time I had someone on my side."
+            pass
+        "I Don't.":
+            $ bShamir = False;
+            r "..."
+
+            s "... I see."
+
+            show s back
+
+            s "Forget I said anything. Let's just go back to being lunch buddies."
+
+            "..."
+
+            r "Alright."
+
+            show s Front
+
+            s "Robin?"
+
+            r "Y-Yeah?"
+
+            show s back
+
+            s "I'm tired. I really don't how how much more I have left in me."
+
+            hide s back
+            with dissolve
+
+            s "Goodbye."
+            pass
+
+    "{bt}You got a little closer to Shamir today.{/bt}"
     $ s_count+=1
     $ todayTalk = "Shamir"
 
     jump returnToDay 
-label shamir5:
-    #Chatting and setup for ending 
-    "You got a little closer to Shamir today."
+label shamir5A:
+    stop music fadeout 1.0
+    scene bg officefrontdesk:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
+
+    show s front at S_C
+    with dissolve
+
+    r "Hey, Shamir!"
+
+    show s side
+
+    s "Robin, just the person I wanted to see."
+
+    s "Want to go out and chat a bit more this weekend? Somewhere a bit further away than work?"
+
+    r "Sure. Where did you have in mind?"
+    
+    show s front
+
+    s "Birdley's?"
+
+    r "Sounds good!"
+
+    show s side
+
+    s "Fantastic. I'll see you then."
+
+    show s back
+    s "For now, I've got something to attend to. We'll save todays chatting for then."
+
+    r "Oh! Shamir, before you go..."
+
+    show s front at DS_C
+    with dissolve
+
+    s "Hm?"
+
+    r "Never forget that I'm in your corner, okay?"
+
+    show s back
+
+    s "...I woln't. Thank you, Robin."
+
+    hide s back
+    with dissolve
+
+    "{bt}You got a little closer to Shamir today.{/bt}"
     $ s_count+=1
     $ todayTalk = "Shamir"
-
     jump returnToDay
-label shamirEnding:
+label shamir5B:
+    stop music fadeout 1.0
+    scene bg officefrontdesk:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Lost Deer.mp3" fadein 1.0
+
+    show s front at S_C
+    with dissolve
+
+    r "Hey Shamir!"
+
+    s "Hey, Robin!"
+
+    r "Wanna go get lunch?"
+
+    s "Absolutely! Let's go!"
+
+
+    scene bg officecafe:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show s front at S_C
+    with dissolve
+
+    r "So Shamir, how was your day?"
+
+    s "{bt}Ahahahahahaha!{/bt}"
+
+    s "Robin you're a riot!"
+
+    r "Haha... I... didn't say anything funny though?"
+
+    s "Oh! My bad, everything has just been so funny to me lately, y'know?"
+
+    r "Ahaha... Yeah..."
+
+    show s back
+
+    s "anyways I ought to be heading back to work."
+
+    hide s back
+    with dissolve
+
+    s "bye."
+
+    r "H-Huh? Wait wha-"
+
+    "{sc}You got a little closer to Shamir today.{/sc}"
+    $ s_count+=1
+    $ todayTalk = "Shamir"
+    jump returnToDay
+    
+label shamirEndingA:
     #Talk about how she’s picking up art again, and how she quit, 
-    #realizing that it's impossible for someone like her to take down a company
+    #realizing that it's impossible for someone like her to take down a company.
+
+label shamirEndingB:
+
