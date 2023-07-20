@@ -577,7 +577,7 @@ label dayOne_morning:
     show h front at S_C
     with dissolve
 
-    h "What are you two doing here."
+    h "What are you two doing here?"
 
     show c side
 
@@ -665,11 +665,75 @@ label dayOne_afternoon:
     play music "music/slime (Office Afternoon).wav" fadein 1.0
     
 
-    r "test"
+    r "Alright! I'm back. Time to get cracking at my afternoon's work."
 
-    r "test 2"
+    show t front at S_C
 
-    r "this is day 1 afternoon"
+    t "Hey, Robin."
+
+    r "Hm? What's up, Taiga?"
+
+    t "I just had a meeting with Horace, now it's your turn."
+
+    r "A-Ah, I see."
+
+    show t back
+
+    t "Good luck."
+
+    hide t back
+
+    r "T-Thanks..."
+
+    "Well, best I head over there..."
+
+    stop music fadeout 1.0
+    scene bg officeboss:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Grime (Boss).wav" fadein 1.0
+
+    r "Hello?"
+
+    show h front at S_C 
+
+    h "Hello, Robin."
+
+    show h side
+
+    h "How was your morning? Did you finish all your work?"
+
+    r "Yep! All done and dusted."
+
+    "I'll leave out the fact I just barely finished it..."
+
+    show h front
+
+    h "Good. How are the sheets you were assigned looking?"
+
+    r "They all looked good!"
+
+    h "Any full bincalls?"
+
+    r "Just one, but I took care of it."
+
+    h "Excelent work, Robin."
+
+    show h back
+
+    h "That's all I need from you. Thanks."
+
+    r "A-Alright, see you!"
+
+    stop music fadeout 1.0
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
+
+    r "Alright, time to get "
 
     return
 
