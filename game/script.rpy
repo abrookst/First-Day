@@ -840,7 +840,7 @@ label dayTwo_morning:
 
     "Did... I just get used to it yesterday?"
 
-    w "its best not to think too hard about things."
+    w "{sc}its best not to think too hard about things.{/sc}"
 
     r "{sc}H-HUH?{/sc}" with vpunch
 
@@ -1019,7 +1019,6 @@ label dayTwo_afternoon:
 
     "Speaking of which, best I hit the hay."
 
-
 label dayThree_morning:
 
     stop music fadeout 1.0
@@ -1027,12 +1026,101 @@ label dayThree_morning:
     with fade
     play music "music/home (Morning).wav" fadein 1.0
 
+    "..."
+
+    r "..ugh"
+
+    "I roll out of bed, falling onto the floor"
+
+    "Upon impact, I hit my back in a way that takes the wind out of me."
+
+    r "{sc}wheeze{/sc}"
+
+    "I get up, while rubbing my back."
+
+    r "G-Guess I best get ready for work..."
+
+    "I gotta remember to ask Horace that question too..."
+
     stop music fadeout 1.0
-    scene bg officeoutside:
+    scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with pixellate
-    play music "music/Sludge (Office outside morning).wav" fadein 1.0
+    play music "music/Glop (Front Desk morning).wav" fadein 1.0
+
+    show s front at S_C
+    with dissolve
+
+    "I come in to see Shamir at the front desk."
+
+    r "Morning, Shamir!"
+
+    s "...Morning"
+
+    r "Hey, Shamir? Do you know what we do here?"
+
+    r "L-Like, what does this company even produce?"
+
+    show s side
+
+    s "I see, you're curious too..."
+
+    r "Y-Yeah, are you?"
+
+    s "Mhm. Havent quite figured it out yet."
+
+    "Figured it out..?"
+
+    r "Well, I'm gonna go ask Horace about it."
+
+    s "I see... Good luck with that."
+
+    r "Thanks!"
+
+    stop music fadeout 1.0
+    scene bg officeboss:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Grime (Boss).wav" fadein 1.0
+
+    r "Hey, Boss?"
+
+    show h front at S_C
+    with dissolve
+
+    h "Yes? What is it?"
+
+    r "What... Does this company do?"
+
+    show h side
+
+    h "Energy."
+
+    show h front
+
+    h "We produce low cost, efficient, and renewable energy here."
+
+    w "{sc}but this shouldnt concern you{/sc}"
+
+    r "{sc}WAUGH!{/sc}" with vpunch
+
+    h "Robin?"
+
+    r "D-DID YOU HEAR THAT?" with vpunch
+
+    h "I didn't hear anything..."
+
+    "What is going on..?"
+
+    h "I'm sorry to cut this meeting while you're having a breakdown, but I've got work to do."
+
+    h "As a new hire you do not have any PTO or sick days yet."
+
+    h "So if you're going to loose your mind, make sure you get your work done."
+
+    r "G-Got it... See you.. Boss..."
 
     stop music fadeout 1.0
     scene bg office:
@@ -1041,7 +1129,38 @@ label dayThree_morning:
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
-    r "Phew... finally lunch time."
+    r "..."
+
+    show c front at S_C
+    with dissolve
+
+    c "Morning Robin!"
+
+    c "Did you ask Hori what we do here?"
+
+    show t front at S_L
+    with dissolve
+
+    t "..."
+
+    r "O-Oh! Y-yeah... We do uh... Energy stuff..."
+
+    c "I-I see..."
+
+    c "You okay, Robin?"
+
+    r "Yeah, just tired is all."
+
+    c "Ah, alright. If you need me to help with any  of your work, let me know."
+
+    r "T-Thanks..."
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    r "Phew, finally got all my work done... Atleast I'm feeling a bit better!"
 
     "I could get to know my coworkers better if I talked to them during lunch..."
 
@@ -1057,19 +1176,199 @@ label dayThree_morning:
         "Shamir":
             jump shamir 
 label dayThree_afternoon:
+    stop music fadeout 1.0
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
 
+    "Alright... All done with lunch, time to get started with this afternoons work."
+
+    show h front at S_C
+    with dissolve
+
+    h "Hello everyone, can I have your attention for a moment?"
+
+    show c front at S_L
+    with dissolve
+    show t front at S_R
+    with dissolve
+
+    c "What's up?"
+
+    h "Our yearly revitilization ceremony is falling on Monday. The company will take the day off."
+
+    h "We'll also offer festivities, though you can stay at home this year."
+
+    r "Oooh... A long weekend!"
+
+    r "Do you guys have any plans?"
+
+    c "It's a chance to stay in and catch up on some books for me."
+
+    t "..."
+
+    show t side
+
+    t "Boss, can we come in and work anyways?"
+
+    h "No. Take the time off."
+
+    t "Grrr..."
+
+    if t_count > 2:
+        r "You could work out and play the piano, Taiga?"
+
+        r "Do a bit extra on Monday, then stay later at work during the week?"
+
+        t "... I suppose..."
+
+    r "How about you Boss? Gonna do anything?"
+
+    h "I'll be here running festivities."
+
+    r "I see, good luck with that!"
+
+    show h back
+
+    h "That's all."
+
+    hide h back
+    with dissolve
+
+    h "Thank you. Get back to work, please."
+
+    c "Welp. Let's get to it!"
+
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    "Phew... Done!"
+
+    r "Man, everything feels a bit more tolerable now that I know we have a 3 day weekend coming up!"
+
+    show c front at S_C
+    with dissolve
+
+    c "Right? This afternoon felt like a breeze."
+
+    c "Welp, I'll see you two tomorrow!"
+
+    if t_count > 3:
+        show t front at S_L
+        with dissolve
+        t "See you, Robin."
+
+    stop music fadeout 1.0
+    scene bg officefrontdesk:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
+
+    show s side at S_C
+    with dissolve
+
+    r "Hey Shamir! I'll see you tomorrow!"
+
+    s "See you..."
+
+    show s front
+
+    s "Ah, wait."
+
+    r "Hm? What's up?"
+
+    s "What did Horace say?"
+
+    if s_count > 3: 
+        s "I forgot to ask you during lunch."
+
+    r "Huh? What about Horace?"
+
+    s "This morning, you said you would ask Horace what this company was for."
+
+    show s side
+
+    s "What did they say?"
+
+    r "Oh... Something about energy I think?"
+
+    r "I'm not sure... I'm a bit tired..."
+
+    show s front
+
+    s "I see. I'll see you around, Robin."
+
+    r "See you!"
+
+    stop audio fadeout 1.0
+    scene bg home
+    with pixellate
+    play music "music/home (Night).wav" fadein 1.0
+
+    r "Phew! Finally home..."
+
+    "I fall onto my bed"
+
+    "Today was pretty great... talking to [todayTalk] was great."
+
+    "And the announcement of having Monday off was fantastic!"
+
+    "Not much else happened today though... right?"
+
+    "Yeah... Yeah..."
+
+    "..."
+ 
 label dayFour_morning:
     stop music fadeout 1.0
     scene bg home
     with fade
     play music "music/home (Morning).wav" fadein 1.0
 
+    "..."
+
+    r "..ugh"
+
+    "I roll out of bed, falling onto the floor"
+
+    "Upon impact, I hit my neck in a way that wakes me up instantly."
+
+    r "{sc}ACK{/sc}"
+
+    "I pull myself up, and start to get ready for work."
+
     stop music fadeout 1.0
-    scene bg officeoutside:
+    scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with pixellate
-    play music "music/Sludge (Office outside morning).wav" fadein 1.0
+    play music "music/Glop (Front Desk morning).wav" fadein 1.0
+
+    r "Hey, Shamir, by the way..."
+
+    show s front at S_C
+    with dissolve
+
+    s "Hm?"
+
+    r "What do you plan on doing during the long weekend?"
+
+    s "Art."
+
+    if s_count > 2:
+        r "Figures."
+    else:
+        r "I see!"
+
+    r "Well, I hope you have fun with that!"
+
+    s "Thanks, hope you have a good one too."
 
     stop music fadeout 1.0
     scene bg office:
@@ -1077,6 +1376,74 @@ label dayFour_morning:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
+
+    r "Morning you guys!"
+
+    show t side at S_L
+    with dissolve
+    show c front at S_R
+    with dissolve
+
+    c "Morning!"
+
+    t "Morning."
+
+    c "Robin, you havent seen the company email we got, right?"
+
+    r "Well, seeing as how I just got in, no. Lemme take a look..."
+
+    "I have a seat at my desk and open up my email."
+
+    r "\"This Monday, we will additionally be saying goodbye to one of our longtime employees.\""
+
+    r "\"Chuck has been with us for years, and it is finally time for him to fufill his true purpouse in retirement.\""
+
+    r "\"Please say thank you to Chuck if you see him in the halls.\""
+    
+    r "\"And feel free to join us in celebrating his time here on tuesday.\""
+
+    r "\"We will never fail to celebrate one of our esteemed employees leaving.\""
+
+    r "\"Please look forward to when you or your coworkers finally leave.\""
+
+    r "\"Mors tua, vita mea, nostra aeternitas.\""
+
+    r "\"CEO.\""
+
+    r "I see..."
+
+    show t side
+
+    t "Yeah, thanks for reading that out for us, Robin."
+
+    r "Ah... yeah..."
+
+    r "Well, did anyone here know Chuck or anything?"
+
+    t "Nope."
+
+    show c side
+
+    c "Nah..."
+
+    show c front
+
+    c "He seemed to be a higher up. Someone who would have no buisiness with us."
+
+    show c side
+
+    c "Maybe Hori knew him?"
+
+    r "I see... I'll try asking Boss about that later..."
+
+    c "Anyways, best we get to work, yeah?"
+
+    r "Yeah. Let's get to it."
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
 
     r "Phew... finally lunch time."
 
@@ -1094,8 +1461,11 @@ label dayFour_morning:
         "Shamir":
             jump shamir 
 label dayFour_afternoon:
+    #Talk about retirement with Taiga and Claire
 
 label dayFive_morning:
+    #talk to horace about retiree
+    #you also get the evening off
     stop music fadeout 1.0
     scene bg home
     with fade
@@ -1562,7 +1932,7 @@ label taiga3:
 
     show t back
 
-    t "I'm heading home for the day."
+    t "I'm going for a walk."
 
     hide t back
     with dissolve
@@ -2863,9 +3233,12 @@ label shamir2:
 
     show s side
 
+    if day > 3:
+        s "Like I said earlier..."
+
     s "I do art, mostly."
 
-    r "Wow, really? Do you sell any of your pieces?"
+    r "Do you sell any of your pieces?"
 
     show s front
 
