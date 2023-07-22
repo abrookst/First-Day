@@ -595,15 +595,15 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Programming, Writing, Visuals: Ali Brooks")
+            text _("Programming, Writing, Visuals: {a=https://abrookst.itch.io/}Ali Brooks{/a}")
 
             text _("Music: Yuppe")
 
             text _("Taiga, Horace, and Zeke Voice: Cole \"Big Man on Campus\" Maryanopolis")
 
-            text _("Shamir and Claire voice: ")
+            text _("Shamir and Claire voice: {a=https://www.instagram.com/artsya.amelia/}Áine Halligan{/a}")
 
-            text _("Fonts: ")
+            text _("Fonts: Jeti, Hewett Tsoi, Freaky Fonts, ElijahTNHK, Hazel Abbiati")
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 

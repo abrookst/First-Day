@@ -127,15 +127,15 @@ label start:
     with fade
     play music "music/bar.wav" fadein 1.0
     
-    "A small dingey bar, kept afloat by its regulars, who have been coming here since before I was even born."
+    "A small local bar, kept afloat by its regulars, who have been coming here since before I was even born."
 
-    "Said regulars are all within their cliques, or are glued to the telly, watching... something."
+    "Said regulars are all within their cliques or are glued to the bar's TV, watching... something."
 
-    "I sit and stir my Black Russian. Not in idle bordem, but rather in tense, sharp, anxiety."
+    "I sit and stir my Black Russian. Not in idle bordem, but rather in a tense, sharp, anxiety."
 
     "My mind is racing, soaring through the air, beyond the wit of man."
 
-    "My mind comes careening back down to reality, when the glass of solitude is shattered by a familiar voice."
+    "My mind comes careening back down to reality when the glass of solitude is shattered by a familiar voice."
 
     z "Hey."
 
@@ -150,17 +150,17 @@ label start:
 
     show z back at S_C
 
-    "He takes a seat, while gesturing at the waiter"
+    "He takes a seat while gesturing at the waiter"
 
     show z side at S_C
 
-    z "Two glasses of Dom P"
+    z "A bottle of your finest Scotch."
 
-    r "Are you mad? How much even is that a glass?"#maybe sfx?
+    r "H-Hey! That's probably really expensive..."
 
-    r "Does this place even carry Dom P?"
+    r "And I didn't even finish my drink..."
     
-    z "It doesnt really matter, after all..."
+    z "It doesn't really matter, after all..."
 
     show z front at S_C
 
@@ -172,7 +172,7 @@ label start:
 
     z "So we should celebrate. Full stop."
 
-    r "Please dont remind me."
+    r "Please don't remind me."
 
     z "Remind you of what?"
 
@@ -180,7 +180,7 @@ label start:
 
     "I bury my face into the table"
 
-    r "{sc}Please dont remind me about my job.{/sc}"
+    r "{sc}Please don't remind me about my job.{/sc}"
 
     z "What?"
 
@@ -190,9 +190,9 @@ label start:
 
     r "I'm just... not a fan of change."
 
-    r "I got used to college, and even moreso to school."
+    r "I got used to college, and even more so to school."
 
-    r "This is just... different. And I really dont like that."
+    r "This is just... different. And I really don't like that."
 
     show z side  at S_C
 
@@ -206,7 +206,7 @@ label start:
 
     show z back  at S_C
 
-    "Our glasses tap, before we take a long sip of the Champage"
+    "Our glasses tap, before we take a long sip of the whisky."
 
     r "Wow. This really is good."
 
@@ -214,9 +214,9 @@ label start:
 
     z "See? Worth every penny."
 
-    r "Well I wouldnt say {i}that{/i}. A beer is just fine."
+    r "Well, I wouldn't say {i}that{/i}. Beer is just fine."
 
-    z "We'll switch to beer after this, lets enjoy this while we're still sober."
+    z "We'll switch to beer after this, let's enjoy this while we're still sober."
 
     hide z with dissolve
 
@@ -245,7 +245,7 @@ label dayOne_morning:
 
     "I roll out of bed, falling onto the floor"
 
-    "I pick myself up, while rubbing my eyes."
+    "I pick myself up while rubbing my eyes."
 
     "Dread strikes as I slowly realize that today"
 
@@ -305,7 +305,7 @@ label dayOne_morning:
 
     r "{sc}I WORK HERE! THIS IS MY FIRST DAY!{/sc}" with vpunch
 
-    "I rummage though my bag to grab my ID."
+    "I rummage through my bag to grab my ID."
 
     "But before I can show it to her, someone comes in and grabs the phone from her hands."
 
@@ -393,7 +393,7 @@ label dayOne_morning:
 
     "Horace quickly moves down the hallway, I wipe my face off with the towel while following them down the hall."
 
-    "We wisk by endless offices and meeting rooms, only breifly slowing down to turn corners."
+    "We wisk by endless offices and meeting rooms, only briefly slowing down to turn corners."
 
     stop music fadeout 1.0
     scene bg office:
@@ -433,7 +433,7 @@ label dayOne_morning:
 
     r "Robin. Nice to meet you!"
 
-    "I extend my hand towards Taiga"
+    "I extend my hand toward Taiga"
 
     t "Yeah... no. I'm not shaking your hand."
 
@@ -523,7 +523,7 @@ label dayOne_morning:
 
     c "Got it. I'll show you the cafeteria and the way to Hori's office"
 
-    r "Mind if I ask why do you call Horace Hori?"
+    r "Mind if I ask why you call Horace Hori?"
 
     c "..."
 
@@ -610,7 +610,7 @@ label dayOne_morning:
 
     h "Then get out. The tour is over."
 
-    "Horace shoves both Claire and I out of the office."
+    "Horace shoves both Claire and me out of the office."
 
     scene bg hallway:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
@@ -649,7 +649,7 @@ label dayOne_morning:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
-    r "Phew... finally lunch time."
+    r "Phew... finally lunchtime."
 
     "I could get to know my coworkers better if I talked to them during lunch..."
 
@@ -742,7 +742,7 @@ label dayOne_afternoon:
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
-    r "Alright, time to get to work proper..."
+    r "Alright, time to get to work properly..."
 
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
@@ -758,7 +758,7 @@ label dayOne_afternoon:
 
     r "Thanks, Claire!"
 
-    r "I can't belive I got my first day of work done, it doesn't feel quite real yet..."
+    r "I can't believe I got my first day of work done, it doesn't feel quite real yet..."
 
     r "How are you feeling, Taiga?"
 
@@ -807,7 +807,7 @@ label dayOne_afternoon:
 
     r "Talking with [todayTalk] was nice as well."
 
-    r "Well.. It's best I go to sleep."
+    r "Well... I should go to sleep."
 
     r "I have to get up bright and early again tomorrow."
 
@@ -853,7 +853,7 @@ label dayTwo_morning:
 
     "Did... I just get used to it yesterday?"
 
-    w "its best not to think too hard about things."
+    w "it's best not to think too hard about things."
 
     r "{sc}H-HUH?{/sc}" with vpunch
 
@@ -864,13 +864,13 @@ label dayTwo_morning:
 
     r "{sc}WAGH!!!{/sc}"
 
-    r "Oh... Oh my god.. It's just you, Shamir."
+    r "Oh... Oh my god... It's just you, Shamir."
 
     show s side
 
     s "Did something happen?"
 
-    r "I swear I head someone say something... It must have been you..."
+    r "I swear I heard someone say something... It must have been you..."
 
     s "...I didn't say anything."
 
@@ -927,7 +927,7 @@ label dayTwo_morning:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
-    r "Phew... finally lunch time."
+    r "Phew... finally lunchtime."
 
     "I could get to know my coworkers better if I talked to them during lunch..."
 
@@ -950,11 +950,11 @@ label dayTwo_afternoon:
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
-    "Alright! Now that I'm done with lunch, its time to get started on this afternoon's work."
+    "Alright! Now that I'm done with lunch, it's time to get started on this afternoon's work."
 
     "Let's see what's on the agenda..."
 
-    "Licrosect the docs related to the revitiliation sector..."
+    "Licrosect the docs related to the revitalization sector..."
 
     "Push fatty dispositions out for QA..."
 
@@ -1057,7 +1057,7 @@ label dayThree_morning:
 
     r "{sc}wheeze{/sc}"
 
-    "I get up, while rubbing my back."
+    "I get up while rubbing my back."
 
     r "G-Guess I best get ready for work..."
 
@@ -1089,7 +1089,7 @@ label dayThree_morning:
 
     r "Y-Yeah, are you?"
 
-    s "Mhm. Havent quite figured it out yet."
+    s "Mhm. Haven't quite figured it out yet."
 
     "Figured it out..?"
 
@@ -1121,9 +1121,9 @@ label dayThree_morning:
 
     show h front
 
-    h "We produce low cost, efficient, and renewable energy here."
+    h "We produce low-cost, efficient, and renewable energy here."
 
-    w "but this shouldnt concern you"
+    w "but this shouldn't concern you"
 
     r "{sc}WAUGH!{/sc}" with vpunch
 
@@ -1137,11 +1137,11 @@ label dayThree_morning:
 
     h "I'm sorry to cut this meeting while you're having a breakdown, but I've got work to do."
 
-    h "As a new hire you do not have any PTO or sick days yet."
+    h "As a new hire, you do not have any PTO or sick days yet."
 
-    h "So if you're going to loose your mind, make sure you get your work done."
+    h "So if you're going to lose your mind, make sure you get your work done."
 
-    r "G-Got it... See you.. Boss..."
+    r "G-Got it... See you... Boss..."
 
     stop music fadeout 1.0
     scene bg office:
@@ -1181,7 +1181,7 @@ label dayThree_morning:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
-    r "Phew, finally got all my work done... Atleast I'm feeling a bit better!"
+    r "Phew, finally got all my work done... At least I'm feeling a bit better!"
 
     "I could get to know my coworkers better if I talked to them during lunch..."
 
@@ -1204,7 +1204,7 @@ label dayThree_afternoon:
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
-    "Alright... All done with lunch, time to get started with this afternoons work."
+    "Alright... All done with lunch, time to get started with this afternoon's work."
 
     show h front at S_C
     with dissolve
@@ -1218,7 +1218,7 @@ label dayThree_afternoon:
 
     c "What's up?"
 
-    h "Our yearly revitilization ceremony is falling on Monday. The company will take the day off."
+    h "Our yearly revitalization ceremony is falling on Monday. The company will take the day off."
 
     h "We'll also offer festivities, though you can stay at home this year."
 
@@ -1365,11 +1365,11 @@ label dayFour_morning:
 
     "I roll out of bed, falling onto the floor"
 
-    "Upon impact, I hit my neck in a way that wakes me up instantly."
+    "Upon impact, I hit my neck in a way that woke me up instantly."
 
     r "{sc}ACK{/sc}"
 
-    "I pull myself up, and start to get ready for work."
+    "I pull myself up and start to get ready for work."
 
     stop music fadeout 1.0
     scene bg officefrontdesk:
@@ -1416,7 +1416,7 @@ label dayFour_morning:
 
     t "Morning."
 
-    c "Robin, you havent seen the company email we got, right?"
+    c "Robin, you haven't seen the company email we got, right?"
 
     r "Well, seeing as how I just got in, no. Lemme take a look..."
 
@@ -1424,7 +1424,7 @@ label dayFour_morning:
 
     r "\"This Monday, we will additionally be saying goodbye to one of our longtime employees.\""
 
-    r "\"Chuck has been with us for years, and it is finally time for him to fufill his true purpouse in retirement.\""
+    r "\"Chuck has been with us for years, and it is finally time for him to fulfill his true purpose in retirement.\""
 
     r "\"Please say thank you to Chuck if you see him in the halls.\""
     
@@ -1456,7 +1456,7 @@ label dayFour_morning:
 
     show c front
 
-    c "He seemed to be a higher up. Someone who would have no buisiness with us."
+    c "He seemed to be a higher-up. Someone who would have no business with us."
 
     show c side
 
@@ -1473,7 +1473,7 @@ label dayFour_morning:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
-    r "Phew... finally lunch time."
+    r "Phew... finally lunchtime."
 
     "I could get to know my coworkers better if I talked to them during lunch..."
 
@@ -1506,7 +1506,7 @@ label dayFour_afternoon:
 
     c "Hey, Robin, Taiga?"
 
-    r "What's up Claire?"
+    r "What's up, Claire?"
 
     show c side
 
@@ -1522,9 +1522,9 @@ label dayFour_afternoon:
 
     t "I'll retire when I die."
 
-    r "Uh. I also havent really thought about retirement."
+    r "Uh. I also haven't really thought about retirement."
 
-    r "I know you're supposed to start early but... I dunnoh it's not something I wanna think about."
+    r "I know you're supposed to start early but... I dunno it's not something I wanna think about."
 
     c "Fair enough. It's a really scary thought."
 
@@ -1561,7 +1561,7 @@ label dayFour_afternoon:
 
     r "I was curious, did you personally know Chuck at all?"
 
-    h "Yes. He's one of the higerups here. I work directly under his order."
+    h "Yes. He's one of the higer-ups here. I work directly under his order."
 
     r "I see..."
 
@@ -1626,7 +1626,7 @@ label dayFive_morning:
 
     r "{sc}ACK{/sc}"
 
-    "I pull myself up, and start to get ready for work."
+    "I pull myself up and start to get ready for work."
 
     stop music fadeout 1.0
     scene bg officeoutside:
@@ -1635,7 +1635,7 @@ label dayFive_morning:
     with pixellate
     play music "music/Sludge (Office outside morning).wav" fadein 1.0
 
-    "Wow... I can't belive its almost been a week since I've started working here."
+    "Wow... I can't belive it's almost been a week since I started working here."
 
     "Time really flew by. I can barely remember working, but can vividly remember all the time I spent with the people I've met here."
 
@@ -1667,7 +1667,7 @@ label dayFive_morning:
 
     show h front
 
-    h "We all need a break Robin. I've been working on this for almost 2 weeks."
+    h "We all need a break, Robin. I've been working on this for almost 2 weeks."
 
     r "...Working on what?"
 
@@ -1693,7 +1693,7 @@ label dayFive_morning:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
-    r "Phew... finally lunch time."
+    r "Phew... finally lunchtime."
 
     "This is my last chance to talk to someone before the weekend..."
 
@@ -1855,7 +1855,7 @@ label dayFive_afternoon:
         z "Got it."
         r "Speaking of drinking..."
     else:
-        r "I talked to a few people, hopefully I can get to know them more."
+        r "I talked to a few people, hopefully, I can get to know them more."
 
         z "So do you have any weekend plans?"
 
@@ -1871,9 +1871,9 @@ label dayFive_afternoon:
         
         z "But anyways..."
 
-    z "Wanna start drinking?"
+    r "Wanna start drinking?"
 
-    r "You know it!"
+    z "You know it!"
 
     stop music fadeout 1.0
     scene black
@@ -2029,7 +2029,7 @@ label taiga1:
 
     t "Naturally, we're the best of the best."
 
-    r "I went to Blighty U, I had a great time there."
+    r "I went to Blighty U, and I had a great time there."
 
     t "Heh, Blighty? That preschool?"
 
@@ -2103,7 +2103,7 @@ label taiga2:
 
     show t front
 
-    t "Fine. Lets go."
+    t "Fine. Let's go."
 
     stop music fadeout 1.0
     scene bg officecafe:
@@ -2131,7 +2131,7 @@ label taiga2:
 
     t "Nope."
 
-    r "Wow, that's sounds like a really sad life."
+    r "Wow, that sounds like a really sad life."
 
     t "If I wanted to know what a sad life was like, I'd ask you."
 
@@ -2145,7 +2145,7 @@ label taiga2:
 
     t "I usually work out."
 
-    r "Ah! See? That's something! You like working out"
+    r "Ah! See? That's something! You like working out!"
 
     show t side
 
@@ -2157,7 +2157,7 @@ label taiga2:
 
     t "Same with my piano playing and cooking."
 
-    t "I play the piano to excercise my mind."
+    t "I play the piano to exercise my mind."
     
     t "And I cook my own meals after workouts to maximize the benefits."
 
@@ -2175,7 +2175,7 @@ label taiga2:
 
     r "Well... that's a very interesting way to lead your life."
 
-    r "Do you derrive joy from anything, Taiga"
+    r "Do you derive joy from anything, Taiga"
 
     show t side
 
@@ -2382,7 +2382,7 @@ label taiga4:
 
     t "..."
 
-    r "Taiga? Mind telling me whats up?"
+    r "Taiga? Mind telling me what's up?"
 
     show t front
 
@@ -2410,7 +2410,7 @@ label taiga4:
 
     t "Neither did my parents."
 
-    t "\"Art doesn't make money\" they said."
+    t "\"Art doesn't make money,\" they said."
 
     t "Every time I would make art, in any way, shape, or form."
 
@@ -2507,7 +2507,7 @@ label taiga5:
     show t side at DS_C
     with dissolve
 
-    t "What do you want."
+    t "What do you want?"
 
     r "Here."
 
@@ -2527,7 +2527,7 @@ label taiga5:
 
     r "You aren't your parents. You have the right to do what you enjoy."
 
-    r "Even if its just off hours."
+    r "Even if it's just off hours."
 
     show t back
 
@@ -2646,7 +2646,7 @@ label claire1:
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
-    r "I see! Wow, thank you so much Claire!"
+    r "I see! Wow, thank you so much, Claire!"
 
     show c front at S_C 
 
@@ -2658,13 +2658,13 @@ label claire1:
 
     c "But I'm glad I could help, and you can call me anytime you need a hand."
 
-    r "Thanks Claire!"
+    r "Thanks, Claire!"
 
     r "You're probably the nicest person here, hands down."
 
     "And probably the most normal..."
 
-    c "Aww, thanks! I know how nice it is to get help you need, so why not pay it forward?"
+    c "Aww, thanks! I know how nice it is to get the help you need, so why not pay it forward?"
 
     r "Those are words to live by, for sure!"
 
@@ -2723,13 +2723,13 @@ label claire2:
 
     r "Congrats on 6 years, then!"
 
-    r "You plan on staying here for a while longer?"
+    r "Do you plan on staying here for a while longer?"
 
     c "Yeah... probably. I've got a lot of... ties here."
 
     r "I see... That does come with a lot of benefits!"
 
-    r "You'll probably get a promotion, if you havent already."
+    r "You'll probably get a promotion if you haven't already."
 
     show c side
 
@@ -2741,7 +2741,7 @@ label claire2:
 
     show c front
 
-    c "Actually I have a question for you."
+    c "Actually, I have a question for you."
 
     r "Hm? What's up?"
 
@@ -2768,16 +2768,16 @@ label claire2:
         r "L-Lemme think... My favorite food is..."
 
         "Hambugers":
-            r "Probably hamburgers, can never beat a good smashburger."
+            r "Probably hamburgers can never beat a good smash burger."
             pass
         "Chilaquiles":
-            r "Probably Chilaquiles, but only my dad's recepie, for sure."
+            r "Probably Chilaquiles, but only my dad's recipe, for sure."
             pass
         "Moules-Frites":
             r "Definitely Moules-Frites, an unexpectedly fantastic combo."
             pass
         "Maafe":
-            r "A long simmered Maafe with a pile of rice can't be beat."
+            r "A long-simmered Maafe with a pile of rice can't be beaten."
             pass
         "Shawarma":
             r "Shawarma, for sure. I could probably eat the meat off the spit."
@@ -2802,11 +2802,11 @@ label claire2:
 
     r 'I... kinda see what you mean!'
 
-    r "I have a good college friend, his name is Zeke, and I remember how much my perception of him changed when he said his favorite food was mashed potatos."
+    r "I have a good college friend, his name is Zeke, and I remember how much my perception of him changed when he said his favorite food was mashed potatoes."
 
     show c front
 
-    c "Riiight? Glad you see what I mean."
+    c "Right? Glad you see what I mean."
 
     show c side
 
@@ -2861,7 +2861,7 @@ label claire3:
 
     show c front
 
-    c "Hori! You're gonna stop by without saying hi, darling?"
+    c "Hori! Are you gonna stop by without saying hi, darling?"
 
     h "..."
 
@@ -2875,7 +2875,7 @@ label claire3:
 
     show h side
 
-    h "Ill be seeing you Robin."
+    h "I'll be seeing you, Robin."
 
     show h back 
 
@@ -2945,7 +2945,7 @@ label claire4:
     show c front at apron
     with dissolve
 
-    r "So what did you want to vent about."
+    r "So what did you want to vent about?"
 
     c "Alright, so..."
 
@@ -2957,7 +2957,7 @@ label claire4:
 
     c "Let's just start at the beginning. Me and Horace started on the same day."
 
-    c "We were desk to desk, and obviously ended up talking a lot."
+    c "We were desk to desk and obviously ended up talking a lot."
 
     c "Eventually, we started hanging out outside of work."
 
@@ -2995,7 +2995,7 @@ label claire4:
 
     show c front
 
-    c "I've head that one enough from my mom."
+    c "I've heard that one enough from my mom."
 
     show c side
 
@@ -3048,7 +3048,7 @@ label claire5:
 
     c "We could celebrate your first week of work!"
 
-    "W-Wow, I didnt even realize it's been a week..."
+    "W-Wow, I forgot it's been a week..."
 
     r "That sounds good! Do you have a place in mind?"
 
@@ -3103,7 +3103,7 @@ label claireEnding:
 
     r "Ooh, I better catch up!"
 
-    "I take my shot, and push the glass back up the table."
+    "I take my shot and push the glass back up the table."
 
     c "I do have some news..."
 
@@ -3117,19 +3117,19 @@ label claireEnding:
 
     show c side
 
-    c "I really have been cligning onto the past."
+    c "I really have been clinging to the past."
     
     c "Smiling and bearing a job that I hate for someone who will never take me back."
 
     c "Horace will never take me back. I've been running away from that fact for so long now."
 
-    c "It's time for me to move on, yknow?"
+    c "It's time for me to move on, y'know?"
 
-    r "I see. Well, even though we've worked together for such a short ammount of time... I'll miss you!"
+    r "I see. Well, even though we've worked together for such a short amount of time... I'll miss you!"
 
-    c "If we make Birdley's a regular haunt together, you'll loose that feeling pretty fast. Trust me."
+    c "If we make Birdley's a regular haunt together, you'll lose that feeling pretty fast. Trust me."
 
-    r "Hah! Well we'll see about that."
+    r "Hah! Well, we'll see about that."
 
     r "But hey, cheers to a new life, yeah?"
 
@@ -3162,7 +3162,7 @@ label horace1:
 
     r "..."
 
-    h "Why are you here."
+    h "Why are you here?"
 
     r "Oh! I-It's lunch, and I wanted to talk to you."
 
@@ -3174,7 +3174,7 @@ label horace1:
 
     show h side
 
-    h "What is it."
+    h "What is it?"
 
     r "U-Uh, building a strong co-worker relationship is important to a strong company..?"
 
@@ -3194,7 +3194,7 @@ label horace1:
 
     h "Efficient yet suffocatingly bland with a tinge of abject misery and horror."
 
-    h "Just like the last 10,227 days of my agonizing existance."
+    h "Just like the last 10,227 days of my agonizing existence."
 
     show h front
 
@@ -3208,7 +3208,7 @@ label horace1:
 
     show h side
 
-    h "You're not very good at this talking thing. Hopefully that isnt on your CV."
+    h "You're not very good at this talking thing. Hopefully, that isn't on your CV."
 
     h "Though. I do seem to understand you a bit better."
 
@@ -3302,7 +3302,7 @@ label horace2:
 
     show h side
 
-    h "Spending hours and hours of time outside of work to write a bunch of made up characters just sounds like a waste of time."
+    h "Spending hours and hours of time outside of work to write a bunch of made-up characters just sounds like a waste of time."
 
     "Touche..."
 
@@ -3383,7 +3383,7 @@ label horace3:
 
         "It was fantastic":
             r "T-This is fantastic, Boss!"
-            r "I was enraptured all the way through, excelent work."
+            r "I was enraptured all the way through, excellent work."
             pass
         "It was okay":
             r "This was pretty alright, Boss."
@@ -3393,7 +3393,7 @@ label horace3:
         "It was awful":
             r "I'm not gonna mince words with you, Boss."
             r "This was truly awful."
-            r "You know you don't need to end every character dialouge with \"Sincerely, Horace\" right?"
+            r "You know you don't need to end every character dialogue with \"Sincerely, Horace\" right?"
             r "And why did everyone get fired at the end? None of them even worked at a company...??"
             r "You've got a long way to go."
             pass
@@ -3409,7 +3409,7 @@ label horace3:
 
     show h back
 
-    h "This is a private buisness afair. Please leave, Taiga."
+    h "This is a private business affair. Please leave, Taiga."
 
     show h front
 
@@ -3501,7 +3501,7 @@ label horace4:
 
     h "You see. When I first came here, I was much more open to people."
 
-    h "I had befriended a majority of the office, and had even started seeing someone."
+    h "I had befriended a majority of the office and had even started seeing someone."
 
     "...I honestly can't imagine that."
 
@@ -3509,13 +3509,13 @@ label horace4:
 
     h "But my work suffered as a result. I was all play and no work."
 
-    h "And one day. My Boss came to me with a ultimatum."
+    h "And one day. My Boss came to me with an ultimatum."
 
-    h "Either focus on my work wholly, and gain a large promotion"
+    h "Either focus on my work wholly and gain a large promotion"
 
     h "...or get laid off."
 
-    h "He saw potential in me, and knew that this potential would not be drawn out in my current state."
+    h "He saw potential in me and knew that this potential would not be drawn out in my current state."
 
     show h front
 
@@ -3533,7 +3533,7 @@ label horace4:
 
     show h side
 
-    h "This is why I would also like to say one additonal thing"
+    h "This is why I would also like to say one additional thing"
     
     h "I have decided that these lunch excursions will cease henceforth."
 
@@ -3588,7 +3588,7 @@ label horace5:
 
     h "What is it?"
 
-    r "I belive you need to have a better work life balance."
+    r "I believe you need to have a better work-life balance."
 
     h "...What?"
 
@@ -3596,17 +3596,17 @@ label horace5:
 
     r "Do stuff outside of work! Talk to your coworkers! Pick up a hobby!"
 
-    h "...Robin, do you know what a work life balance is?"
+    h "...Robin, do you know what a work-life balance is?"
 
-    r "{sc}n-no...{/sc} But that's besides the point!"
+    r "{sc}n-no...{/sc} But that's beside the point!"
 
     r "Horace, I can tell, this is hurting you."
 
     h "!"
 
-    r "You woln't last much longer shutting yourself away like this."
+    r "You won't last much longer shutting yourself away like this."
 
-    r "And if you wanna keep working, then you gotta do whats best for you."
+    r "And if you wanna keep working, then you gotta do what's best for you."
 
     r "You gotta open up a bit more!"
 
@@ -3672,7 +3672,7 @@ label horaceEnding:
 
     r "Well, wanna get some drinks? Maybe that'll help loosen us both up."
 
-    h "Well, alchohol being a \"Social Lubricant\" is a common myth."
+    h "Well, alcohol being a \"Social Lubricant\" is a common myth."
     
     h "Many act anti-social when inebriated."
 
@@ -3692,7 +3692,7 @@ label horaceEnding:
 
     show h side
 
-    h "Fair enough. I had really thought I surrendered being amicable withn my coworkers forever."
+    h "Fair enough. I had really thought I surrendered being amicable with my coworkers forever."
 
     show h front
 
@@ -3769,7 +3769,7 @@ label shamir1:
 
     s "You just seem like the kinda person who would be a danger to those around them."
 
-    s "Like if I was infront of you in a line, I might take a few steps away, you know?"
+    s "Like if I was in front of you in a line, I might take a few steps away, you know?"
 
     r "That... was worse, Shamir."
 
@@ -3798,7 +3798,7 @@ label shamir2:
     show s front at S_C
     with dissolve
 
-    s "Sure. Again, I owe you after last time."
+    s "Sure. Again, I owe you after the last time."
 
     r "L-Let's just drop the \"I owe you\" stuff and get lunch, yeah?"
 
@@ -3826,7 +3826,7 @@ label shamir2:
 
     show s front
 
-    s "I try to, but its really hard to here."
+    s "I try to, but it's really hard to sell my art here."
 
     r "Here? What do you mean?"
 
@@ -3844,7 +3844,7 @@ label shamir2:
 
     s "And a lot of people here aren't quite used to that."
 
-    s "Food is one thing, yknow? But are people as likely to buy an expensive painting?"
+    s "Food is one thing, y'know? But are people as likely to buy an expensive painting?"
 
     show s side
     
@@ -3891,7 +3891,7 @@ label shamir3:
 
     r "Hey Shamir! Wanna go get lunch?"
 
-    s "Sure, Robin. Just give a moment, I need to wrap this up."
+    s "Sure, Robin. Just give me a moment, I need to wrap this up."
 
     show h front at S_L
     with dissolve
@@ -3998,17 +3998,17 @@ label shamir4:
 
     s "And that was the day Horace got a massive promotion. Their spot here was secured."
 
-    s "Robin. Before you loose your way, get out of here. As soon as you can."
+    s "Robin. Before you lose your way, get out of here. As soon as you can."
 
     r "S-Shamir..."
 
     s "Did you know this company exclusively snatches up college graduates?"
 
-    s "And yet, they never seem to leave this place. They all get caught in it's web."
+    s "And yet, they never seem to leave this place. They all get caught in its web."
 
-    s "Our biggest department is IT, which is already an anomoly."
+    s "Our biggest department is IT, which is already an anomaly."
 
-    s "And yet, none of our infastructure is for our work, rather its to store information about us."
+    s "And yet, none of our infrastructure is for our work, rather it's to store information about us."
 
     s "Don't you see it, Robin?"
 
@@ -4020,9 +4020,9 @@ label shamir4:
 
     s "...heh... I probably sound like a madwoman, don't I?"
 
-    s "We have a few lunches together, I act weird around a coworker..."
+    s "We have a few lunches together, and I act weird around a coworker..."
 
-    s "And here I am barfing my conspiracy theories at you."
+    s "And here I am throwing my conspiracy theories at you."
 
     s "And I called you a creep. Heh..."
 
@@ -4031,11 +4031,11 @@ label shamir4:
     r "..?"
 
     menu:
-        s "Do you belive me?"
+        s "Do you believe me?"
 
         "I Do.":
             $ bShamir = True;
-            r "I-I belive you, Shamir."
+            r "I-I believe you, Shamir."
 
             r "I never know what I'm working on, I can't seem to shake this feeling deep in my chest... I..."
 
@@ -4073,7 +4073,7 @@ label shamir4:
 
             show s back
 
-            s "I'm tired. I really don't how how much more I have left in me."
+            s "I'm tired. I really don't know how much more I have left in me."
 
             hide s back
             with dissolve
@@ -4118,7 +4118,7 @@ label shamir5A:
     s "Fantastic. I'll see you then."
 
     show s back
-    s "For now, I've got something to attend to. We'll save todays chatting for then."
+    s "For now, I've got something to attend to. We'll save today's chat for then."
 
     r "Oh! Shamir, before you go..."
 
@@ -4172,7 +4172,7 @@ label shamir5B:
 
     s "{bt}Ahahahahahaha!{/bt}"
 
-    s "Robin you're a riot!"
+    s "Robin, you're a riot!"
 
     r "Haha... I... didn't say anything funny though?"
 
@@ -4232,7 +4232,7 @@ label shamirEndingA:
 
     s "I know I was talking big about finding the truth... But I would rather prioritize my own happiness."
 
-    r "No. I understand! Spending all your time trying to find out whats going on does sound pretty maddening..."
+    r "No. I understand! Spending all your time trying to find out what's going on does sound pretty maddening..."
 
     r "But anyways, want to start walking? We've just been standing at the start..."
 
@@ -4255,7 +4255,7 @@ label shamirEndingB:
     with fade
     play music "music/Lost Deer.mp3" fadein 1.0
 
-    r "Ugh... Wh-What am I doing here."
+    r "Ugh... Wh-What am I doing here..?"
 
     show z back at apron
 
@@ -4360,7 +4360,7 @@ label zekeEnding:
 
     show z front
 
-    z "Ah, yeah. Because I was scared I was loosing my bill footing buddy!"
+    z "Ah, yeah. Because I was scared I was losing my bill footing buddy!"
 
     r "Screw you, man."
 

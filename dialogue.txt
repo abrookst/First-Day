@@ -4,11 +4,11 @@ Wave Shader Ren'Py Module 2022 Daniel Westfall <SoDaRa2595@gmail.com>
 http://twitter.com/sodara9 I'd appreciate being given credit if you do end up using it! :D Would really make my day to know I helped some people out! Really hope this can help the community create some cool visuals! http://opensource.org/licenses/mit-license.php Github: https://github.com/SoDaRa/RenpyWaveShader itch.io: https://wattson.itch.io/renpy-wave-shader Forum Post: https://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=64378
 Notes on how to use
 Important Part
-May 28th 201X
+May 201X
 11:18 P.M.
 Birdley's Bar
-A small dingey bar, kept afloat by its regulars, who have been coming here since before I was even born.
-Said regulars are all within their cliques, or are glued to the telly, watching... something.
+A small local bar, kept afloat by its regulars, who have been coming here since before I was even born.
+Said regulars are all within their cliques, or are glued to the bar's TV, watching... something.
 I sit and stir my Black Russian. Not in idle bordem, but rather in tense, sharp, anxiety.
 My mind is racing, soaring through the air, beyond the wit of man.
 My mind comes careening back down to reality, when the glass of solitude is shattered by a familiar voice.
@@ -16,9 +16,9 @@ Hey.
 Mind if I have a seat?
 Oh, hey Zeke. Go ahead.
 He takes a seat, while gesturing at the waiter
-Two glasses of Dom P
-Are you mad? How much even is that a glass?
-Does this place even carry Dom P?
+A bottle of your finest Scotch.
+H-Hey! That's probably really expensive...
+And I didn't even finish my drink...
 It doesnt really matter, after all...
 Doesn't someone here have a job now?
 And didn't two people here just graduate from college?
@@ -71,16 +71,28 @@ But before I can show it to her, someone comes in and grabs the phone from her h
 Hello? This is Horace.
 Shamir was lying. You don't have to come to the front desk.
 They put the phone down into its cradle.
-You must be Robin. Nice to meet you.
+Sorry about that. You must be Robin.
+Nice to meet you.
 Yes! I-It's great to meet you too, Horace.
 That's Boss to you.
 Ah, s-sorry boss.
-They step forward and extend their hand, and I reach to shake it.
+By the way, the lady who just tried to get you kicked out was Shamir.
+She's our HR lady. So please get along.
+HR? Why are you at the front desk?
+Budget cuts.
+I-I see...
+Here, Robin.
+Horace steps forward and extends their hand, and I reach to shake it.
 But I instead grab something fuzzy and soft. I look down at my hand.
 I wasn't trying to shake your hand. This is a towel. You're sweating like mad.
 H-huh?
+I can understand. You must be nervous about your first day.
+Let me put all doubts to rest for you, Robin.
+Whatever you're imagining your work will be like...
+It's worse.
+...
 Come with me.
-They quickly move down the hallway, I wipe my face off with the towel while following them down the hall.
+Horace quickly moves down the hallway, I wipe my face off with the towel while following them down the hall.
 We wisk by endless offices and meeting rooms, only breifly slowing down to turn corners.
 This is your office.
 G-Got it. Which of the two empty desks is mine?
@@ -116,8 +128,7 @@ Alright! Follow me!
 Where have you been so far?
 Besides the front desk and the office, nowhere else.
 Got it. I'll show you the cafeteria and the way to Hori's office
-Actually, I've been meaning to ask, why do you call Horace Hori?
-And why do they hate that?
+Mind if I ask why do you call Horace Hori?
 ...
 ...
 The air grew unusually thick.
@@ -134,9 +145,12 @@ If all goes well, you'll never have to set foot in there again.
 And that's a very big if, mind you.
 Gulp...
 And here we are! Hi Horace!
-What are you two doing here.
+What are you two doing here?
 We're on the tour, Robin has to know where their boss' office is!
-I see. Did you need anything else?
+I see. Robin, how is your first day so far?
+Oh, not that bad, actually...
+That's very unfortunate. I'll assign you some extra morning work to help rectify this issue.
+Did you need anything else?
 N-No... Not really...
 Then get out. The tour is over.
 Horace shoves both Claire and I out of the office.
@@ -149,6 +163,378 @@ I plop down into my chair and face my computer.
 Welp, time to get to it...
 Phew... finally lunch time.
 I could get to know my coworkers better if I talked to them during lunch...
+Alright! I'm back. Time to get cracking at my afternoon's work.
+Hey, Robin.
+Hm? What's up, Taiga?
+I just had a meeting with Horace, now it's your turn.
+A-Ah, I see.
+Good luck.
+T-Thanks...
+Well, best I head over there...
+Hello?
+Hello, Robin.
+How was your morning? Did you finish all your work?
+Yep! All done and dusted.
+I'll leave out the fact I just barely finished it...
+Good. How are the sheets you were assigned looking?
+They all looked good!
+Any full bincalls?
+Just one, but I took care of it.
+Excelent work, Robin.
+That's all I need from you. Thanks.
+A-Alright, see you!
+Alright, time to get to work proper...
+Phew! Finally done!
+Yeah, me too. Good work today, Robin!
+Thanks, Claire!
+I can't belive I got my first day of work done, it doesn't feel quite real yet...
+How are you feeling, Taiga?
+...
+I'll see you all tomorrow.
+A-Ah...
+W-Well, I'll see you tomorrow, Claire!
+Yeah, see you!
+Hey Shamir! I'll see you tomorrow!
+...See you.
+Phew! Finally home.
+I fall down onto my bed.
+Today wasn't too bad... All things considered...
+Talking with [todayTalk] was nice as well.
+Well.. It's best I go to sleep.
+I have to get up bright and early again tomorrow.
+...
+...
+ugh...
+I roll over and fall on the floor, face first this time.
+Ow...
+I slowly rise up from the floor, rubbing my face.
+Oof... G-Guess I better get ready for work...
+Ugh... Despite how well I thought yesterday went.
+Coming back here just reminded me how creepy this place is...
+It feels almost... dizzying...
+Did... I just get used to it yesterday?
+its best not to think too hard about things.
+H-HUH?
+Robin?
+WAGH!!!
+Oh... Oh my god.. It's just you, Shamir.
+Did something happen?
+I swear I head someone say something... It must have been you...
+...I didn't say anything.
+...I-I see...
+Don't worry about it, then. Let's head to work, yeah?
+...
+Yeah...
+Morning Claire! Morning Taiga!
+Good morning Robin!
+...Morning
+Oh, Robin, by the way...
+Hm?
+Boss passed you a task. Check your Smacked, they put it there.
+...Also, your fly is down.
+!
+This is gonna be another long day...
+Phew... finally lunch time.
+I could get to know my coworkers better if I talked to them during lunch...
+Alright! Now that I'm done with lunch, its time to get started on this afternoon's work.
+Let's see what's on the agenda...
+Licrosect the docs related to the revitiliation sector...
+Push fatty dispositions out for QA...
+Hm...
+Hey. Claire, Taiga...
+Yeah?
+What?
+What does this company even do?
+...
+...
+...
+Wait... Do...
+Do none of us know?
+I don't really care. Work is work.
+Speaking of which, I'm going to get back to work.
+M-Maybe you should bring it up with Horace tomorrow?
+Hm? Is Horace not in?
+They're at a meeting with some higher-ups all afternoon.
+I see. I'll try asking tomorrow morning then.
+Until then... Guess we gotta get to it...
+Y-Yeah...
+Ugh... I'm finally done...
+I can't even clearly remember what happened this afternoon...
+I just remember talking about the company with Claire and Taiga...
+Oh, and I also remember talking to [todayTalk] during lunch but...
+That's really about it.
+Maybe I got too absorbed in my work.
+Or maybe... I'm not getting enough sleep...
+Speaking of which, best I hit the hay.
+...
+...
+..ugh
+I roll out of bed, falling onto the floor
+Upon impact, I hit my back in a way that takes the wind out of me.
+wheeze
+I get up, while rubbing my back.
+G-Guess I best get ready for work...
+I gotta remember to ask Horace that question too...
+I come in to see Shamir at the front desk.
+Morning, Shamir!
+...Morning
+Hey, Shamir? Do you know what we do here?
+L-Like, what does this company even produce?
+I see, you're curious too...
+Y-Yeah, are you?
+Mhm. Havent quite figured it out yet.
+Figured it out..?
+Well, I'm gonna go ask Horace about it.
+I see... Good luck with that.
+Thanks!
+Hey, Boss?
+Yes? What is it?
+What... Does this company do?
+Energy.
+We produce low cost, efficient, and renewable energy here.
+but this shouldnt concern you
+WAUGH!
+Robin?
+D-DID YOU HEAR THAT?
+I didn't hear anything...
+What is going on..?
+I'm sorry to cut this meeting while you're having a breakdown, but I've got work to do.
+As a new hire you do not have any PTO or sick days yet.
+So if you're going to loose your mind, make sure you get your work done.
+G-Got it... See you.. Boss...
+...
+Morning Robin!
+Did you ask Hori what we do here?
+...
+O-Oh! Y-yeah... We do uh... Energy stuff...
+I-I see...
+You okay, Robin?
+Yeah, just tired is all.
+Ah, alright. If you need me to help with any of your work, let me know.
+T-Thanks...
+Phew, finally got all my work done... Atleast I'm feeling a bit better!
+I could get to know my coworkers better if I talked to them during lunch...
+Alright... All done with lunch, time to get started with this afternoons work.
+Hello everyone, can I have your attention for a moment?
+What's up?
+Our yearly revitilization ceremony is falling on Monday. The company will take the day off.
+We'll also offer festivities, though you can stay at home this year.
+Oooh... A long weekend!
+Do you guys have any plans?
+It's a chance to stay in and catch up on some books for me.
+...
+Boss, can we come in and work anyways?
+No. Take the time off.
+Grrr...
+You could work out and play the piano, Taiga?
+Do a bit extra on Monday, then stay later at work during the week?
+... I suppose...
+How about you Boss? Gonna do anything?
+I'll be here running festivities.
+I see, good luck with that!
+That's all.
+Thank you. Get back to work, please.
+Welp. Let's get to it!
+Phew... Done!
+Man, everything feels a bit more tolerable now that I know we have a 3 day weekend coming up!
+Right? This afternoon felt like a breeze.
+Welp, I'll see you two tomorrow!
+See you, Robin.
+Hey Shamir! I'll see you tomorrow!
+See you...
+Ah, wait.
+Hm? What's up?
+What did Horace say?
+I forgot to ask you during lunch.
+Huh? What about Horace?
+This morning, you said you would ask Horace what this company was for.
+What did they say?
+Oh... Something about energy I think?
+I'm not sure... I'm a bit tired...
+I see. I'll see you around, Robin.
+See you!
+Phew! Finally home...
+I fall onto my bed
+Today was pretty great... talking to [todayTalk] was great.
+And the announcement of having Monday off was fantastic!
+Not much else happened today though... right?
+Yeah... Yeah...
+...
+...
+..ugh
+I roll out of bed, falling onto the floor
+Upon impact, I hit my neck in a way that wakes me up instantly.
+ACK
+I pull myself up, and start to get ready for work.
+Hey, Shamir, by the way...
+Hm?
+What do you plan on doing during the long weekend?
+Art.
+Figures.
+I see!
+Well, I hope you have fun with that!
+Thanks, hope you have a good one too.
+Morning you guys!
+Morning!
+Morning.
+Robin, you havent seen the company email we got, right?
+Well, seeing as how I just got in, no. Lemme take a look...
+I have a seat at my desk and open up my email.
+"This Monday, we will additionally be saying goodbye to one of our longtime employees."
+"Chuck has been with us for years, and it is finally time for him to fufill his true purpouse in retirement."
+"Please say thank you to Chuck if you see him in the halls."
+"And feel free to join us in celebrating his time here on Monday."
+"We will never fail to celebrate one of our esteemed employees leaving."
+"Please look forward to when you or your coworkers finally leave."
+"Mors tua, vita mea, nostra aeternitas."
+"CEO."
+I see...
+Yeah, thanks for reading that out for us, Robin.
+Ah... yeah...
+Well, did anyone here know Chuck or anything?
+Nope.
+Nah...
+He seemed to be a higher up. Someone who would have no buisiness with us.
+Maybe Hori knew him?
+I see... I'll try asking Boss about that later...
+Anyways, best we get to work, yeah?
+Yeah. Let's get to it.
+Phew... finally lunch time.
+I could get to know my coworkers better if I talked to them during lunch...
+Alright... back from lunch!
+Hey, Robin, Taiga?
+What's up Claire?
+I was curious, especially after that e-mail we got...
+Are you two thinking about retirement at all?
+I'm honestly not thinking about it much, and sometimes I feel like I should.
+I'll retire when I die.
+Uh. I also havent really thought about retirement.
+I know you're supposed to start early but... I dunnoh it's not something I wanna think about.
+Fair enough. It's a really scary thought.
+Whenever I see one of these retirement emails I just think "Oh god. That's gonna be me someday."
+Right? It's such a scary thought.
+Well, that's an issue for future me to worry about. We should focus on our work.
+Too true, let's get to it!
+Alright... All done!
+Maybe I should go ask Horace about Chuck...
+Hey, Boss?
+Yes? What is it?
+I was curious, did you personally know Chuck at all?
+Yes. He's one of the higerups here. I work directly under his order.
+I see...
+Are you going to miss him?
+Not really.
+We talked about this.
+Y-Yeah. Right. Gotcha.
+Is that all you wanted to ask?
+Yeah, pretty much...
+I'll see you, Boss.
+Man, I'm finally home!
+I flop onto my bed.
+It was great to get to learn more about [todayTalk] some more.
+But outside of that... Today was all about retirement... Ugh. That bums me out...
+Best not to think about it...
+...
+...
+..ugh
+I roll out of bed, falling onto the floor
+Upon impact, I hit my head in a way that...
+uh...
+absolves you of your sins.
+Right. I fell in a way that absolves me from my sins.
+ACK
+I pull myself up, and start to get ready for work.
+Wow... I can't belive its almost been a week since I've started working here.
+Time really flew by. I can barely remember working, but can vividly remember all the time I spent with the people I've met here.
+No point in just standing here, time to get to work.
+Robin. Just the person I wanted to see.
+Oh! Hey Boss! What's up?
+I had a meeting yesterday about our new hires.
+We decided to give you the evening off.
+Feel free to head home after lunch.
+W-Wow really? Why so sudden?
+We all need a break Robin. I've been working on this for almost 2 weeks.
+...Working on what?
+Never mind...
+Try to get some work done this morning now.
+G-Got it!
+A-Alright! Time to knuckle down and work!
+Phew... finally lunch time.
+This is my last chance to talk to someone before the weekend...
+A-Alright! All done! Time to head home!
+Hey Claire! Taiga! Have a good weekend!
+Oh! Heading out early?
+Yep! Boss gave the new hires the afternoon off.
+Lucky lucky! Have fun!
+I'll see you this weekend!
+...I'll see you this weekend, Robin.
+See you!
+Oh! Boss!
+Hello Robin. Thank you for a good week of work.
+T-Thank you!
+I'll see you this weekend.
+See you!
+Hey Shamir!
+Howdy Robin!
+...Hey.
+I'll be seeing you! Thanks for a good first week!
+Absolutely! Thank you so much, Robin!
+Yeah...
+See you this weekend.
+See you this weekend.
+See you!
+Alright... It's Friday...
+Time to head to the bar!
+I'll give Zeke a call in a little bit, I can tell him about my week! 
+Hey Zeke!
+Hey. You look much more chipper than last weekend.
+Yeah! Work wasn't as bad as I thought. I had a lotta fun.
+What did you do this week?
+Uhh... A bunch of stuff! It's a little hard to remember the details though...
+Though I did befriend someone named Claire!
+We're gonna hang out tomorrow.
+That's nice.
+I don't wanna have a crazy hangover tomorrow cuz of that, so I'll be off early.
+Got it.
+Speaking of drinking...
+Though I did befriend someone named Shamir!
+We're gonna hang out tomorrow.
+That's nice.
+I don't wanna have a crazy hangover tomorrow cuz of that, so I'll be off early.
+Got it.
+Speaking of drinking...
+Though I did befriend my fellow start Taiga!
+We're gonna hang out tomorrow.
+That's nice.
+I don't wanna have a crazy hangover tomorrow cuz of that, so I'll be off early.
+Got it.
+Speaking of drinking...
+Though I did befriend someone named Horace!
+We're gonna hang out tomorrow.
+That's nice.
+I don't wanna have a crazy hangover tomorrow cuz of that, so I'll be off early.
+Got it.
+Speaking of drinking...
+I talked to a few people, hopefully I can get to know them more.
+So do you have any weekend plans?
+Nah, not really.
+I see... want to meet up then?
+But I do have some movies I'm hoping to catch up on...
+Ahh what the hell! Yeah, I'll turn up this weekend!
+Fantastic.
+But anyways...
+Wanna start drinking?
+You know it!
+...
+...Ugh
+I slowly rise up from bed
+instead of falling on the floor for the 5th time in a row.
+Ooh! I gotta get ready for today!
+Ooh! I gotta get ready for today!
+Ooh! I gotta get ready for today!
+Ooh! I gotta get ready for today!
+I don't really have anything this morning...
+I'll watch some movies before going to the bar with Zeke...
 Phew. That's this morning's work done and dusted!
 How are you holding up, Taiga?
 ...
@@ -161,4 +547,722 @@ W-Wow, I've never met someone who went to Flitington.
 Naturally, we're the best of the best.
 I went to Blighty U, I had a great time there.
 Heh, Blighty? That preschool?
-I'm shocked 
+I'm shocked you even know how to use a computer.
+Ugh... that's a low blow.
+A-Anyways Taiga, wanna go get lunch together?
+Nope. See you.
+Taiga walks out
+...
+Welp. Guess I'll be eating lunch alone...
+...
+Taiga?
+I'll be nice and let you eat lunch with me this once.
+Huh? Why the sudden change of heart.
+As coworkers, we should be able to work together well.
+If you know more about me, you'll be able to bolster me up higher.
+And...
+...
+The reason isn't important. Let's go to the cafe.
+You got a little closer to Taiga today.
+Hey Taiga, wanna go get lunch again?
+To uh, bolster your status higher or whatever?
+Fine. Lets go.
+...
+...
+S-So Taiga, do you have any interests... besides work?
+None. Next question.
+Huh? You really don't do anything besides work?
+Nope.
+Wow, that's sounds like a really sad life.
+If I wanted to know what a sad life was like, I'd ask you.
+Very funny, Taiga.
+I wasn't being funny.
+...ah
+So wait, what do you do once you get off of work?
+I usually work out.
+Ah! See? That's something! You like working out
+Working out isn't something I enjoy.
+It's something I do to stay in peak mental and physical fitness.
+Same with my piano playing and cooking.
+I play the piano to excercise my mind.
+And I cook my own meals after workouts to maximize the benefits.
+And speaking of cooking, if you wanna be more like me Robin...
+Hm?
+You should lay off the fast food.
+I sheepishly put down the burger I was about to shove into my mouth.
+Well... that's a very interesting way to lead your life.
+Do you derrive joy from anything, Taiga
+...
+Crushing the opposition.
+Gulp...
+I used to enjoy some things when I was a little kid...
+But I'm an adult now, and my parents taught me how to focus on what matters in life.
+...
+We should probably get going.
+Ah, you're right.
+I'll be seeing you.
+You got a little closer to Taiga today.
+Hey Taiga, lunch again?
+My, aren't you persistent.
+Fine, let's-
+Excuse me.
+Shamir, what are you doing here?
+I'm here to talk about art again.
+Robin. Can I ask you an art question?
+Huh? You like art?
+...Yes
+Why me?
+You seem like you would have an eye for it. No other reason, really.
+Well, what did you wanna talk about?
+I recently found this piece in my closet.
+I have no room for it, would you like to keep it?
+Ooh! Mind if I see?
+Here you go.
+Oh wow! This is beautiful.
+Hm? Taiga?
+Hm? Is something wrong Taiga?
+Taiga...
+Are you crying?
+!!!
+Taiga bolted out of the room.
+TAIGA!
+Woah, what's up with the egomaniac?
+I-I'll go after him!
+Taiga! Wait!
+...What is it?
+What happened there? You just sprinted off!
+...
+Do you wanna talk about it?
+Next time you're free at lunch...
+Bring that painting, please.
+And don't tell anyone about this.
+S-Sure...
+I'm going for a walk.
+Bye.
+You got a little closer to Taiga today.
+H-Hey Taiga, I'm free today...
+...
+Come with me.
+Did you bring it?
+Yeah, here's the painting.
+...
+Taiga? Mind telling me whats up?
+...
+Remember when I said I used to love something when I was a kid...
+And my parents taught me better?
+Mhm.
+That was art.
+I used to... want to be an artist.
+I-I see...
+Didn't expect that, huh?
+Neither did my parents.
+"Art doesn't make money" they said.
+Every time I would make art, in any way, shape, or form.
+They would strip it away from me, and send me up to my room to do another sheet of math problems.
+Eventually, I gave up.
+And eventually... I started to become someone I wasn't.
+When I got into Flitington, it was town news.
+"Did you hear Taiga got into Flitington? A full ride too."
+"He must be so...
+...Happy"
+...
+When I saw that painting. I remembered.
+I had nearly forgotten.
+How much making art, seeing art, and just... loving art gave me unbridled joy.
+...
+Well. Now you know.
+Feel free to mock me when I'm not looking.
+I'll be going "back to normal" after this.
+I'm scared to do anything else but go back to normal.
+And I suggest you do the same with me. Horace would probably notice.
+Thanks for listening.
+Goodbye, Robin.
+...
+You got a little closer to Taiga today.
+Hey, Taiga.
+...
+Taiga.
+...
+Ugh... just... come with me you mope.
+Fine.
+What do you want.
+Here.
+What's this?
+Two tickets for an art gallery, this Saturday.
+WHAT?!?!?!
+Woah! Calm down there Taiga.
+...
+Taiga. You need to stop shelling yourself up like this.
+You aren't your parents. You have the right to do what you enjoy.
+Even if its just off hours.
+So we're going to the art gallery this weekend, okay?
+Fine.
+...
+You got a little closer to Taiga today.
+I took Taiga to an art gallery.
+The tickets didn't come cheap, but looking at his face made it all worth it.
+...
+I'm basically just tagging along. None of this art really means much to me...
+Robin.
+Hm?
+Thank you.
+O-Oh yeah! It's no problem.
+You can pay me back when you're one of the famous artists up here!
+!
+You... You really think I could be a famous artist one day?
+What happened to the confidence?
+If you could make it this far in your academic and work life, art should be easy for a guy like you!
+...
+...
+Alright. I'll try and get back into art...
+I can't wait to see it, Taiga!
+Ack, wait. I still need to get this done.
+And I have no clue how to do this...
+Maybe I should ask Claire?
+Hey, Claire?
+What's up?
+Mind helping me out with this?
+I have no clue how to do this, to be perfectly honest with you.
+Sure! Lemme see what you got
+Claire takes a look at my computer.
+Ooooh... One of these, here, let me show you how to do this.
+I see! Wow, thank you so much Claire!
+No problem, Robin!
+It really is quite easy once it gets explained to you.
+It really is...
+But I'm glad I could help, and you can call me anytime you need a hand.
+Thanks Claire!
+You're probably the nicest person here, hands down.
+And probably the most normal...
+Aww, thanks! I know how nice it is to get help you need, so why not pay it forward?
+Those are words to live by, for sure!
+Anyways, it's about high time we got to lunch, right?
+Right! Would you like to go get lunch together?
+Sounds good!
+Let's go eat, I'm starving!
+You got a little closer to Claire today.
+Hey, Claire, wanna go get lunch again today?
+Sure! Let's head over!
+Alright, time to eat!
+We start to dig into our food.
+So Claire, when did you start working here?
+Oh... about 6 or so years ago?
+Congrats on 6 years, then!
+You plan on staying here for a while longer?
+Yeah... probably. I've got a lot of... ties here.
+I see... That does come with a lot of benefits!
+You'll probably get a promotion, if you havent already.
+Yeah... A promotion...
+Is something the matter?
+Nah, don't worry about it.
+Actually I have a question for you.
+Hm? What's up?
+Claire leans forward
+This is an extremely important question.
+Wh-What is it?
+What's your favorite food?
+...huh
+What's your favorite food?
+Y-Yeah I heard you I just, wasn't expecting that.
+It's an extremely important question.
+L-Lemme think... My favorite food is...
+Probably hamburgers, can never beat a good smashburger.
+Probably Chilaquiles, but only my dad's recepie, for sure.
+Definitely Moules-Frites, an unexpectedly fantastic combo.
+A long simmered Maafe with a pile of rice can't be beat.
+Shawarma, for sure. I could probably eat the meat off the spit.
+Ooh... gotta be Chana Masala. Especially with some extra spice.
+Tteokbokki. For sure, it's so easy to make, but so delicious.
+I see! A really great choice.
+Mine is probably... Steak!
+I see! That's also a great choice, you can never go wrong with steak.
+Can you see how someone's favorite food says a lot about them?
+I... kinda see what you mean!
+I have a good college friend, his name is Zeke, and I remember how much my perception of him changed when he said his favorite food was mashed potatos.
+Riiight? Glad you see what I mean.
+Anyways, it's about high time we got back, don't you think?
+Yep, let's head over then!
+You got a little closer to Claire today.
+Ugh... wait... I'm getting this weird issue on my e-mail app... What's going on?
+Before I go to lunch, I should probably get this sorted out, e-mails are way too important...
+Uh... Claire? Mind if I ask for a little more help?
+Sure! What's up?
+My e-mail app is acting up, I have no clue what's wrong...
+I haven't seen this before... Let me take a closer look.
+Seemingly from the shadows, Horace steps in.
+Let me have a look.
+...
+Done. I'll be going then.
+Hori! You're gonna stop by without saying hi, darling?
+...
+Why are you still clinging on, Claire?
+...Isn't it about time you let go?
+!
+Ill be seeing you Robin.
+Goodbye, Claire. And I don't want to say that again.
+...
+...Claire?
+I'll um...
+I'll talk about it later.
+N-Next lunch, okay?
+A-And don't worry about me, I'm fine!
+S-See you!
+...
+You got a little closer to Claire today.
+Hey, Robin?
+What's up, Claire?
+Remember what happened last time, with Horace?
+Ah, y-yeah...
+Mind if I vent to you about that? I kinda want to get it all off my chest.
+Oh, sure! W-Wanna go to the cafeteria?
+That would be fantastic.
+So what did you want to vent about.
+Alright, so...
+..ugh, for once I'm at a loss for words.
+Let's just start at the beginning. Me and Horace started on the same day.
+We were desk to desk, and obviously ended up talking a lot.
+Eventually, we started hanging out outside of work.
+And, y'know... One thing led to another... and we started dating.
+...
+But one day, Horace came to my place, right after work.
+And something seemed off, they weren't their usual self.
+They told me that we had to break up, and before I could even respond...
+Horace said "Goodbye, Claire" before leaving.
+I'm so sorry to hear that Claire...
+And I was oblivious to it until then but...
+There's something strange going on here, and I can't quite put my finger on it.
+...
+I really do loathe this job. Nothing here sits right with me, even from the start.
+I've always wanted to quit, but I just can't give up Horace.
+And there's no need to tell me that staying at a job I hate for unrequited love is dumb.
+I've head that one enough from my mom.
+Anyways, it's about high time we left. Sorry for dumping that all on you.
+Y-You're all good! I'm glad I was able to help you get that off your chest!
+Yeah... It was really nice telling someone all of that...
+Thanks, Robin.
+...
+You got a little closer to Claire today.
+Hey, Robin! Down for lunch again today?
+Sure! Let's go!
+Y'know, I'm feeling a lot better after our talk last time.
+I'm glad to hear it, Claire!
+By the way, would you wanna meet up sometime this weekend?
+We could celebrate your first week of work!
+W-Wow, I didnt even realize it's been a week...
+That sounds good! Do you have a place in mind?
+Ever heard of a bar called Birdley's?
+Oh yeah! I love Birdley's, I'm a regular myself!
+Oh really? Well then, it's set!
+Sounds great!
+Now, I'm sorry to cut our little lunch short, but I've got somewhere to be.
+Really? Where?
+Oh, I just have a lunch meeting. I'll see you around the office later.
+Alright, I'll see you!
+See you!
+...
+You got a little closer to Claire today.
+Hey! Robin! Over here!
+Oh! Hey Claire!
+I have a seat, while Claire passes me a shot.
+How has your weekend been so far?
+Great! It's especially picking up now that I've got a few drinks in me!
+Ooh, I better catch up!
+I take my shot, and push the glass back up the table.
+I do have some news...
+Oh? What's that?
+I think I might switch jobs.
+What? Why so sudden?
+Well, talking to you kinda made me realize...
+I really have been cligning onto the past.
+Smiling and bearing a job that I hate for someone who will never take me back.
+Horace will never take me back. I've been running away from that fact for so long now.
+It's time for me to move on, yknow?
+I see. Well, even though we've worked together for such a short ammount of time... I'll miss you!
+If we make Birdley's a regular haunt together, you'll loose that feeling pretty fast. Trust me.
+Hah! Well we'll see about that.
+But hey, cheers to a new life, yeah?
+Yeah... Cheers!
+...
+...
+Why are you here.
+Oh! I-It's lunch, and I wanted to talk to you.
+Well, you talked to me. I'll be leaving now.
+W-WAIT!
+What is it.
+U-Uh, building a strong co-worker relationship is important to a strong company..?
+...
+Do you have a source for that?
+N-No but... Let's just try and talk, okay?
+... Fine.
+How was your day?
+Efficient yet suffocatingly bland with a tinge of abject misery and horror.
+Just like the last 10,227 days of my agonizing existance.
+...How about you..?
+...
+...
+I'm stunned... I can't... say anything...
+You're not very good at this talking thing. Hopefully that isnt on your CV.
+Though. I do seem to understand you a bit better.
+This was a good idea. Thanks, Robin.
+I'll actually be going now.
+Bye.
+...
+...
+...is this what death feels like?
+You got a little closer to Horace today.
+BOSS!
+Hm?
+I-I'm ready to try talking again!
+Sure. Does lunch sound good?
+Yes! That sounds great!
+Then let's head out.
+...
+...
+So... Boss... Are you gonna get any food? You just have a cup of coffee.
+No. I woln't.
+Well uh, what's your favorite food then?
+It's coffee.
+W-Wow, Claire was right. Favorite food does say a lot about a person...
+So, Boss, what are your favorite things to do? What's your passion?
+Probably laying off employees. Either that or writing e-mails.
+S-So you like writing?
+I suppose, just e-mails, however.
+Have you tried writing anything else besides e-mails?
+No. I can't really see a reason why you would write for any other reason than for a work context.
+Spending hours and hours of time outside of work to write a bunch of made up characters just sounds like a waste of time.
+Touche...
+Well... just give it a try!
+...Fine.
+I'm really shocked at how many times Horace has said yes to something I've suggested...
+I'll report back to you next time we have some free time about my findings.
+I'll have to cut our meeting short. I have something a bit more pressing.
+Ah, got it! I'll see you then.
+Yeah... I'll see you.
+...
+You got a little closer to Horace today.
+Hey Boss!
+Hello Robin. My findings are finished.
+Woah, you really went and wrote something?
+Yes. Here. Have a look.
+Let me see...
+...
+...
+...This is awful.
+I have never seen such spectacularly bad writing.
+Are you finished?
+Y-Yeah...
+Now it is time for the user feedback. What did you think of this?
+T-This is fantastic, Boss!
+I was enraptured all the way through, excelent work.
+This was pretty alright, Boss.
+I think it could use a bit of... work...
+But this is a great start!
+I'm not gonna mince words with you, Boss.
+This was truly awful.
+You know you don't need to end every character dialouge with "Sincerely, Horace" right?
+And why did everyone get fired at the end? None of them even worked at a company...??
+You've got a long way to go.
+...I see. I will add this feedback to my report.
+Hey Boss. What's this?
+Horace slams the laptop shut
+This is a private buisness afair. Please leave, Taiga.
+Ah. G-Got it, Boss.
+See you...
+...
+H-Hey Boss...
+Why do you usually... push people away?
+...
+You've warmed up to me a little bit, but we don't even know what Taiga came in for. And yet you-
+This is irrelevant.
+I'll have to ask you to leave too.
+Ah, alright.
+See you then.
+...
+You got a little closer to Horace today.
+Phew. Time to get to lunch, finally.
+Robin.
+ACK
+B-Boss! Wh-What's up?
+Need you in my office in 5.
+Bye.
+Guess I'll get over there...
+Thank you for coming, Robin.
+What did you need, Boss?
+I want to talk to you about something.
+W-What's up?
+Just a bit about my past.
+You see. When I first came here, I was much more open to people.
+I had befriended a majority of the office, and had even started seeing someone.
+...I honestly can't imagine that.
+But my work suffered as a result. I was all play and no work.
+And one day. My Boss came to me with a ultimatum.
+Either focus on my work wholly, and gain a large promotion
+...or get laid off.
+He saw potential in me, and knew that this potential would not be drawn out in my current state.
+As you can see, I've made my choice.
+Additionally, I am currently caring for a lot of people.
+I am the "breadwinner" so to speak.
+So if you got laid off...
+Yes. We would have starved.
+That is why I keep nobody close.
+This is why I would also like to say one additonal thing
+I have decided that these lunch excursions will cease henceforth.
+I hope you understand.
+Wait, but-
+Sorry, Robin, Boss' orders.
+Now I will have to ask you to leave.
+...
+You got a little closer to Horace today.
+...
+Was I not clear yesterday?
+No, you were very clear, as usual.
+I'm here as an employee to ask you one thing.
+Consider it an HR request.
+Did you take this up with Shamir?
+Y-Yeah...
+Well then...
+What is it?
+I belive you need to have a better work life balance.
+...What?
+You need to learn to balance your life and work more!
+Do stuff outside of work! Talk to your coworkers! Pick up a hobby!
+...Robin, do you know what a work life balance is?
+n-no... But that's besides the point!
+Horace, I can tell, this is hurting you.
+!
+You woln't last much longer shutting yourself away like this.
+And if you wanna keep working, then you gotta do whats best for you.
+You gotta open up a bit more!
+...
+...
+...
+Ugh! This feels like when we first talked at lunch! This silence is killing me.
+Birdley's.
+Huh..?
+Saturday, Birdley's.
+W-Wait I-
+Speak of this to nobody.
+Bye.
+...
+D-Did Horace just ask me to hang out this weekend?
+...
+You got a little closer to Horace today.
+Hello, Robin.
+Hey Horace!
+How's it going?
+Ah... You know... The usual...
+Sorry. I'm not sure I'm used to this quite yet.
+Well, wanna get some drinks? Maybe that'll help loosen us both up.
+Well, alchohol being a "Social Lubricant" is a common myth.
+Many act anti-social when inebriated.
+So... No drinks?
+I didn't say that. Let's get some beers, on me.
+We both order our beers of choice and are slid two glasses.
+You've changed a lot in one week, Robin.
+I could say the same for you!
+Fair enough. I had really thought I surrendered being amicable withn my coworkers forever.
+But I forgot how nice this was.
+Here's to not pushing people away anymore, yeah?
+Sure. Cheers.
+Hey Shamir!
+...
+Hey, Robin.
+Wanna get lunch together?
+Hmmmmm...
+Sure. Why not. I owe it to you anyways.
+Owe me? For what?
+Remember the whole security incident on your first day?
+Yeah. Sorry about that.
+Oh! I-It's fine...
+...Why did you think I didn't work here?
+I'll try to put this in the nicest way possible...
+You need to do a lot of work on your face.
+T-That wasn't nice at all...
+Hmmm... How to put it...
+You just seem like the kinda person who would be a danger to those around them.
+Like if I was infront of you in a line, I might take a few steps away, you know?
+That... was worse, Shamir.
+Let's just forget everything I said and go get lunch.
+...yeah.
+You got a little closer to Shamir today.
+Hey Shamir! Wanna go get lunch?
+Sure. Again, I owe you after last time.
+L-Let's just drop the "I owe you" stuff and get lunch, yeah?
+Sure.
+So Shamir, what do you do outside of work?
+Like I said earlier...
+I do art, mostly.
+Do you sell any of your pieces?
+I try to, but its really hard to here.
+Here? What do you mean?
+Ah, I don't think I've ever told you.
+I'm an immigrant. I came here from overseas.
+I see, but what does that have to do with your art?
+Well, my art is very telling of where I came from.
+And a lot of people here aren't quite used to that.
+Food is one thing, yknow? But are people as likely to buy an expensive painting?
+Not so much.
+Well, can I see your paintings? Maybe I'll buy one!
+Sure. Have a look.
+Shamir pulls out her phone and swipes through some paintings.
+W-Wow! These are amazing! I'd love to buy one when I get paid!
+Thank you, Robin. That means a lot to me.
+I'll see what I can sell to you.
+But it looks like lunch is wrapping up, let's head back.
+Ah, you're right. See you, Shamir!
+...
+You got a little closer to Shamir today.
+Hey Shamir! Wanna go get lunch?
+Sure, Robin. Just give a moment, I need to wrap this up.
+Hello Shamir. Do you need any help?
+...
+I'm fine... Horace.
+...I see.
+I'll be off then.
+...
+I-Is something up?
+Yeah. I.. don't think I want to get lunch today.
+H-Huh? Why?
+I had a change of heart. Sorry, Robin.
+I also need some fresh air.
+I-I'll see you.
+...
+You got a little closer to Shamir today.
+Phew... Finally done for the day...
+Hey, Robin?
+O-Oh! Hey Shamir! What's up?
+Mind if we chat about something?
+Oh sure! Lunch?
+Let's... step outside.
+O-Okay...
+So Shamir, what is it you wanted to talk abo-
+You feel it too, don't you?
+Something is wrong here.
+...
+I can see it in your eyes, Robin. You feel the same way.
+Everyone feels this... unsettling feeling when they first come here.
+But everyone slowly forgets.
+It's driving me insane.
+Every day, I dig into this company more and more.
+Yet I feel like I know less and less.
+That's why I reacted the way I did around Horace. I really don't trust them at all.
+We used to be friends, but one day they came into work dead behind the eyes.
+And that was the day Horace got a massive promotion. Their spot here was secured.
+Robin. Before you loose your way, get out of here. As soon as you can.
+S-Shamir...
+Did you know this company exclusively snatches up college graduates?
+And yet, they never seem to leave this place. They all get caught in it's web.
+Our biggest department is IT, which is already an anomoly.
+And yet, none of our infastructure is for our work, rather its to store information about us.
+Don't you see it, Robin?
+...
+...
+...
+...heh... I probably sound like a madwoman, don't I?
+We have a few lunches together, I act weird around a coworker...
+And here I am barfing my conspiracy theories at you.
+And I called you a creep. Heh...
+...Robin?
+..?
+Do you belive me?
+I-I belive you, Shamir.
+I never know what I'm working on, I can't seem to shake this feeling deep in my chest... I...
+It's okay if you don't understand, Robin. You just have to run.
+N-No...
+Hm?
+Shamir, if you're gonna find out what's going on here. Let me help you.
+Robin...
+T-Thank you. I really can't remember the last time I had someone on my side.
+...
+... I see.
+Forget I said anything. Let's just go back to being lunch buddies.
+...
+Alright.
+Robin?
+Y-Yeah?
+I'm tired. I really don't how how much more I have left in me.
+Goodbye.
+You got a little closer to Shamir today.
+Hey, Shamir!
+Robin, just the person I wanted to see.
+Want to go out and chat a bit more this weekend? Somewhere a bit further away than work?
+Sure. Where did you have in mind?
+Wanna check out that new art gallery? I have two tickets.
+Sounds good! I had been meaning to check that place out!
+Fantastic. I'll see you then.
+For now, I've got something to attend to. We'll save todays chatting for then.
+Oh! Shamir, before you go...
+Hm?
+Never forget that I'm in your corner, okay?
+...I woln't. Thank you, Robin.
+You got a little closer to Shamir today.
+Hey Shamir!
+Hey, Robin!
+Wanna go get lunch?
+Absolutely! Let's go!
+So Shamir, how was your day?
+Ahahahahahaha!
+Robin you're a riot!
+Haha... I... didn't say anything funny though?
+Oh! My bad, everything has just been so funny to me lately, y'know?
+Ahaha... Yeah...
+anyways I ought to be heading back to work.
+bye.
+H-Huh? Wait wha-
+You got a little closer to Shamir today.
+Hello, Robin.
+Hey Shamir!
+Wow... All of these pieces are really beautiful...
+Mhm... I'm here to get some inspiration for my art.
+I'm gonna try and get back into selling art.
+Er... Well... I kinda have to. Since I quit my job.
+Wait, what? You quit?
+Yeah.
+Yesterday, when I was leaving, I turned around and looked up at the tower that cast me in a deep shadow.
+And I realized... There really is nothing I could do to take down a company like this.
+I realized I would keep digging endlessly. While contributing to this place that I actively hate.
+I-I see...
+I know I was talking big about finding the truth... But I would rather prioritize my own happiness.
+No. I understand! Spending all your time trying to find out whats going on does sound pretty maddening...
+But anyways, want to start walking? We've just been standing at the start...
+Yeah... Let's.
+Ugh... Wh-What am I doing here.
+Robin?
+Z-Zeke..?
+Come along, Robin.
+It's time for us to go.
+Where's Shamir?
+Come along, Robin.
+It's time for us to go.
+Oh...
+Oh yeah...
+It is time for us to go, isn't it?
+Come along, Robin.
+Yeah... Alright...
+It's spreading quite nicely, isn't it?
+Yeah...
+Yeah...
+...
+Hey, Zeke!
+Hey, Robin.
+Ready for a second taste of Dom P?
+No way.
+My wallet still hasn't recovered from the first time.
+Ahaha...
+All in good fun... Robin...
+So... how are you? Anything new?
+I feel like we've just been talking about my problems.
+Let's hear more about the wallet-busting Zeke
+Ahh... You know how it is. Same old same old.
+Don't you have to get a job soon?
+Gotta pay rent and all that, right?
+Yeah, but in the meantime, I have my way of keeping my head above water.
+I see...
+By the way... You didn't really find yourself getting close with any coworkers this week, right?
+Oh! Yeah, I suppose so.
+I see.., That's good...
+That's good?
+Ah, yeah. Because I was scared I was loosing my bill footing buddy!
+Screw you, man.
+Heh, and speaking of the bill... Let's start making one, shall we?
+Heh, sounds good.
