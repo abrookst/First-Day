@@ -707,11 +707,17 @@ screen file_slots(title):
 
                     textbutton _("<") action FilePagePrevious()
 
+                    if config.has_autosave:
+                        textbutton _("{#auto_page}A") action FilePage("auto")
+
+                    if config.has_quicksave:
+                        textbutton _("{#quick_page}Q") action FilePage("quick")
+
                     ## range(1, 10) gives the numbers from 1 to 2.
                     for page in range(1, 3):
                         textbutton "[page]" action FilePage(page)
 
-                    textbutton _(">") action FilePageNext()
+                    textbutton _(">") action FilePageNext(max=2, wrap=True)
 
                 if config.has_sync:
                     if CurrentScreenName() == "save":
@@ -754,6 +760,7 @@ style slot_button:
 
 style slot_button_text:
     properties gui.button_text_properties("slot_button")
+
 
 
 ## Preferences screen ##########################################################

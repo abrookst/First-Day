@@ -1,9 +1,17 @@
 ﻿init python:
+    config.has_quicksave = False
 
     #Generate seperate audio channel from voice for beeps.
     renpy.music.register_channel(name='beeps', mixer='voice')
 
     def z(event, **kwargs):
+        if event == "begin": 
+            build_sentence(_last_say_what, "zeke")
+            renpy.sound.play("audio/output.wav", channel="beeps", loop=False)
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop(channel="beeps")
+
+    def w(event, **kwargs):
         if event == "begin": 
             build_sentence(_last_say_what, "zeke")
             renpy.sound.play("audio/output.wav", channel="beeps", loop=False)
@@ -50,7 +58,7 @@ define t = Character("[t_name]", callback=t, what_font="t.ttf")
 define s = Character("[s_name]", callback=s, what_font="s.ttf")
 define c = Character("[c_name]", callback=c, what_font="c.ttf")
 define r = Character("Robin", callback=r)
-define w = Character("????", callback=z, what_font="w.ttf")
+define w = Character("????", callback=w, what_font="w.ttf")
 
 default z_name = "????"
 default h_name = "????"
@@ -64,7 +72,7 @@ default s_count = 1
 default c_count = 1
 default day = 1
 default todayTalk = ""
-default bShamir = True;
+default bShamir = True
 
 transform US_L:
     zoom 0.25 
@@ -809,9 +817,10 @@ label dayOne_afternoon:
     scene black
     with fade
 
-    return
+    jump dayTwo_morning
 
 label dayTwo_morning:
+    $ day = 2
     stop music fadeout 1.0
     scene bg home
     with fade
@@ -844,7 +853,7 @@ label dayTwo_morning:
 
     "Did... I just get used to it yesterday?"
 
-    w "{sc}its best not to think too hard about things.{/sc}"
+    w "its best not to think too hard about things."
 
     r "{sc}H-HUH?{/sc}" with vpunch
 
@@ -987,7 +996,7 @@ label dayTwo_afternoon:
     hide t back
     with dissolve
 
-    "Speaking of which, I'm going to get back to work."
+    t "Speaking of which, I'm going to get back to work."
 
     show c front
 
@@ -1029,8 +1038,10 @@ label dayTwo_afternoon:
     scene black
     with fade
 
-label dayThree_morning:
+    jump dayThree_morning
 
+label dayThree_morning:
+    $ day = 3
     stop music fadeout 1.0
     scene bg home
     with fade
@@ -1112,7 +1123,7 @@ label dayThree_morning:
 
     h "We produce low cost, efficient, and renewable energy here."
 
-    w "{sc}but this shouldnt concern you{/sc}"
+    w "but this shouldnt concern you"
 
     r "{sc}WAUGH!{/sc}" with vpunch
 
@@ -1338,8 +1349,11 @@ label dayThree_afternoon:
     stop music fadeout 1.0
     scene black
     with fade
+
+    jump dayFour_morning
  
 label dayFour_morning:
+    $ day = 4
     stop music fadeout 1.0
     scene bg home
     with fade
@@ -1414,7 +1428,7 @@ label dayFour_morning:
 
     r "\"Please say thank you to Chuck if you see him in the halls.\""
     
-    r "\"And feel free to join us in celebrating his time here on tuesday.\""
+    r "\"And feel free to join us in celebrating his time here on Monday.\""
 
     r "\"We will never fail to celebrate one of our esteemed employees leaving.\""
 
@@ -1587,8 +1601,10 @@ label dayFour_afternoon:
     scene black
     with fade
 
+    jump dayFive_morning
 
 label dayFive_morning:
+    $ day = 5
     stop music fadeout 1.0
     scene bg home
     with fade
@@ -1757,15 +1773,25 @@ label dayFive_afternoon:
 
     r "Hey Shamir!"
 
-    s "...Hey."
+    if not bShamir:
+        s "Howdy Robin!"
+    else:
+        s "...Hey."
 
     r "I'll be seeing you! Thanks for a good first week!"
 
-    s "Yeah..."
+    if not bShamir:
+        s "Absolutely! Thank you so much, Robin!"
+    else:
+        s "Yeah..."
 
     if s_count > 5:
         show s side
-        s "See you this weekend."
+        if not bShamir:
+            w "See you this weekend."
+        else:
+            s "See you this weekend."
+        
 
     r "See you!"
 
@@ -1852,6 +1878,8 @@ label dayFive_afternoon:
     stop music fadeout 1.0
     scene black
     with fade
+
+    jump ending_morning
 
 label ending_morning:
     stop music fadeout 1.0
@@ -2568,9 +2596,11 @@ label taigaEnding:
 
     r "I can't wait to see it, Taiga!"
 
+    stop music fadeout 1.0
+
     scene black with dissolve
 
-    show text "Ending:\nTaiga" with Pause(1.5)
+    show text "Ending:\nTaiga" with Pause(3)
 
     scene black with dissolve
 
@@ -2774,7 +2804,11 @@ label claire2:
 
     r "I have a good college friend, his name is Zeke, and I remember how much my perception of him changed when he said his favorite food was mashed potatos."
 
+    show c front
+
     c "Riiight? Glad you see what I mean."
+
+    show c side
 
     c "Anyways, it's about high time we got back, don't you think?"
 
@@ -3101,9 +3135,11 @@ label claireEnding:
 
     c "Yeah... Cheers!"
 
+    stop music fadeout 1.0
+
     scene black with dissolve
 
-    show text "Ending:\nClaire" with Pause(1.5)
+    show text "Ending:\nClaire" with Pause(3)
 
     scene black with dissolve
 
@@ -3666,9 +3702,11 @@ label horaceEnding:
 
     h "Sure. Cheers."
 
+    stop music fadeout 1.0
+
     scene black with dissolve
 
-    show text "Ending:\nHorace" with Pause(1.5)
+    show text "Ending:\nHorace" with Pause(3)
 
     scene black with dissolve
 
@@ -3944,11 +3982,7 @@ label shamir4:
 
     s "I can see it in your eyes, Robin. You feel the same way."
 
-    r "Y-Yeah... I've almost forgotten because I got so absorbed in my work but..."
-
-    r "Since the beginning, nothing has sat quite right with me here."
-
-    s "Right. Everyone feels this way when they first come here."
+    s "Everyone feels this... unsettling feeling when they first come here."
 
     s "But everyone slowly forgets."
 
@@ -4031,7 +4065,7 @@ label shamir4:
 
             r "Alright."
 
-            show s Front
+            show s front
 
             s "Robin?"
 
@@ -4204,16 +4238,18 @@ label shamirEndingA:
 
     s "Yeah... Let's."
 
+    stop music fadeout 1.0
+
     scene black with dissolve
 
-    show text "Ending:\nShamir A" with Pause(1.5)
+    show text "Ending:\nShamir A" with Pause(3)
 
     scene black with dissolve
 
     return
 label shamirEndingB:
     stop music fadeout 1.0
-    scene bg artstudioB:
+    scene bg badstudio:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
@@ -4247,6 +4283,8 @@ label shamirEndingB:
 
     r "Yeah... Alright..."
 
+    show z side
+
     w "It's spreading quite nicely, isn't it?"
 
     r "Yeah..."
@@ -4254,10 +4292,10 @@ label shamirEndingB:
     "Yeah..."
 
     "..."
-
+    stop music fadeout 1.0
     scene black with dissolve
 
-    show text "Ending:\nShamir B" with Pause(1.5)
+    show text "Ending:\nShamir B" with Pause(3)
 
     scene black with dissolve
 
@@ -4330,9 +4368,11 @@ label zekeEnding:
 
     r "Heh, sounds good."
 
+    stop music fadeout 1.0
+
     scene black with dissolve
 
-    show text "Ending:\nZeke / Neutral" with Pause(1.5)
+    show text "Ending:\nZeke / Neutral" with Pause(3)
 
     scene black with dissolve
 
