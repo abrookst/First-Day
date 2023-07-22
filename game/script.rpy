@@ -2767,7 +2767,7 @@ label claire2:
     menu:
         r "L-Lemme think... My favorite food is..."
 
-        "Hambugers":
+        "Hamburgers":
             r "Probably hamburgers can never beat a good smash burger."
             pass
         "Chilaquiles":
@@ -2846,7 +2846,7 @@ label claire3:
     show c side at S_L
     with move
 
-    show h front at s_count
+    show h front at S_C
     with dissolve
 
     "Seemingly from the shadows, Horace steps in."
