@@ -113,7 +113,7 @@ transform apron:
 
 label start:
 
-    "May 28th 201X\n11:18 P.M.\nBirdley's Bar"
+    "May 201X\n11:18 P.M.\nBirdley's Bar"
 
     scene bg bar
     with fade
@@ -805,6 +805,10 @@ label dayOne_afternoon:
 
     "..."
 
+    stop music fadeout 1.0
+    scene black
+    with fade
+
     return
 
 label dayTwo_morning:
@@ -1019,6 +1023,12 @@ label dayTwo_afternoon:
 
     "Speaking of which, best I hit the hay."
 
+    "..."
+
+    stop music fadeout 1.0
+    scene black
+    with fade
+
 label dayThree_morning:
 
     stop music fadeout 1.0
@@ -1127,7 +1137,7 @@ label dayThree_morning:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).wav" fadein 1.0
+    play music "music/slime (Office Morning).wav" fadein 1.0
 
     r "..."
 
@@ -1324,6 +1334,10 @@ label dayThree_afternoon:
     "Yeah... Yeah..."
 
     "..."
+
+    stop music fadeout 1.0
+    scene black
+    with fade
  
 label dayFour_morning:
     stop music fadeout 1.0
@@ -1375,7 +1389,7 @@ label dayFour_morning:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).wav" fadein 1.0
+    play music "music/slime (Office Morning).wav" fadein 1.0
 
     r "Morning you guys!"
 
@@ -1462,14 +1476,141 @@ label dayFour_morning:
             jump shamir 
 label dayFour_afternoon:
     #Talk about retirement with Taiga and Claire
+    stop music fadeout 1.0
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
+
+    "Alright... back from lunch!"
+
+    show c front at S_C
+    with dissolve
+    show t front at S_R
+    with dissolve
+
+    c "Hey, Robin, Taiga?"
+
+    r "What's up Claire?"
+
+    show c side
+
+    c "I was curious, especially after that e-mail we got..."
+
+    show c front
+
+    c "Are you two thinking about retirement at all?"
+
+    c "I'm honestly not thinking about it much, and sometimes I feel like I should."
+
+    show t side 
+
+    t "I'll retire when I die."
+
+    r "Uh. I also havent really thought about retirement."
+
+    r "I know you're supposed to start early but... I dunnoh it's not something I wanna think about."
+
+    c "Fair enough. It's a really scary thought."
+
+    c "Whenever I see one of these retirement emails I just think \"Oh god. That's gonna be me someday.\"" 
+
+    r "Right? It's such a scary thought."
+
+    c "Well, that's an issue for future me to worry about. We should focus on our work."
+
+    r "Too true, let's get to it!"
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    "Alright... All done!"
+
+    "Maybe I should go ask Horace about Chuck..."
+
+    stop music fadeout 1.0
+    scene bg officeboss:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Grime (Boss).wav" fadein 1.0
+
+    r "Hey, Boss?"
+
+    show h front at S_C
+    with dissolve
+
+    h "Yes? What is it?"
+
+    r "I was curious, did you personally know Chuck at all?"
+
+    h "Yes. He's one of the higerups here. I work directly under his order."
+
+    r "I see..."
+
+    r "Are you going to miss him?"
+
+    h "Not really."
+
+    if h_count > 4:
+        h "We talked about this."
+    
+    r "Y-Yeah. Right. Gotcha."
+
+    h "Is that all you wanted to ask?"
+
+    r "Yeah, pretty much..."
+
+    r "I'll see you, Boss."
+
+    stop audio fadeout 1.0
+    scene bg home
+    with pixellate
+    play music "music/home (Night).wav" fadein 1.0
+
+    r "Man, I'm finally home!"
+
+    "I flop onto my bed."
+
+    "It was great to get to learn more about [todayTalk] some more."
+
+    "But outside of that... Today was all about retirement... Ugh. That bums me out..."
+
+    "Best not to think about it..."
+
+    "..."
+
+    stop music fadeout 1.0
+    scene black
+    with fade
+
 
 label dayFive_morning:
-    #talk to horace about retiree
-    #you also get the evening off
     stop music fadeout 1.0
     scene bg home
     with fade
     play music "music/home (Morning).wav" fadein 1.0
+
+    "..."
+
+    r "..ugh"
+
+    "I roll out of bed, falling onto the floor"
+
+    "Upon impact, I hit my head in a way that..."
+    
+    "uh..."
+    
+    w "absolves you of your sins."
+
+    "Right. I fell in a way that absolves me from my sins."
+
+    r "{sc}ACK{/sc}"
+
+    "I pull myself up, and start to get ready for work."
 
     stop music fadeout 1.0
     scene bg officeoutside:
@@ -1478,16 +1619,67 @@ label dayFive_morning:
     with pixellate
     play music "music/Sludge (Office outside morning).wav" fadein 1.0
 
+    "Wow... I can't belive its almost been a week since I've started working here."
+
+    "Time really flew by. I can barely remember working, but can vividly remember all the time I spent with the people I've met here."
+
+    "No point in just standing here, time to get to work."
+
+    stop music fadeout 1.0
+    scene bg officefrontdesk:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Glop (Front Desk morning).wav" fadein 1.0
+
+    show h front at S_C
+    with dissolve
+
+    h "Robin. Just the person I wanted to see."
+
+    r "Oh! Hey Boss! What's up?"
+
+    h "I had a meeting yesterday about our new hires."
+
+    show h side
+
+    h "We decided to give you the evening off."
+
+    h "Feel free to head home after lunch."
+
+    r "W-Wow really? Why so sudden?"
+
+    show h front
+
+    h "We all need a break Robin. I've been working on this for almost 2 weeks."
+
+    r "...Working on what?"
+
+    show h side
+
+    h "Never mind..."
+
+    h "Try to get some work done this morning now."
+
+    r "G-Got it!"
+
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
         function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
-    play music "music/slime (Office Afternoon).wav" fadein 1.0
+    play music "music/slime (Office Morning).wav" fadein 1.0
+
+    "A-Alright! Time to knuckle down and work!"
+
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
 
     r "Phew... finally lunch time."
 
-    "I could get to know my coworkers better if I talked to them during lunch..."
+    "This is my last chance to talk to someone before the weekend..."
 
     menu:
         "Who should I try and talk to?"
@@ -1501,8 +1693,199 @@ label dayFive_morning:
         "Shamir":
             jump shamir 
 label dayFive_afternoon:
+    stop music fadeout 1.0
+    scene bg office:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/slime (Office Afternoon).wav" fadein 1.0
+
+    "A-Alright! All done! Time to head home!"
+
+    r "Hey Claire! Taiga! Have a good weekend!"
+
+    show c front at S_C
+    with dissolve
+
+    c "Oh! Heading out early?"
+
+    r "Yep! Boss gave the new hires the afternoon off."
+
+    c "Lucky lucky! Have fun!"
+
+    if c_count > 5:
+        c "I'll see you this weekend!"
+
+    if t_count > 5:
+        show t front at S_L
+        with dissolve
+
+        t "...I'll see you this weekend, Robin."
+
+    r "See you!"
+
+    scene bg hallway:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+
+    show h front at S_C
+    with dissolve
+
+    r "Oh! Boss!"
+
+    h "Hello Robin. Thank you for a good week of work."
+
+    r "T-Thank you!"
+
+    if h_count > 5:
+        show h side
+
+        h "I'll see you this weekend."
+    
+    r "See you!"
+
+    stop music fadeout 1.0
+    scene bg officefrontdesk:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Glop (Front Desk morning).wav" fadein 1.0
+
+    show s front at S_C
+    with dissolve
+
+    r "Hey Shamir!"
+
+    s "...Hey."
+
+    r "I'll be seeing you! Thanks for a good first week!"
+
+    s "Yeah..."
+
+    if s_count > 5:
+        show s side
+        s "See you this weekend."
+
+    r "See you!"
+
+    stop music fadeout 1.0
+    scene bg officeoutside:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Sludge (Office outside afternoon).wav" fadein 1.0
+
+    "Alright... It's Friday..."
+    
+    "Time to head to the bar!"
+
+    "I'll give Zeke a call in a little bit, I can tell him about my week! "
+
+    stop music fadeout 1.0
+    scene bg bar
+    with pixellate
+    play music "music/bar.wav" fadein 1.0
+
+    show z front at DS_C
+    with dissolve
+
+    r "Hey Zeke!"
+
+    z "Hey. You look much more chipper than last weekend."
+
+    r "Yeah! Work wasn't as bad as I thought. I had a lotta fun."
+
+    z "What did you do this week?"
+
+    r "Uhh... A bunch of stuff! It's a little hard to remember the details though..."
+
+    if c_count > 5:
+        r "Though I did befriend someone named Claire!"
+        r "We're gonna hang out tomorrow."
+        z "That's nice."
+        r "I don't wanna have a crazy hangover tomorrow cuz of that, so I'll be off early."
+        z "Got it."
+        r "Speaking of drinking..."
+    elif s_count > 5:
+        r "Though I did befriend someone named Shamir!"
+        r "We're gonna hang out tomorrow."
+        z "That's nice."
+        r "I don't wanna have a crazy hangover tomorrow cuz of that, so I'll be off early."
+        z "Got it."
+        r "Speaking of drinking..."
+    elif t_count > 5:
+        r "Though I did befriend my fellow start Taiga!"
+        r "We're gonna hang out tomorrow."
+        z "That's nice."
+        r "I don't wanna have a crazy hangover tomorrow cuz of that, so I'll be off early."
+        z "Got it."
+        r "Speaking of drinking..."
+    elif h_count > 5:
+        r "Though I did befriend someone named Horace!"
+        r "We're gonna hang out tomorrow."
+        z "That's nice."
+        r "I don't wanna have a crazy hangover tomorrow cuz of that, so I'll be off early."
+        z "Got it."
+        r "Speaking of drinking..."
+    else:
+        r "I talked to a few people, hopefully I can get to know them more."
+
+        z "So do you have any weekend plans?"
+
+        r "Nah, not really."
+
+        z "I see... want to meet up then?"
+
+        r "But I do have some movies I'm hoping to catch up on..."
+
+        r "Ahh what the hell! Yeah, I'll turn up this weekend!"
+
+        z "Fantastic."
+        
+        z "But anyways..."
+
+    z "Wanna start drinking?"
+
+    r "You know it!"
+
+    stop music fadeout 1.0
+    scene black
+    with fade
 
 label ending_morning:
+    stop music fadeout 1.0
+    scene bg home
+    with fade
+    play music "music/home (Morning).wav" fadein 1.0
+
+    "..."
+
+    r "...Ugh"
+
+    "I slowly rise up from bed"
+
+    "instead of falling on the floor for the 5th time in a row."
+
+    if t_count == 6:
+        r "Ooh! I gotta get ready for today!"
+        jump taigaEnding
+    elif c_count == 6:
+        r "Ooh! I gotta get ready for today!"
+        jump claireEnding
+    elif s_count == 6:
+        r "Ooh! I gotta get ready for today!"
+        if bShamir:
+            jump shamirEndingA
+        else:
+            jump shamirEndingB
+    elif h_count == 6:
+        r "Ooh! I gotta get ready for today!"
+        jump horaceEnding
+    else:
+        r "I don't really have anything this morning..."
+        r "I'll watch some movies before going to the bar with Zeke..."
+        jump zekeEnding
     
 
 label taiga:
@@ -1516,62 +1899,51 @@ label taiga:
         jump taiga4
     elif t_count == 5:
         jump taiga5
-    elif t_count == 6:
-        jump taigaEnding
     else:
         python:
             renpy.error("Invalid taiga link!")
 label horace:
-    if t_count == 1:
+    if h_count == 1:
         jump horace1
-    elif t_count == 2:
+    elif h_count == 2:
         jump horace2
-    elif t_count == 3:
+    elif h_count == 3:
         jump horace3
-    elif t_count == 4:
+    elif h_count == 4:
         jump horace4
-    elif t_count == 5:
+    elif h_count == 5:
         jump horace5
-    elif t_count == 6:
-        jump horaceEnding
     else:
         python:
             renpy.error("Invalid horace link!")
 label shamir:
-    if t_count == 1:
+    if s_count == 1:
         jump shamir1
-    elif t_count == 2:
+    elif s_count == 2:
         jump shamir2
-    elif t_count == 3:
+    elif s_count == 3:
         jump shamir3
-    elif t_count == 4:
+    elif s_count == 4:
         jump shamir4
-    elif t_count == 5:
+    elif s_count == 5:
         if bShamir:
             jump shamir5A
         else:
             jump shamir5B
-    elif t_count == 6:
-        if bShamir:
-            jump shamirEndingA
-        else:
-            jump shamirEndingB
     else:
         python:
             renpy.error("Invalid shamir link!")
 label claire:
-    if t_count == 1:
+    if c_count == 1:
         jump claire1
-    elif t_count == 2:
+    elif c_count == 2:
         jump claire2
-    elif t_count == 3:
+    elif c_count == 3:
         jump claire3
-    elif t_count == 4:
+    elif c_count == 4:
         jump claire4
-    elif t_count == 5:
+    elif c_count == 5:
         jump claire5
-    elif t_count == 6:
-        jump claireEnding
     else:
         python:
             renpy.error("Invalid claire link!")
@@ -2148,7 +2520,61 @@ label taiga5:
     jump returnToDay
 label taigaEnding:
     #Going with taiga to art studio
+    stop music fadeout 1.0
+    scene bg artstudio
+    with fade
+    play music "music/end1.wav" fadein 1.0
 
+    "I took Taiga to an art gallery."
+
+    "The tickets didn't come cheap, but looking at his face made it all worth it."
+
+    show t back at DS_C
+    with dissolve
+
+    t "..."
+
+    "I'm basically just tagging along. None of this art really means much to me..."
+
+    t "Robin."
+
+    r "Hm?"
+
+    t "Thank you."
+
+    r "O-Oh yeah! It's no problem."
+
+    r "You can pay me back when you're one of the famous artists up here!"
+
+    show t front
+
+    t "{sc}!{/sc}"
+
+    t "You... You really think I could be a famous artist one day?"
+
+    r "What happened to the confidence?"
+    
+    r "If you could make it this far in your academic and work life, art should be easy for a guy like you!"
+
+    show t side
+
+    t "..."
+
+    show t back 
+
+    t "..."
+
+    t "Alright. I'll try and get back into art..."
+
+    r "I can't wait to see it, Taiga!"
+
+    scene black with dissolve
+
+    show text "Ending:\nTaiga" with Pause(1.5)
+
+    scene black with dissolve
+
+    return
 
 label claire1:
     #Getting help from Claire and talking about work
@@ -2623,6 +3049,65 @@ label claire5:
     jump returnToDay
 label claireEnding:
     #Chatting at bar says she might leave
+    stop music fadeout 1.0
+    scene bg bar
+    with fade
+    play music "music/end1.wav" fadein 1.0
+
+    show c front at DS_C
+    with dissolve
+
+    c "Hey! Robin! Over here!"
+
+    r "Oh! Hey Claire!"
+
+    "I have a seat, while Claire passes me a shot."
+
+    r "How has your weekend been so far?"
+
+    c "Great! It's especially picking up now that I've got a few drinks in me!"
+
+    r "Ooh, I better catch up!"
+
+    "I take my shot, and push the glass back up the table."
+
+    c "I do have some news..."
+
+    r "Oh? What's that?"
+
+    c "I think I might switch jobs."
+
+    r "What? Why so sudden?"
+
+    c "Well, talking to you kinda made me realize..."
+
+    show c side
+
+    c "I really have been cligning onto the past."
+    
+    c "Smiling and bearing a job that I hate for someone who will never take me back."
+
+    c "Horace will never take me back. I've been running away from that fact for so long now."
+
+    c "It's time for me to move on, yknow?"
+
+    r "I see. Well, even though we've worked together for such a short ammount of time... I'll miss you!"
+
+    c "If we make Birdley's a regular haunt together, you'll loose that feeling pretty fast. Trust me."
+
+    r "Hah! Well we'll see about that."
+
+    r "But hey, cheers to a new life, yeah?"
+
+    c "Yeah... Cheers!"
+
+    scene black with dissolve
+
+    show text "Ending:\nClaire" with Pause(1.5)
+
+    scene black with dissolve
+
+    return
 
 
 label horace1:
@@ -3127,6 +3612,67 @@ label horace5:
     jump returnToDay
 label horaceEnding:
     #Chat and talk about how your work has been so far and how they’ve changed
+    stop music fadeout 1.0
+    scene bg bar
+    with fade
+    play music "music/end1.wav" fadein 1.0
+
+    show h front at DS_C
+    with dissolve
+
+    h "Hello, Robin."
+
+    r "Hey Horace!"
+
+    r "How's it going?"
+
+    show h side
+
+    h "Ah... You know... The usual..."
+
+    show h front
+
+    h "Sorry. I'm not sure I'm used to this quite yet."
+
+    r "Well, wanna get some drinks? Maybe that'll help loosen us both up."
+
+    h "Well, alchohol being a \"Social Lubricant\" is a common myth."
+    
+    h "Many act anti-social when inebriated."
+
+    r "So... No drinks?"
+
+    h "I didn't say that. Let's get some beers, on me."
+
+    show h back
+
+    "We both order our beers of choice and are slid two glasses."
+
+    show h front
+
+    h "You've changed a lot in one week, Robin."
+
+    r "I could say the same for you!"
+
+    show h side
+
+    h "Fair enough. I had really thought I surrendered being amicable withn my coworkers forever."
+
+    show h front
+
+    h "But I forgot how nice this was."
+
+    r "Here's to not pushing people away anymore, yeah?"
+
+    h "Sure. Cheers."
+
+    scene black with dissolve
+
+    show text "Ending:\nHorace" with Pause(1.5)
+
+    scene black with dissolve
+
+    return
 
 
 label shamir1:
@@ -3529,9 +4075,9 @@ label shamir5A:
     
     show s front
 
-    s "Birdley's?"
+    s "Wanna check out that new art gallery? I have two tickets."
 
-    r "Sounds good!"
+    r "Sounds good! I had been meaning to check that place out!"
 
     show s side
 
@@ -3615,10 +4161,179 @@ label shamir5B:
     $ s_count+=1
     $ todayTalk = "Shamir"
     jump returnToDay
-    
 label shamirEndingA:
     #Talk about how she’s picking up art again, and how she quit, 
     #realizing that it's impossible for someone like her to take down a company.
+    stop music fadeout 1.0
+    scene bg artstudio
+    with fade
+    play music "music/end1.wav" fadein 1.0
 
+    show s front at DS_C
+    with dissolve
+
+    s "Hello, Robin."
+
+    r "Hey Shamir!"
+
+    r "Wow... All of these pieces are really beautiful..."
+
+    s "Mhm... I'm here to get some inspiration for my art."
+
+    s "I'm gonna try and get back into selling art."
+
+    s "Er... Well... I kinda have to. Since I quit my job."
+
+    r "Wait, what? You quit?"
+
+    s "Yeah."
+
+    s "Yesterday, when I was leaving, I turned around and looked up at the tower that cast me in a deep shadow."
+
+    s "And I realized... There really is nothing I could do to take down a company like this."
+
+    s "I realized I would keep digging endlessly. While contributing to this place that I actively hate."
+
+    r "I-I see..."
+
+    s "I know I was talking big about finding the truth... But I would rather prioritize my own happiness."
+
+    r "No. I understand! Spending all your time trying to find out whats going on does sound pretty maddening..."
+
+    r "But anyways, want to start walking? We've just been standing at the start..."
+
+    s "Yeah... Let's."
+
+    scene black with dissolve
+
+    show text "Ending:\nShamir A" with Pause(1.5)
+
+    scene black with dissolve
+
+    return
 label shamirEndingB:
+    stop music fadeout 1.0
+    scene bg artstudioB:
+        function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
+        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
+    with fade
+    play music "music/Lost Deer.mp3" fadein 1.0
 
+    r "Ugh... Wh-What am I doing here."
+
+    show z back at apron
+
+    w "Robin?"
+
+    r "Z-Zeke..?"
+
+    w "Come along, Robin."
+
+    w "It's time for us to go."
+
+    r "Where's Shamir?"
+
+    w "Come along, Robin."
+
+    w "It's time for us to go."
+
+    r "Oh..."
+
+    r "Oh yeah..."
+
+    r "It is time for us to go, isn't it?"
+
+    w "Come along, Robin."
+
+    r "Yeah... Alright..."
+
+    w "It's spreading quite nicely, isn't it?"
+
+    r "Yeah..."
+
+    "Yeah..."
+
+    "..."
+
+    scene black with dissolve
+
+    show text "Ending:\nShamir B" with Pause(1.5)
+
+    scene black with dissolve
+
+    return
+
+label zekeEnding:
+    stop music fadeout 1.0
+    scene bg bar
+    with fade
+    play music "music/bar.wav" fadein 1.0
+
+    r "Hey, Zeke!"
+
+    show z front at DS_C
+    with dissolve
+
+    z "Hey, Robin."
+
+    show z side
+
+    z "Ready for a second taste of Dom P?"
+
+    r "{sc}No way.{/sc}"
+
+    r "My wallet still hasn't recovered from the first time."
+
+    z "{bt}Ahaha...{/bt}"
+
+    show z front
+
+    z "All in good fun... Robin..."
+
+    r "So... how are you? Anything new?"
+
+    r "I feel like we've just been talking about my problems."
+
+    r "Let's hear more about the wallet-busting Zeke"
+
+    show z side
+
+    z "Ahh... You know how it is. Same old same old."
+
+    r "Don't you have to get a job soon?"
+
+    r "Gotta pay rent and all that, right?"
+
+    show z front
+
+    z "Yeah, but in the meantime, I have my way of keeping my head above water."
+
+    r "I see..."
+
+    z "By the way... You didn't really find yourself getting close with any coworkers this week, right?"
+
+    r "Oh! Yeah, I suppose so."
+
+    show z side
+
+    z "I see.., That's good..."
+
+    r "That's good?"
+
+    show z front
+
+    z "Ah, yeah. Because I was scared I was loosing my bill footing buddy!"
+
+    r "Screw you, man."
+
+    z "Heh, and speaking of the bill... Let's start making one, shall we?"
+
+    r "Heh, sounds good."
+
+    scene black with dissolve
+
+    show text "Ending:\nZeke / Neutral" with Pause(1.5)
+
+    scene black with dissolve
+
+    return
