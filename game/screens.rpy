@@ -597,7 +597,9 @@ screen about():
 
             text _("Programming, Writing, Visuals: {a=https://abrookst.itch.io/}Ali Brooks{/a}")
 
-            text _("Music: Yuppe")
+            text _("Music: {a=https://soundcloud.com/yuyoyuyoyuppe}Yuppe{/a}")
+
+            text _("Logo: {a=https://soundcloud.com/yuyoyuyoyuppe}Yuppe{/a}")
 
             text _("Taiga, Horace, and Zeke Voice: Cole \"Big Man on Campus\" Maryanopolis")
 
@@ -798,6 +800,10 @@ screen preferences():
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
+                vbox:
+                    style_prefix "check"
+                    label _("Motion")
+                    textbutton _("Animated Backgrounds") action ToggleField(persistent, "aBackground")
 
             null height (4 * gui.pref_spacing)
 

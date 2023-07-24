@@ -4,6 +4,9 @@
 ## them. Lines beginning with a single '#' mark are commented-out code, and you
 ## may want to uncomment them when appropriate.
 
+# A preference that enables or disables animated backgrounds
+default persistent.aBackground = True
+
 
 ## Basics ######################################################################
 
@@ -23,7 +26,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.2"
 
 
 ## Text that is placed on the game's about screen. Place the text between the

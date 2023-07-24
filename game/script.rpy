@@ -254,7 +254,6 @@ label dayOne_morning:
     stop music fadeout 1.0
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with pixellate
     play music "music/Sludge (Office outside morning).wav" fadein 1.0
 
@@ -270,7 +269,6 @@ label dayOne_morning:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Glop (Front Desk morning).wav" fadein 1.0
 
@@ -388,7 +386,6 @@ label dayOne_morning:
 
     scene bg hallway:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     "Horace quickly moves down the hallway, I wipe my face off with the towel while following them down the hall."
@@ -398,7 +395,6 @@ label dayOne_morning:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Morning).wav" fadein 1.0
 
@@ -512,7 +508,6 @@ label dayOne_morning:
 
     scene bg hallway:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     show c back at S_C
@@ -534,7 +529,6 @@ label dayOne_morning:
     stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/gloop (Cafe).wav" fadein 1.0
 
@@ -574,7 +568,6 @@ label dayOne_morning:
     stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Grime (Boss).wav" fadein 1.0
 
@@ -614,7 +607,6 @@ label dayOne_morning:
 
     scene bg hallway:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     r "Oof!"
@@ -634,7 +626,6 @@ label dayOne_morning:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Morning).wav" fadein 1.0
 
@@ -646,7 +637,6 @@ label dayOne_morning:
 
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     r "Phew... finally lunchtime."
@@ -669,7 +659,6 @@ label dayOne_afternoon:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
     
@@ -699,7 +688,6 @@ label dayOne_afternoon:
     stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Grime (Boss).wav" fadein 1.0
 
@@ -738,7 +726,6 @@ label dayOne_afternoon:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -746,7 +733,6 @@ label dayOne_afternoon:
 
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     r "Phew! Finally done!"
@@ -783,7 +769,6 @@ label dayOne_afternoon:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
 
@@ -841,7 +826,6 @@ label dayTwo_morning:
     stop music fadeout 1.0
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with pixellate
     play music "music/Sludge (Office outside morning).wav" fadein 1.0
 
@@ -889,7 +873,6 @@ label dayTwo_morning:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Morning).wav" fadein 1.0
 
@@ -924,7 +907,6 @@ label dayTwo_morning:
 
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     r "Phew... finally lunchtime."
@@ -946,7 +928,6 @@ label dayTwo_afternoon:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -1066,7 +1047,6 @@ label dayThree_morning:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with pixellate
     play music "music/Glop (Front Desk morning).wav" fadein 1.0
 
@@ -1102,7 +1082,6 @@ label dayThree_morning:
     stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Grime (Boss).wav" fadein 1.0
 
@@ -1146,7 +1125,6 @@ label dayThree_morning:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Morning).wav" fadein 1.0
 
@@ -1178,7 +1156,6 @@ label dayThree_morning:
 
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     r "Phew, finally got all my work done... At least I'm feeling a bit better!"
@@ -1200,7 +1177,6 @@ label dayThree_afternoon:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -1265,7 +1241,6 @@ label dayThree_afternoon:
 
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     "Phew... Done!"
@@ -1287,7 +1262,6 @@ label dayThree_afternoon:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
 
@@ -1374,7 +1348,6 @@ label dayFour_morning:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with pixellate
     play music "music/Glop (Front Desk morning).wav" fadein 1.0
 
@@ -1401,7 +1374,6 @@ label dayFour_morning:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Morning).wav" fadein 1.0
 
@@ -1470,7 +1442,6 @@ label dayFour_morning:
 
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     r "Phew... finally lunchtime."
@@ -1493,7 +1464,6 @@ label dayFour_afternoon:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -1538,7 +1508,6 @@ label dayFour_afternoon:
 
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     "Alright... All done!"
@@ -1548,7 +1517,6 @@ label dayFour_afternoon:
     stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Grime (Boss).wav" fadein 1.0
 
@@ -1561,7 +1529,7 @@ label dayFour_afternoon:
 
     r "I was curious, did you personally know Chuck at all?"
 
-    h "Yes. He's one of the higer-ups here. I work directly under his order."
+    h "Yes. He's one of the higher-ups here. I work directly under his order."
 
     r "I see..."
 
@@ -1631,7 +1599,6 @@ label dayFive_morning:
     stop music fadeout 1.0
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with pixellate
     play music "music/Sludge (Office outside morning).wav" fadein 1.0
 
@@ -1644,7 +1611,6 @@ label dayFive_morning:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Glop (Front Desk morning).wav" fadein 1.0
 
@@ -1682,7 +1648,6 @@ label dayFive_morning:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Morning).wav" fadein 1.0
 
@@ -1690,7 +1655,6 @@ label dayFive_morning:
 
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     r "Phew... finally lunchtime."
@@ -1712,7 +1676,6 @@ label dayFive_afternoon:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -1742,7 +1705,6 @@ label dayFive_afternoon:
 
     scene bg hallway:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     show h front at S_C
@@ -1764,7 +1726,6 @@ label dayFive_afternoon:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Glop (Front Desk morning).wav" fadein 1.0
 
@@ -1798,7 +1759,6 @@ label dayFive_afternoon:
     stop music fadeout 1.0
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Sludge (Office outside afternoon).wav" fadein 1.0
 
@@ -1998,7 +1958,6 @@ label taiga1:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -2090,7 +2049,6 @@ label taiga2:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -2108,7 +2066,6 @@ label taiga2:
     stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/gloop (Cafe).wav" fadein 1.0
 
@@ -2217,7 +2174,6 @@ label taiga3:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -2300,7 +2256,6 @@ label taiga3:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
 
@@ -2350,7 +2305,6 @@ label taiga4:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -2368,7 +2322,6 @@ label taiga4:
     stop music fadeout 1.0
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     show t front at DS_C
@@ -2476,7 +2429,6 @@ label taiga5:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -2500,7 +2452,6 @@ label taiga5:
     stop music fadeout 1.0
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Sludge (Office outside afternoon).wav" fadein 1.0
 
@@ -2612,7 +2563,6 @@ label claire1:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -2643,7 +2593,6 @@ label claire1:
 
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     r "I see! Wow, thank you so much, Claire!"
@@ -2692,7 +2641,6 @@ label claire2:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -2706,7 +2654,6 @@ label claire2:
     stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/gloop (Cafe).wav" fadein 1.0
 
@@ -2824,7 +2771,6 @@ label claire3:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -2871,7 +2817,7 @@ label claire3:
 
     h "...Isn't it about time you let go?"
 
-    c "!" #sfx here maybe?
+    c "H-Huh?" #sfx here maybe?
 
     show h side
 
@@ -2915,7 +2861,6 @@ label claire4:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -2939,7 +2884,6 @@ label claire4:
     stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     show c front at apron
@@ -3019,7 +2963,6 @@ label claire5:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -3033,7 +2976,6 @@ label claire5:
     stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/gloop (Cafe).wav" fadein 1.0
 
@@ -3151,7 +3093,6 @@ label horace1:
     stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Grime (Boss).wav" fadein 1.0
 
@@ -3241,7 +3182,6 @@ label horace2:
     stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Grime (Boss).wav" fadein 1.0
 
@@ -3263,7 +3203,6 @@ label horace2:
     stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/gloop (Cafe).wav" fadein 1.0
 
@@ -3275,7 +3214,7 @@ label horace2:
 
     r "So... Boss... Are you gonna get any food? You just have a cup of coffee."
 
-    h "No. I woln't."
+    h "No. I won't."
 
     r "Well uh, what's your favorite food then?"
 
@@ -3339,7 +3278,6 @@ label horace3:
     stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Grime (Boss).wav" fadein 1.0
 
@@ -3358,7 +3296,6 @@ label horace3:
 
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     "..."
@@ -3419,7 +3356,7 @@ label horace3:
 
     c "See you..."
 
-    hide c back
+    hide t back
 
     "..."
 
@@ -3451,7 +3388,6 @@ label horace4:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -3479,7 +3415,6 @@ label horace4:
     stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     show h front at DS_C
@@ -3559,7 +3494,6 @@ label horace5:
     stop music fadeout 1.0
     scene bg officeboss:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Grime (Boss).wav" fadein 1.0
 
@@ -3602,7 +3536,7 @@ label horace5:
 
     r "Horace, I can tell, this is hurting you."
 
-    h "!"
+    h "..."
 
     r "You won't last much longer shutting yourself away like this."
 
@@ -3718,7 +3652,6 @@ label shamir1:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
 
@@ -3789,7 +3722,6 @@ label shamir2:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
 
@@ -3807,7 +3739,6 @@ label shamir2:
     stop music fadeout 1.0
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/gloop (Cafe).wav" fadein 1.0
 
@@ -3882,7 +3813,6 @@ label shamir3:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
 
@@ -3943,7 +3873,6 @@ label shamir4:
     stop music fadeout 1.0
     scene bg office:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/slime (Office Afternoon).wav" fadein 1.0
 
@@ -3967,7 +3896,6 @@ label shamir4:
     stop music fadeout 1.0
     scene bg officeoutside:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     show s front at apron
@@ -4090,7 +4018,6 @@ label shamir5A:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Glop (Front Desk afternoon).wav" fadein 1.0
 
@@ -4131,7 +4058,7 @@ label shamir5A:
 
     show s back
 
-    s "...I woln't. Thank you, Robin."
+    s "...I won't. Thank you, Robin."
 
     hide s back
     with dissolve
@@ -4144,7 +4071,6 @@ label shamir5B:
     stop music fadeout 1.0
     scene bg officefrontdesk:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Lost Deer.mp3" fadein 1.0
 
@@ -4162,7 +4088,6 @@ label shamir5B:
 
     scene bg officecafe:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
 
     show s front at S_C
@@ -4251,7 +4176,6 @@ label shamirEndingB:
     stop music fadeout 1.0
     scene bg badstudio:
         function WaveShader(period=1, amp=5.0, speed=1, direction='x', repeat="mirror")
-        function WaveShader(period=1.25, amp=12.0, speed=1.3, direction='y')
     with fade
     play music "music/Lost Deer.mp3" fadein 1.0
 

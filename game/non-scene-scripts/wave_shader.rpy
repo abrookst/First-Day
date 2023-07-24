@@ -148,6 +148,8 @@ init -1 python:
         #                                        A tuple, ie ("clamp", "repeat") will set the x behavior to clamping and y behavior to repeating. A single string will set it to the same value for both directions
         #                                        If omitted, the shader will inherit this property from the global state of OpenGL.
         def __init__(self, amp = 12.0, period = 20.0, speed = 1.0, direction = "both", damp = 1.0, double=None, double_params=None, melt=None, melt_params=None, repeat=None):
+            if not persistent.aBackground:
+                return
             # In Renpy's shaders, we don't have access to bools or ints. Only floats. So I use these in the shader to differentiate what waves should be included.
             options_dict = {"vertical": 2.0, "y": 2.0, "horizontal": 1.0, "x": 1.0, "both": 0.0, None: -1.0}
             property_dict = {'clamp': GL_CLAMP_TO_EDGE, 'mirrored': GL_MIRRORED_REPEAT, 'mirror': GL_MIRRORED_REPEAT, 'repeat': GL_REPEAT}
@@ -224,6 +226,8 @@ init -1 python:
         #   You can update the parameters over time if you'd like.
         #   Such as u_wave_amp could be increased or decreased over time with some modifications.
         def __call__(self, trans, st, at):
+            if not persistent.aBackground:
+                return
             if self.first_time or trans.shader != 'watt.wave':
                 trans.shader = 'watt.wave'
                 trans.mesh = True
