@@ -121,6 +121,8 @@ transform apron:
 
 label start:
 
+    stop music fadeout 1.0
+
     "May 201X\n11:18 P.M.\nBirdley's Bar"
 
     scene bg bar

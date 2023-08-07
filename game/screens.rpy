@@ -599,7 +599,7 @@ screen about():
 
             text _("Music: {a=https://soundcloud.com/yuyoyuyoyuppe}Yuppe{/a}")
 
-            text _("Logo: {a=https://soundcloud.com/yuyoyuyoyuppe}Yuppe{/a}")
+            text _("Logo: {a=https://beetlewitch.itch.io/}BeetleWitch{/a}")
 
             text _("Taiga, Horace, and Zeke Voice: Cole \"Big Man on Campus\" Maryanopolis")
 
